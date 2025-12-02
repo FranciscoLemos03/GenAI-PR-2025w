@@ -51,12 +51,9 @@ GenAI-PR-2025w/
     ├── app.py                  # Main Streamlit application entry point
     ├── requirements.txt        # Project dependencies
     ├── images/                 # Image assets
-    │   ├── Illustration.png
-    │   └── logo.png
+    │   └── ...
     ├── pages/                  # Streamlit pages
     │   └── homepage.py         # Homepage/landing page
-    └── components/             # Reusable components
-        └── button.py           # Custom button component
 ```
 
 ## 📝 Notes
