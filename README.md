@@ -1,62 +1,40 @@
-# GenAI-PR-2025w
+# 🧠 Collaborative Research Intelligence Platform
 
-## 📋 Project Setup
+🚧 **Work in Progress** 🚧  
+This project is currently under active development. Features, architecture, and documentation may change frequently as the system evolves.
 
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package manager)
-- Git (optional, for version control)
+---
 
-### Step 1: Clone or Download the Repository
-```bash
-git clone <repository-URL>
-cd GenAI-PR-2025w
-```
+## 📌 Project Overview
 
-### Step 2: Create a Virtual Environment (Recommended)
-```bash
-# On Windows (PowerShell)
-python -m venv venv
-.\venv\Scripts\activate.bat
+This project aims to build a **collaborative web platform for academic research teams**, designed to help researchers manage, retrieve, connect, and synthesize large collections of textual documents.
 
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
+Research projects typically generate a high volume of unstructured text, such as papers, notes, annotations, and meeting documents. As this information grows, it becomes increasingly difficult to:
+- Retrieve previously seen ideas or references
+- Identify connections between related documents
+- Maintain an up-to-date overview of the project
+- Stay aligned with collaborators’ contributions
 
-### Step 3: Install Frontend Dependencies (Streamlit)
-```bash
-cd frontend
-pip install -r requirements.txt
-```
+To address these challenges, the platform leverages **Generative AI techniques** to support three core capabilities:
 
-### Step 4: Run the Streamlit Application
-```bash
-streamlit run app.py
-```
+### 🔍 Retrieve
+Semantic search allows users to query concepts or topics and retrieve the most relevant documents, even when exact keywords or locations are forgotten.
 
-The application will automatically open in your browser at `http://localhost:8501`
+### 🔗 Connect
+Documents are automatically grouped into topic-based clusters using embeddings and similarity measures, revealing implicit relationships and overlapping ideas across the project.
 
-### Step 5: Deactivate the Virtual Environment (When Done)
-```bash
-deactivate
-```
+### 🧾 Generate
+The system produces AI-generated summaries at multiple levels (per document, per cluster, per user, or entire project), enabling fast understanding without manually reading all materials.
 
-## 📁 Project Structure
-```
-GenAI-PR-2025w/
-├── README.md
-├── .gitignore
-└── frontend/
-    ├── app.py                  # Main Streamlit application entry point
-    ├── requirements.txt        # Project dependencies
-    ├── images/                 # Image assets
-    │   └── ...
-    ├── pages/                  # Streamlit pages
-    │   └── homepage.py         # Homepage/landing page
-```
+The platform is designed for **collaborative research environments**, supporting shared workspaces where multiple researchers can upload documents, add notes, and explore insights together.
 
-## 📝 Notes
-- Make sure Python is installed: `python --version`
-- To add more packages: `pip install <package-name>`
-- To save updated dependencies: `pip freeze > frontend/requirements.txt`
+---
+
+## 🏗️ Project Structure
+
+The repository is organized into three main components:
+
+- frontend/ (React.JS web app with firebase integration)
+- backend/ (Python development for GenAI Functionalities)
+- .gitignore 
+- README.md
