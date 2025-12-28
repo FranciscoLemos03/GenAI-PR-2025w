@@ -2,17 +2,15 @@ import os
 import uuid
 import fitz
 import json
-from sentence_transformers import SentenceTransformer
+from embedder import Embedder
 
 PDF_FOLDER = "data/pdfs"
 METADATA_FILE = "data/metadata.json"
 os.makedirs(PDF_FOLDER, exist_ok=True)
 
-embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2", device="cpu")
-
-
 class DataManager:
     def __init__(self, metadata_file=METADATA_FILE, pdf_folder=PDF_FOLDER):
+        self.embedder = Embedder()
         self.metadata_file = metadata_file
         self.pdf_folder = pdf_folder
         self.metadata = self.load_metadata()
@@ -55,16 +53,7 @@ class DataManager:
         return full_text
 
     def chunk_text(self, text, max_chars=1000):
-        chunks = []
-        start = 0
-        while start < len(text):
-            end = min(start + max_chars, len(text))
-            chunks.append(text[start:end])
-            start = end
-        return chunks
-
-    def generate_embedding(self, text):
-        return embedding_model.encode(text).tolist()
+        return [text[i:i+max_chars] for i in range(0, len(text), max_chars)]
 
     def process_pdf(self, entry):
         pdf_path = os.path.join(self.pdf_folder, entry["pdf_name"])
@@ -77,7 +66,7 @@ class DataManager:
 
         chunks_data = []
         for chunk in text_chunks:
-            emb = self.generate_embedding(chunk)
+            emb = self.embedder.encode(chunk)
             chunks_data.append({
                 "id": str(uuid.uuid4()),
                 "text": chunk,

@@ -1,14 +1,14 @@
-from data_manager import DataManager
-from summarizer import Summarizer
-
+from baseline_data_manager import DataManager
+from baseline_retriever import BaselineRetriever
 
 dm = DataManager()
-summ = Summarizer()
+retr = BaselineRetriever()
+
 
 
 while True:
 
-    action = input("Main menu:\n  1. Upload\n  2. Summarize\n  3. Retrieve\n> ")
+    action = input("Main menu:\n  1. Upload\n  2. Retrieve\n> ")
 
 
     # ------------------ UPLOAD ------------------
@@ -42,34 +42,38 @@ while True:
         dm.process_pdf(entry)
 
 
-    # ------------------ SUMMARIZE ------------------
-    elif action == "2":
-        while True:
-            sub = input("\nSummarization options:\n  1. Summarize ALL papers\n  2. Summarize by researcher\n> ")
-
-            if sub == "1":
-                summ.summarize_all()
-                break
-
-            elif sub == "2":
-                researchers = ["Alice Robertson", "Bob Martinez", "Chloe Nguyen", "Daniel Fischer"]
-                while True:
-                    print("Select researcher:")
-                    for idx, name in enumerate(researchers, start=1):
-                        print(f"  {idx}. {name}")
-                    choice = input("Enter number: ")
-                    if choice.isdigit() and 1 <= int(choice) <= len(researchers):
-                        researcher = researchers[int(choice) - 1]
-                        break
-                    else:
-                        print("Invalid selection. Please choose a number from the list.\n")
-                summ.summarize_by_researcher(researcher)
-                break
-            else:
-                print("Invalid option. Please choose 1 or 2.\n")
-
-
-
     # ------------------ RETRIEVE ------------------
-    elif action == "3":
-        print("Retrieve functionality goes here")
+    elif action == "2":
+        query = input("Enter a concept/idea to search:\n> ")
+        results = retr.search(query, threshold=0.50)
+        if not results:
+            print("\nNo relevant papers found for that query.\n")
+        else:
+            print("\nResults:")
+            for r in results:
+                print(f"- {r['title']} (score: {r['score']}) — {r['researcher']}")
+                print(f"  text: {r['sample_text'][:120]}...\n")
+
+
+        """
+        "unsupervised language modeling with transformers"	1907.02052v1, 1911.02365v1
+        "scaling laws in GPT models"	1911.02365v1
+        "prompting techniques for text generation"	1911.00536v3
+        "conditional text synthesis using GPT"	1911.00536v3
+        "how GPT improves with more parameters"	1911.02365v1
+        "autoregressive transformer for sentence continuation"	1907.02052v1
+
+        NO PAPERS RETURNED
+        "quantum computing optimization for cryptography"
+        "protein folding transformers"
+        "graph neural networks for social networks"
+        """
+
+
+    # ------------------ SUMMARIZE ------------------
+    #from summarizer import Summarizer
+    #summ = Summarizer()
+    #elif action == "3":
+    #    summ.summarize_all()
+
+
