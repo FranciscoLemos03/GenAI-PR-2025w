@@ -1,15 +1,12 @@
-from baseline_data_manager import DataManager
+from data_manager import DataManager
 from baseline_retriever import BaselineRetriever
-
-dm = DataManager()
-retr = BaselineRetriever()
-
 
 
 while True:
 
     action = input("Main menu:\n  1. Upload\n  2. Retrieve\n> ")
-
+    dm = DataManager()
+    retr = BaselineRetriever()
 
     # ------------------ UPLOAD ------------------
     if action == "1":
@@ -36,14 +33,16 @@ while True:
                 print("Invalid selection. Please choose a number from the list.\n")
 
         # Upload pdf to the database
-        entry = dm.upload_pdf(file_path, title, researcher)
+        # entry = dm.upload_pdf(file_path, title, researcher)
 
         # Create and save embeddings
-        dm.process_pdf(entry)
-
+        # dm.process_pdf(entry)
+        dm = DataManager()
+        dm.upload_pdf(file_path, title, researcher)
 
     # ------------------ RETRIEVE ------------------
     elif action == "2":
+        retr = BaselineRetriever()
         query = input("Enter a concept/idea to search:\n> ")
         results = retr.search(query, threshold=0.50)
         if not results:
@@ -51,9 +50,8 @@ while True:
         else:
             print("\nResults:")
             for r in results:
-                print(f"- {r['title']} (score: {r['score']}) — {r['researcher']}")
-                print(f"  text: {r['sample_text'][:120]}...\n")
-
+                print(f"- {r['title']}\n"
+                      f"      Score: {r['score']})\n      Researcher: {r['researcher']}\n\n")
 
         """
         "unsupervised language modeling with transformers"	1907.02052v1, 1911.02365v1

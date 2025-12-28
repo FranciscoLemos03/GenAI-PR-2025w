@@ -3,7 +3,8 @@ import json
 import numpy as np
 from embedder import Embedder
 
-METADATA_FILE = "data/metadata.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+METADATA_FILE = os.path.join(BASE_DIR, "data", "metadata.json")
 
 class BaselineRetriever:
     def __init__(self, metadata_file=METADATA_FILE):
@@ -23,7 +24,12 @@ class BaselineRetriever:
         return float(np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2)))
 
     def search(self, query, threshold=0.70):
-        """Returns papers ranked by similarity. threshold ~ 0.65-0.80 recommended"""
+        """Returns papers ranked by similarity. threshold ~ 0.65-0.80 recommended"""    
+        self.metadata = self.load_metadata()
+
+        if len(self.metadata) == 0:
+            print("Metadata is empty: no entries to search.\n")
+
         query_emb = self.embedder.encode(query)
         results = []
 
@@ -38,7 +44,7 @@ class BaselineRetriever:
                 if score > best_score:
                     best_score = score
                     best_chunk = chunk
-
+            
             if best_score >= threshold:
                 results.append({
                     "paper_id": entry["id"],
@@ -47,7 +53,6 @@ class BaselineRetriever:
                     "score": round(best_score, 3),
                     "sample_text": best_chunk["text"][:300] if best_chunk else ""
                 })
-
         # Sort best match → worst
         results.sort(key=lambda x: x["score"], reverse=True)
         return results
