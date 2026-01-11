@@ -1,0 +1,388 @@
+{
+  "1907.02052v1.pdf": null,
+  "1911.00536v3.pdf": null,
+  "1911.02365v1.pdf": null,
+  "2002.03471v1.pdf": null,
+  "2103.10385v2.pdf": {
+    "title": "GPT Understands, Too",
+    "authors": [
+      "Xiao Liu",
+      "Yanan Zheng",
+      "Zhengxiao Du",
+      "Ming Ding",
+      "Yujie Qian",
+      "Zhilin Yang",
+      "Jie Tang"
+    ],
+    "year": 2023,
+    "keywords": [
+      "P-Tuning",
+      "prompting",
+      "natural language understanding",
+      "NLU",
+      "continuous prompts",
+      "discrete prompts",
+      "pretrained language models",
+      "PLMs",
+      "language model adaptation",
+      "LAMA",
+      "SuperGLUE",
+      "prompt embeddings",
+      "training stability",
+      "few-shot learning",
+      "knowledge probing"
+    ],
+    "topics": [
+      "Natural Language Processing",
+      "Language Models",
+      "Prompt Engineering",
+      "Machine Learning"
+    ],
+    "one_sentence_summary": "P-Tuning is a novel method that employs trainable continuous prompt embeddings to stabilize training and improve performance on various natural language understanding tasks, addressing the instability of manual discrete prompts."
+  },
+  "2004.13845v1.pdf": {
+    "title": "DARE: Data Augmented Relation Extraction with GPT-2",
+    "authors": [
+      "Yannis Papanikolaou",
+      "Andrea Pierleoni"
+    ],
+    "year": 2020,
+    "keywords": [
+      "Relation Extraction",
+      "Data Augmentation",
+      "GPT-2",
+      "BERT models",
+      "Training data generation",
+      "Class imbalance",
+      "Biomedical datasets",
+      "Transformer architectures",
+      "Language models",
+      "Semantic relations",
+      "Natural Language Understanding",
+      "Text classification",
+      "Oversampling techniques",
+      "Supervised learning",
+      "Knowledge graphs"
+    ],
+    "topics": [
+      "Natural Language Processing",
+      "Relation Extraction",
+      "Data Augmentation",
+      "Generative Models"
+    ],
+    "one_sentence_summary": "This work introduces DARE, a method using fine-tuned GPT-2 to generate augmented training data for Relation Extraction, effectively addressing limited data and class imbalance for BERT-based classifiers and achieving state-of-the-art results on biomedical datasets."
+  },
+  "2102.08036v1.pdf": {
+    "title": "Exploring Transformers in Natural Language Generation: GPT, BERT, and XLNet",
+    "authors": [
+      "M. Onat Topal",
+      "Anil Bas",
+      "Imke van Heerden"
+    ],
+    "year": 2021,
+    "keywords": [
+      "Transformer",
+      "Attention Mechanism",
+      "GPT",
+      "BERT",
+      "XLNet",
+      "Natural Language Generation",
+      "Language Models",
+      "Text Generation",
+      "Deep Learning",
+      "Sequence-to-sequence",
+      "Parallelization",
+      "Bidirectional Encoder Representations",
+      "Autoregressive Models",
+      "Vanishing Gradient Problem"
+    ],
+    "topics": [
+      "Transformers",
+      "Natural Language Generation",
+      "Deep Learning Models",
+      "Attention Mechanisms"
+    ],
+    "one_sentence_summary": "This paper explores three major Transformer-based models\u2014GPT, BERT, and XLNet\u2014highlighting their advancements and significant implications for the field of Natural Language Generation by overcoming limitations of prior architectures."
+  },
+  "2104.04466v3.pdf": {
+    "title": "Knowledge-Aware Graph-Enhanced GPT-2 for Dialogue State Tracking",
+    "authors": [
+      "Weizhe Lin",
+      "Bo-Hsiang Tseng",
+      "Bill Byrne"
+    ],
+    "year": 2021,
+    "keywords": [
+      "Dialogue State Tracking",
+      "GPT-2",
+      "Graph Attention Networks",
+      "Multi-domain dialogue systems",
+      "Graph Neural Networks",
+      "Causal sequential prediction",
+      "Inter-slot relationships",
+      "Sparse supervision",
+      "Weak supervision",
+      "Generative models",
+      "MultiWOZ",
+      "Schema-guided DST",
+      "Statistical DST",
+      "Slot value prediction"
+    ],
+    "topics": [
+      "Dialogue Systems",
+      "Natural Language Processing",
+      "Graph Neural Networks",
+      "GPT-2 Augmentation"
+    ],
+    "one_sentence_summary": "This paper presents a novel hybrid architecture that augments GPT-2 with Graph Attention Network representations to improve dialogue state tracking performance, particularly in capturing inter-slot dependencies and robustness under sparse supervision."
+  },
+  "2003.01473v2.pdf": {
+    "title": "XGPT: Cross-modal Generative Pre-Training for Image Captioning",
+    "authors": [
+      "Qiaolin Xia",
+      "Haoyang Huang",
+      "Nan Duan",
+      "Dongdong Zhang",
+      "Lei Ji",
+      "Zhifang Sui",
+      "Edward Cui",
+      "Taroon Bharti",
+      "Xin Liu",
+      "Ming Zhou"
+    ],
+    "year": 2020,
+    "keywords": [
+      "XGPT",
+      "Image Captioning",
+      "Cross-modal Pre-training",
+      "Generative Models",
+      "Vision-and-Language",
+      "Encoder-Decoder Architecture",
+      "Masked Language Modeling",
+      "Denoising Autoencoding",
+      "Image Feature Generation",
+      "State-of-the-art",
+      "COCO Captions",
+      "Flickr30k",
+      "Data Augmentation",
+      "Image Retrieval",
+      "Deep Learning"
+    ],
+    "topics": [
+      "Image Captioning",
+      "Generative AI",
+      "Multimodal Learning",
+      "Pre-training"
+    ],
+    "one_sentence_summary": "XGPT introduces a novel cross-modal generative pre-training method for image captioning, utilizing an encoder-decoder architecture and three new generation tasks to achieve state-of-the-art results and improve understanding tasks like image retrieval."
+  },
+  "2006.01997v1.pdf": {
+    "title": "Automatic Text Summarization of COVID-19 Medical Research Articles using BERT and GPT-2",
+    "authors": [
+      "Bowen Tan",
+      "Virapat Kieuvongngam",
+      "Yiming Niu"
+    ],
+    "year": 2020,
+    "keywords": [
+      "COVID-19",
+      "Text Summarization",
+      "BERT model",
+      "GPT-2 model",
+      "Natural Language Processing",
+      "Medical Research Articles",
+      "Machine Learning",
+      "Abstractive Summarization",
+      "Extractive Summarization",
+      "Transformer Architecture",
+      "ROUGE scores",
+      "CORD-19 dataset",
+      "Language Modeling",
+      "Multitask learning",
+      "Fine-tuning models"
+    ],
+    "topics": [
+      "NLP applications",
+      "COVID-19 research",
+      "Text summarization",
+      "Large language models",
+      "Deep learning"
+    ],
+    "one_sentence_summary": "This work leverages pre-trained BERT and GPT-2 models for automatic abstractive and extractive text summarization of COVID-19 medical literature, providing succinct summaries to aid the medical community in managing the rapidly growing research."
+  },
+  "2005.09123v2.pdf": {
+    "title": "GPT-too: A language-model-\ufb01rst approach for AMR-to-text generation",
+    "authors": [
+      "Manuel Mager",
+      "Ram\u00b4on Fernandez Astudillo",
+      "Tahira Naseem",
+      "Md Arafat Sultan",
+      "Young-Suk Lee",
+      "Radu Florian",
+      "Salim Roukos"
+    ],
+    "year": 2020,
+    "keywords": [
+      "AMR-to-text generation",
+      "Abstract Meaning Representations",
+      "Pre-trained language models",
+      "GPT-2",
+      "Cycle consistency",
+      "Text generation",
+      "Semantic graphs",
+      "Sequence-to-sequence models",
+      "Transformer architectures",
+      "Human evaluation",
+      "Natural Language Processing",
+      "Graph-to-text",
+      "Deep learning",
+      "Re-scoring techniques",
+      "Conditional text generation"
+    ],
+    "topics": [
+      "Natural Language Processing",
+      "Text Generation",
+      "Abstract Meaning Representation",
+      "Deep Learning",
+      "Pre-trained Models"
+    ],
+    "one_sentence_summary": "This paper proposes an AMR-to-text generation approach combining a pre-trained GPT-2 language model with cycle consistency-based re-scoring, demonstrating state-of-the-art performance on the LDC2017T10 dataset through automatic and human evaluations."
+  },
+  "2102.05126v3.pdf": {
+    "title": "AuGPT: Auxiliary Tasks and Data Augmentation for End-To-End Dialogue with Pre-Trained Language Models",
+    "authors": [
+      "Jon\u00e1\u0161 Kulh\u00e1nek",
+      "Vojt\u02c7ech Hude\u02c7cek",
+      "Tom\u00e1\u0161 Nekvinda",
+      "Ond\u02c7rej Du\u0161ek"
+    ],
+    "year": 2022,
+    "keywords": [
+      "Pre-trained language models",
+      "End-to-end dialogue modelling",
+      "Task-oriented dialogue",
+      "Data augmentation",
+      "Back-translation",
+      "Auxiliary training objectives",
+      "GPT-2",
+      "MultiWOZ dataset",
+      "Dialogue consistency",
+      "Unlikelihood loss",
+      "Response generation",
+      "Belief state prediction",
+      "Human evaluation",
+      "Automatic evaluation",
+      "Neural networks"
+    ],
+    "topics": [
+      "Natural Language Processing",
+      "Dialogue Systems",
+      "Machine Learning",
+      "Language Models",
+      "Deep Learning"
+    ],
+    "one_sentence_summary": "This paper introduces AuGPT, an end-to-end dialogue model based on GPT-2, which utilizes modified training objectives including a novel dialogue consistency classification task, token unlikelihood loss, and massive data augmentation via back-translation to improve performance and diversity in multi-domain task-oriented dialogue on the MultiWOZ dataset."
+  },
+  "2003.02498v1.pdf": {
+    "title": "RecipeGPT: Generative Pre-training Based Cooking Recipe Generation and Evaluation System",
+    "authors": [
+      "Helena H. Lee",
+      "Ke Shu",
+      "Palakorn Achananuparp",
+      "Philips Kokoh Prasetyo",
+      "Yue Liu",
+      "Ee-Peng Lim",
+      "Lav R. Varshney"
+    ],
+    "year": 2020,
+    "keywords": [
+      "recipe generation",
+      "natural language generation",
+      "web application",
+      "recipe evaluation",
+      "GPT-2",
+      "transformer models",
+      "natural language processing",
+      "instruction generation",
+      "ingredient generation",
+      "deep neural networks",
+      "pre-trained models",
+      "language models",
+      "fine-tuning",
+      "cooking recipes",
+      "online systems"
+    ],
+    "topics": [
+      "AI",
+      "Natural Language Processing",
+      "Generative Models",
+      "Web Applications",
+      "Cooking Systems"
+    ],
+    "one_sentence_summary": "RecipeGPT is a novel online system for generating and evaluating cooking recipes, leveraging a fine-tuned GPT-2 model for both instruction and ingredient generation, and providing tools for user evaluation and comparison with reference recipes."
+  },
+  "2006.15437v1.pdf": {
+    "title": "GPT-GNN: Generative Pre-Training of Graph Neural Networks",
+    "authors": [
+      "Ziniu Hu",
+      "Yuxiao Dong",
+      "Kuansan Wang",
+      "Kai-Wei Chang",
+      "Yizhou Sun"
+    ],
+    "year": 2020,
+    "keywords": [
+      "Generative Pre-Training",
+      "Graph Neural Networks",
+      "Graph Representation Learning",
+      "Network Embedding",
+      "GNN Pre-Training",
+      "Unsupervised learning",
+      "Neural networks",
+      "Learning latent representations"
+    ],
+    "topics": [
+      "Graph Neural Networks",
+      "Pre-training models",
+      "Self-supervised learning",
+      "Graph data analysis",
+      "Machine Learning"
+    ],
+    "one_sentence_summary": "GPT-GNN is a generative pre-training framework for Graph Neural Networks that uses a self-supervised attributed graph generation task to capture structural and semantic graph properties, enabling improved performance on downstream tasks with limited labeled data."
+  },
+  "2007.00659v2.pdf": {
+    "title": "LSTM and GPT-2 Synthetic Speech Transfer Learning for Speaker Recognition to Overcome Data Scarcity",
+    "authors": [
+      "Jordan J. Bird",
+      "Diego R. Faria",
+      "Anik\u00f3 Ek\u00e1rt",
+      "Cristiano Premebida",
+      "Pedro P. S. Ayrosa"
+    ],
+    "year": 2020,
+    "keywords": [
+      "LSTM",
+      "GPT-2",
+      "Synthetic speech",
+      "Transfer learning",
+      "Speaker recognition",
+      "Data scarcity",
+      "MFCC",
+      "Neural networks",
+      "Data augmentation",
+      "Generative models",
+      "Human-Machine Interaction",
+      "Voice biometrics",
+      "Deep learning",
+      "Speech processing"
+    ],
+    "topics": [
+      "Speaker Recognition",
+      "Data Augmentation",
+      "Transfer Learning",
+      "Deep Learning Models",
+      "AI for Speech"
+    ],
+    "one_sentence_summary": "This work addresses data scarcity in speaker recognition by generating synthetic Mel-Frequency Cepstral Coefficients (MFCCs) using LSTM and GPT-2 models, demonstrating that transfer learning with this synthetic data significantly improves speaker classification performance with limited real user data."
+  }
+}

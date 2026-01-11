@@ -1,16 +1,20 @@
 # data_manager.py
 import os
 import uuid
-import fitz
+import fitz  #pip install pymupdf
 import json
 import tempfile
 import requests
+
 from embedder import Embedder
+from gemini_metadata import extract_llm_metadata
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # folder where this .py is located
 DATABASE_FILE = os.path.join(BASE_DIR, "data", "database.json")
 PDF_FOLDER = os.path.join(BASE_DIR, "data", "pdfs")
 EXAMPLE_FOLDER = os.path.join(BASE_DIR, "example_pdfs_to_upload")
+
+
 
 class DataManager:
     """
@@ -21,11 +25,12 @@ class DataManager:
     - chunking, embedding & storing database
     """
 
-    def __init__(self, database_file=DATABASE_FILE, pdf_folder=PDF_FOLDER):
+    def __init__(self, database_file=DATABASE_FILE, pdf_folder=PDF_FOLDER, metadata_mode = "concat"):
         self.embedder = Embedder()
         self.database_file = database_file
         self.pdf_folder = pdf_folder
         self.database = self.load_database()
+        self.metadata_mode = metadata_mode #"concat" or "dual"
 
     # ------------------------------
     # DATABASE I/O
@@ -76,7 +81,45 @@ class DataManager:
         self.process_pdf(entry)
         print(f"Uploaded & indexed: {title}")
         return entry
+    # ------------------------------
+    # METADATA
+    # ------------------------------
+    def build_metadata_string(self, entry): #entry is dict
+        m = entry.get("llm_metadata") or {}
+        parts = []
+        if m.get("title"):
+            parts.append(f"Title: {m['title']}")
+        if m.get("authors"):
+            parts.append("Authors: " + ", ".join(m["authors"][:10]))
+        if m.get("year"):
+            parts.append(f"Year: {m['year']}")
+        if m.get("topics"):
+            parts.append("Topics: " + ", ".join(m["topics"]))
+        if m.get("keywords"):
+            parts.append("Keywords: " + ", ".join(m["keywords"]))
+        if m.get("one_sentence_summary"):
+            parts.append("Summary: " + m["one_sentence_summary"])
 
+        if not parts:
+            return ""
+
+        return "[METADATA]\n" + "\n".join(parts)
+
+
+    def ensure_llm_metadata(self, entry, doc_text):
+        """
+        Adds entry['llm_metadata'] if missing. Calls Gemini once per document.
+        """
+        if entry.get("llm_metadata") is not None:
+            return  # already present (even if empty dict)
+
+        try:
+            entry["llm_metadata"] = extract_llm_metadata(doc_text)
+            self.save_database()  # persist early to avoid repeated calls
+        except Exception as e:
+            print("Gemini metadata extraction failed:", e)
+            entry["llm_metadata"] = {}
+            self.save_database()      
 
     # ------------------------------
     # PROCESSING (CHUNK + EMBEDDING)
@@ -97,16 +140,23 @@ class DataManager:
             return
 
         text = self.extract_text(pdf_path)
+
+        #metadata doc-level
+        self.ensure_llm_metadata(entry, text)
+        metadata_str = self.build_metadata_string(entry)
+        
         chunks = self.chunk_text(text)
 
-        entry["chunks"] = [
-            {
+        for chunk in chunks:
+            if self.metadata_mode == "concat":
+                text_to_embed = chunk + "\n\n" + metadata_str if metadata_str else chunk
+                embedding = self.embedder.encode(text_to_embed)
+
+            entry["chunks"].append({
                 "id": str(uuid.uuid4()),
                 "text": chunk,
-                "embedding": self.embedder.encode(chunk)
-            }
-            for chunk in chunks
-        ]
+                "embedding": embedding
+            })
 
         self.save_database()
         print(f"Indexed {len(chunks)} chunks for: {entry['title']}")

@@ -47,7 +47,7 @@ streamlit_error_log.txt
 
 # Jupyter Notebook
 .ipynb_checkpoints/
-*.ipynb
+#*.ipynb
 
 # OS
 Thumbs.db
