@@ -7,18 +7,18 @@ import requests
 
 
 class Summarizer:
-    def __init__(self, metadata_path="data/metadata.json", api_key=None):
-        self.metadata_path = metadata_path
+    def __init__(self, database_path="data/database.json", api_key=None):
+        self.database_path = database_path
         self.api_key = api_key or "KEY"  # CHANGE PRIVATE KEY HERE
-        self.metadata = self._load_metadata()
+        self.database = self._load_database()
 
 
-    def _load_metadata(self):
-        if not os.path.exists(self.metadata_path):
-            print("metadata.json not found.")
+    def _load_database(self):
+        if not os.path.exists(self.database_path):
+            print("database.json not found.")
             return []
 
-        with open(self.metadata_path, "r", encoding="utf-8") as f:
+        with open(self.database_path, "r", encoding="utf-8") as f:
             return json.load(f)
 
 
@@ -49,7 +49,7 @@ class Summarizer:
     def _summarize_filtered(self, filter_fn, title="SUMMARY"):
         """Generic function to summarize papers filtered by a given function."""
         chunks = []
-        for paper in filter(filter_fn, self.metadata):
+        for paper in filter(filter_fn, self.database):
             chunks.append(f"\n=== PAPER: {paper['title']} ===\n")
             chunks.extend([c["text"] for c in paper["chunks"]])
 
@@ -74,8 +74,8 @@ class Summarizer:
    
     # PUBLIC METHODS
     def summarize_all(self):
-        """Summarize ALL papers in metadata.json."""
-        self.metadata = self._load_metadata() 
+        """Summarize ALL papers in database.json."""
+        self.database = self._load_database() 
 
         def all_papers_filter(paper):
             return "chunks" in paper
@@ -85,7 +85,7 @@ class Summarizer:
 
     def summarize_by_researcher(self, researcher_name):
         """Summarize only papers uploaded/consulted by a specific researcher."""
-        self.metadata = self._load_metadata() 
+        self.database = self._load_database() 
 
         def researcher_filter(paper):
             return paper.get("researcher") == researcher_name and "chunks" in paper

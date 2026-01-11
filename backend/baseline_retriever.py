@@ -4,17 +4,17 @@ import numpy as np
 from embedder import Embedder
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-METADATA_FILE = os.path.join(BASE_DIR, "data", "metadata.json")
+DATABASE_FILE = os.path.join(BASE_DIR, "data", "database.json")
 
 class BaselineRetriever:
-    def __init__(self, metadata_file=METADATA_FILE):
+    def __init__(self, database_file=DATABASE_FILE):
         self.embedder = Embedder()
-        self.metadata_file = metadata_file
-        self.metadata = self.load_metadata()
+        self.database_file = database_file
+        self.database = self.load_database()
 
-    def load_metadata(self):
-        if os.path.exists(self.metadata_file):
-            with open(self.metadata_file, "r", encoding="utf-8") as f:
+    def load_database(self):
+        if os.path.exists(self.database_file):
+            with open(self.database_file, "r", encoding="utf-8") as f:
                 return json.load(f)
         return []
 
@@ -25,15 +25,15 @@ class BaselineRetriever:
 
     def search(self, query, threshold=0.70):
         """Returns papers ranked by similarity. threshold ~ 0.65-0.80 recommended"""    
-        self.metadata = self.load_metadata()
+        self.database = self.load_database()
 
-        if len(self.metadata) == 0:
-            print("Metadata is empty: no entries to search.\n")
+        if len(self.database) == 0:
+            print("Database is empty: no entries to search.\n")
 
         query_emb = self.embedder.encode(query)
         results = []
 
-        for entry in self.metadata:
+        for entry in self.database:
             if "chunks" not in entry:
                 continue  # not processed yet
             best_score = 0

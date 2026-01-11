@@ -1,6 +1,61 @@
-from data_manager import DataManager
+# import_pdfs_to_db.py
+import os
+import shutil
+import uuid
+import arxiv
+import random
+from data_manager import DataManager, PDF_FOLDER, DATABASE_FILE, EXAMPLE_FOLDER
 from baseline_retriever import BaselineRetriever
 
+os.makedirs(PDF_FOLDER, exist_ok=True)
+os.makedirs(os.path.dirname(DATABASE_FILE), exist_ok=True)
+
+
+###   1. ADD 15 PDFS TO THE DATABASE INITIALLY, TO HAVE SOME EXAMPLES
+### -------------------------------------------------------------------
+
+N_TO_IMPORT = 15
+researchers = ["Alice Robertson", "Bob Martinez", "Chloe Nguyen", "Daniel Fischer"]
+
+# Load PDFs from example folder
+pdf_files = [f for f in os.listdir(EXAMPLE_FOLDER) if f.lower().endswith(".pdf")]
+if len(pdf_files) < N_TO_IMPORT:
+    raise ValueError(f"Not enough PDFs in example_pdfs_to_upload" )
+selected_pdfs = random.sample(pdf_files, N_TO_IMPORT)
+
+
+# Upload them to the database
+dm = DataManager()
+client = arxiv.Client()
+for i, pdf_file in enumerate(selected_pdfs):
+    arxiv_id = pdf_file.replace(".pdf", "")
+    pdf_path = os.path.join(EXAMPLE_FOLDER, pdf_file)
+
+    out_path = os.path.join(dm.pdf_folder, f"{arxiv_id}.pdf")
+    if os.path.exists(out_path):
+        print(f"Skipping already uploaded PDF: {arxiv_id}.pdf")
+        continue
+    
+    print(f"\n[{i+1}/{N_TO_IMPORT}] Importing arXiv:{arxiv_id}")
+
+    # Find title of paper with arXiv ID
+    search = arxiv.Search(id_list=[arxiv_id], max_results=1)
+    results = list(client.results(search))
+    if not results:
+        print("Could not resolve title for:", arxiv_id)
+        continue
+    else:
+        title = results[0].title.strip().replace("\n", " ")
+
+    researcher = researchers[i % len(researchers)]
+    dm.upload_pdf(pdf_path, title, researcher, arxiv_id)
+
+print("\n\n\n")
+
+
+
+###   2. RUN THE MAIN PROGRAMM
+### -------------------------------------------------------------------
 
 while True:
 
@@ -17,6 +72,7 @@ while True:
 
         # Select pdf
         file_path = input("Enter path to PDF: ")
+        arxiv_id = os.path.splitext(os.path.basename(file_path))[0]
         
         # Enter metadata
         title = input("Enter paper title: ")
@@ -33,12 +89,8 @@ while True:
                 print("Invalid selection. Please choose a number from the list.\n")
 
         # Upload pdf to the database
-        # entry = dm.upload_pdf(file_path, title, researcher)
-
-        # Create and save embeddings
-        # dm.process_pdf(entry)
         dm = DataManager()
-        dm.upload_pdf(file_path, title, researcher)
+        dm.upload_pdf(file_path, title, researcher, arxiv_id)
 
     # ------------------ RETRIEVE ------------------
     elif action == "2":
@@ -51,7 +103,7 @@ while True:
             print("\nResults:")
             for r in results:
                 print(f"- {r['title']}\n"
-                      f"      Score: {r['score']})\n      Researcher: {r['researcher']}\n\n")
+                      f"      Score: {r['score']}\n      Researcher: {r['researcher']}\n\n")
 
         """
         "unsupervised language modeling with transformers"	1907.02052v1, 1911.02365v1
