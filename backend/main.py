@@ -1,9 +1,6 @@
 # import_pdfs_to_db.py
 import os
-import shutil
-import uuid
 import arxiv
-import random
 from data_manager import DataManager, PDF_FOLDER, DATABASE_FILE, EXAMPLE_FOLDER
 from baseline_retriever import BaselineRetriever
 
@@ -12,6 +9,7 @@ os.makedirs(os.path.dirname(DATABASE_FILE), exist_ok=True)
 
 
 ###   1. ADD 15 PDFS TO THE DATABASE INITIALLY, TO HAVE SOME EXAMPLES
+###      (this part is skipped automatically if they are already on the database)
 ### -------------------------------------------------------------------
 
 N_TO_IMPORT = 15
@@ -21,7 +19,7 @@ researchers = ["Alice Robertson", "Bob Martinez", "Chloe Nguyen", "Daniel Fische
 pdf_files = [f for f in os.listdir(EXAMPLE_FOLDER) if f.lower().endswith(".pdf")]
 if len(pdf_files) < N_TO_IMPORT:
     raise ValueError(f"Not enough PDFs in example_pdfs_to_upload" )
-selected_pdfs = random.sample(pdf_files, N_TO_IMPORT)
+selected_pdfs = pdf_files[:N_TO_IMPORT]
 
 
 # Upload them to the database
