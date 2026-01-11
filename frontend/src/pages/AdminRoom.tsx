@@ -50,6 +50,8 @@ export function AdminRoom() {
     const [newPrompt, setNewPrompt] = useState('');
     const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
     const [selectedFileName, setSelectedFileName] = useState<string | null>(null);
+    const [isAIModalOpen, setIsAIModalOpen] = useState(false);
+    const [aiTheme, setAiTheme] = useState('');
     const [ showPopup, setShowPopup ] = useState(false)
     const [ promptIdToDelete, setPromptIdToDelete ] = useState<string | null>(null);
     const [ showEndPopup, setShowEndPopup ] = useState(false)
@@ -134,6 +136,25 @@ export function AdminRoom() {
     function handleAttachFile() {
         setIsUploadModalOpen(true);
     }
+
+    function handleCloseAIModal() {
+        setIsAIModalOpen(false);
+        setAiTheme('');
+    }
+
+    function handleSubmitAIModal(event: FormEvent) {
+        event.preventDefault();
+
+        if (aiTheme.trim() === '') {
+            return;
+        }
+
+        // 🚧 Aqui depois ligas à lógica de AI
+        console.log('AI Theme:', aiTheme);
+
+        handleCloseAIModal();
+    }
+
     
     function handleCloseModal() {
         setIsUploadModalOpen(false);
@@ -208,11 +229,7 @@ export function AdminRoom() {
 
     function handleAIGenerate() {
         
-        ///                \\\
-        //                  \\
-        //      To Do       \\
-        //                  \\
-        ///                \\\
+        setIsAIModalOpen(true);
 
     }
 
@@ -350,6 +367,34 @@ export function AdminRoom() {
                     </div>
                 </div>
             )}
+
+            {isAIModalOpen && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <h2>What theme are you searching?</h2>
+
+                        <form onSubmit={handleSubmitAIModal}>
+                            <input
+                                type="text"
+                                placeholder="Ex:. GPT LLM, AI in healthcare..."
+                                value={aiTheme}
+                                onChange={(e) => setAiTheme(e.target.value)}
+                                className="text-input"
+                            />
+
+                            <div className="modal-actions">
+                                <Button type="button" onClick={handleCloseAIModal}>
+                                    Cancel
+                                </Button>
+                                <Button type="submit">
+                                    Submit
+                                </Button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            )}
+
 
             {   
                 showPopup && (

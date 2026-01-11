@@ -45,6 +45,8 @@ export function Room(){
     const {title, prompts} = useRoom(roomId) as { title: string; prompts: PromptType[] };
     const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
     const [selectedFileName, setSelectedFileName] = useState<string | null>(null);
+    const [isAIModalOpen, setIsAIModalOpen] = useState(false);
+    const [aiTheme, setAiTheme] = useState('');
 
     type RoomParams = {
         id: string,
@@ -61,6 +63,24 @@ export function Room(){
     function handleCloseModal() {
         setIsUploadModalOpen(false);
         setSelectedFileName(null);
+    }
+
+    function handleCloseAIModal() {
+        setIsAIModalOpen(false);
+        setAiTheme('');
+    }
+
+    function handleSubmitAIModal(event: FormEvent) {
+        event.preventDefault();
+
+        if (aiTheme.trim() === '') {
+            return;
+        }
+
+        // 🚧 Aqui depois ligas à lógica de AI
+        console.log('AI Theme:', aiTheme);
+
+        handleCloseAIModal();
     }
 
     function handleFileSelection(event: React.ChangeEvent<HTMLInputElement>) {
@@ -126,11 +146,7 @@ export function Room(){
 
     function handleAIGenerate() {
                 
-        ///                \\\
-        //                  \\
-        //      To Do       \\
-        //                  \\
-        ///                \\\
+        setIsAIModalOpen(true);
 
     }
 
@@ -247,6 +263,33 @@ export function Room(){
                                 </Button>
                                 <Button type="submit">
                                     Attach
+                                </Button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            )}
+
+            {isAIModalOpen && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <h2>What theme are you searching?</h2>
+
+                        <form onSubmit={handleSubmitAIModal}>
+                            <input
+                                type="text"
+                                placeholder="e.g. Climate change, AI in healthcare..."
+                                value={aiTheme}
+                                onChange={(e) => setAiTheme(e.target.value)}
+                                className="text-input"
+                            />
+
+                            <div className="modal-actions">
+                                <Button type="button" onClick={handleCloseAIModal}>
+                                    Cancel
+                                </Button>
+                                <Button type="submit">
+                                    Submit
                                 </Button>
                             </div>
                         </form>
