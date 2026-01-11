@@ -120,7 +120,7 @@
 
         .prompt-list {
             margin: 32px 0;
-            max-height: 350px;
+            max-height: 300px;
             overflow-x: hidden; 
             overflow-y: auto;
             display: flex;
@@ -223,6 +223,20 @@
         
         &:hover {
             background: #ededed;
+        }
+    }
+
+    .text-input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 16px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+
+        &:focus {
+            outline: none;
+            border-color: #835afd; // ou a cor principal do projeto
         }
     }
     

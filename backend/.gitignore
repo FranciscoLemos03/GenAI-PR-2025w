@@ -1,0 +1,19 @@
+# Virtual Environment
+myvenv/
+myvenv/**
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Archives
+.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/

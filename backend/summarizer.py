@@ -71,7 +71,6 @@ class Summarizer:
 
         return summary
    
-   
     # PUBLIC METHODS
     def summarize_all(self):
         """Summarize ALL papers in database.json."""
