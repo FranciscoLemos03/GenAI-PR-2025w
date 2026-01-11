@@ -14,18 +14,20 @@ that receives:
 
 ## 🧱 Project Structure
 
+```text
 genai-api/
 ├── app/
-│ ├── main.py
-│ ├── api/
-│ │ └── routes.py
-│ ├── models/
-│ │ └── schemas.py
-│ └── core/
-│ └── config.py
+│   ├── main.py
+│   ├── api/
+│   │   └── routes.py
+│   ├── models/
+│   │   └── schemas.py
+│   └── core/
+│       └── config.py
 ├── requirements.txt
 ├── .env
 └── .gitignore
+```
 
 ---
 
