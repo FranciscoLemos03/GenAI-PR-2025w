@@ -50,6 +50,7 @@ class BaselineRetriever:
                     "paper_id": entry["id"],
                     "title": entry["title"],
                     "researcher": entry["researcher"],
+                    "pdf_name": entry.get("pdf_name", ""),
                     "score": round(best_score, 3),
                     "sample_text": best_chunk["text"][:300] if best_chunk else ""
                 })

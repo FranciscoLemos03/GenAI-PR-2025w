@@ -100,7 +100,8 @@ while True:
         else:
             print("\nResults:")
             for r in results:
-                print(f"- {r['title']}\n"
+                print(f"- {r['pdf_name']}\n"
+                      f"  {r['title']}\n"
                       f"      Score: {r['score']}\n      Researcher: {r['researcher']}\n\n")
 
         """
