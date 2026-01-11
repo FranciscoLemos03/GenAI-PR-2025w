@@ -1,0 +1,33 @@
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+myvenv/
+venv/
+.env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing / coverage
+.coverage
+htmlcov/
+
+# FastAPI / Uvicorn
+*.pid
