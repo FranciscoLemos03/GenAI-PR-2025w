@@ -26,6 +26,7 @@ class DataManager:
         self.database_file = database_file
         self.pdf_folder = pdf_folder
         self.database = self.load_database()
+        self.tokenizer = self.embedder.model.tokenizer
 
     # ------------------------------
     # DATABASE I/O
@@ -89,6 +90,22 @@ class DataManager:
 
     def chunk_text(self, text, max_chars=1000):
         return [text[i:i + max_chars] for i in range(0, len(text), max_chars)]
+
+    def chunk_text(self, text, chunk_size=400, chunk_overlap=50):
+        # 1. Convert text to token IDs (integers)
+        # We use add_special_tokens=False so we don't get [CLS]/[SEP] inside every chunk
+        tokens = self.tokenizer.encode(text, add_special_tokens=False)
+        chunks = []
+        # 2. Iterate through tokens with a sliding window
+        # The step size is (chunk_size - chunk_overlap)
+        step = chunk_size - chunk_overlap
+        for i in range(0, len(tokens), step):
+            # Extract the window of tokens
+            chunk_ids = tokens[i : i + chunk_size]
+            # 3. Decode back to text
+            chunk_text = self.tokenizer.decode(chunk_ids, skip_special_tokens=True)
+            chunks.append(chunk_text)
+        return chunks
 
     def process_pdf(self, entry):
         pdf_path = os.path.join(self.pdf_folder, entry["pdf_name"])
