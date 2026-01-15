@@ -39,7 +39,7 @@ for filename in files_to_process:
         date_str = parts[0]
         researcher = parts[1]
         title = parts[2].replace("-", " ") # Replace hyphens with spaces for the title to make it readable
-        print(f"Uploading: {filename}...")
+        print(f"\nUploading: {filename}...")
         
         try:
             dm.upload_pdf(
