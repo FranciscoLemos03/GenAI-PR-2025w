@@ -678,5 +678,75 @@
       "Data Security"
     ],
     "one_sentence_summary": "The Principal Investigator of the Multimodal AI-AD project issues an urgent directive to halt all external transfers of pseudonymized high-resolution MRI data to a third-party commercial provider due to severe GDPR and contractual violations, emphasizing the re-identification risk and demanding immediate remediation actions."
-  }
+  },
+  "2026-01-27_Daniel-Fischer_Weekly-Sync.pdf:728340ed1f4564f0458dfdfb81b2b34ebe9c3baed7719ae8414590eb2b9e5528": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2025-12-08_Chloe-Nguyen_Multimodal-Attention-based-Deep-Learning-for-Alzheimers-Disease-Diagnosis.pdf:62846f3d48e934ce9d0542e9dbc07b5127639126f480332da1cf667b18e37908": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2026-01-16_Chloe-Nguyen_Hyperparameter-Sweep.pdf:1614febcfc27b7eb5bd9fa034d54cf58ccfd6044c5e43f50479ca1a47db92d65": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2025-12-10_Alice-Robertson_A-Quantitative-Approach-for-Evaluating-Disease-Focus-and-Interpretability-of-Deep-Learning-Models-for-Alzheimers.pdf:943ff7f189ae7838ad6bbd410a01e7e9d9fe6c5074816aa0a6eadf9e02e55f6f": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2025-11-10_Chloe-Nguyen_Attention-Is-All-You-Need.pdf:2c2d91596cf54729dcd12b32f632b7e7c8760f0f02ab47568e81e972ac097f00": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2025-12-02_Bob-Martinez_Data-driven-spatiotemporal-modeling-reveals-personalized-trajectories-of-cortical-atrophy-in-Alzheimers-disease.pdf:71b92ccbd6e45c38559f43ff5ddd8a125440018cb1f3d16b1f8da5c55da2c42e": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2025-12-16_Chloe-Nguyen_Generative-Adversarial-Network-in-Medical-Imaging-A-Review.pdf:7834ec1517b3c37945da90883d02b6405b4213d35f7c3d8a94434eaf08003600": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2025-12-14_Bob-Martinez_Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis.pdf:67a92643a78fe9e56f4fbfaa3c84cd13ef6a4bc16ba3554cc1ba5cf0a3885726": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2026-01-22_Bob-Martinez_Synthetic-Data-Gen.pdf:fa503ff670a1cc46d7e15d2b9554c44d8dc9fc18a79e7a3f2eee64d2f1a20860": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ],
+  "2025-12-04_Alice-Robertson_Pathology-Steered-Stratification-Network-for-Subtype-Identification-in-Alzheimers-Disease.pdf:8cc34f1280189481add01a3cc772076df3864a4f83c12b63e49016e4fadec6dd": [
+    {
+      "title": "Document",
+      "start_char": 0,
+      "end_char": null
+    }
+  ]
 }
