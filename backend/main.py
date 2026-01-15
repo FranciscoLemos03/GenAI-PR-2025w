@@ -117,17 +117,7 @@ while True:
                       f"      Score: {r['score']}\n      Researcher: {r['researcher']}\n\n")
 
         """
-        "unsupervised language modeling with transformers"	1907.02052v1, 1911.02365v1
-        "scaling laws in GPT models"	1911.02365v1
-        "prompting techniques for text generation"	1911.00536v3
-        "conditional text synthesis using GPT"	1911.00536v3
-        "how GPT improves with more parameters"	1911.02365v1
-        "autoregressive transformer for sentence continuation"	1907.02052v1
 
-        NO PAPERS RETURNED
-        "quantum computing optimization for cryptography"
-        "protein folding transformers"
-        "graph neural networks for social networks"
         """
 
 
