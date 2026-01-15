@@ -1,388 +1,682 @@
 {
-  "1907.02052v1.pdf": null,
-  "1911.00536v3.pdf": null,
-  "1911.02365v1.pdf": null,
-  "2002.03471v1.pdf": null,
-  "2103.10385v2.pdf": {
-    "title": "GPT Understands, Too",
+  "2025-12-08_Chloe-Nguyen_Multimodal-Attention-based-Deep-Learning-for-Alzheimers-Disease-Diagnosis.pdf": {
+    "title": "Multimodal Attention-based Deep Learning for Alzheimer\u2019s Disease Diagnosis",
     "authors": [
-      "Xiao Liu",
-      "Yanan Zheng",
-      "Zhengxiao Du",
-      "Ming Ding",
-      "Yujie Qian",
-      "Zhilin Yang",
-      "Jie Tang"
-    ],
-    "year": 2023,
-    "keywords": [
-      "P-Tuning",
-      "prompting",
-      "natural language understanding",
-      "NLU",
-      "continuous prompts",
-      "discrete prompts",
-      "pretrained language models",
-      "PLMs",
-      "language model adaptation",
-      "LAMA",
-      "SuperGLUE",
-      "prompt embeddings",
-      "training stability",
-      "few-shot learning",
-      "knowledge probing"
-    ],
-    "topics": [
-      "Natural Language Processing",
-      "Language Models",
-      "Prompt Engineering",
-      "Machine Learning"
-    ],
-    "one_sentence_summary": "P-Tuning is a novel method that employs trainable continuous prompt embeddings to stabilize training and improve performance on various natural language understanding tasks, addressing the instability of manual discrete prompts."
-  },
-  "2004.13845v1.pdf": {
-    "title": "DARE: Data Augmented Relation Extraction with GPT-2",
-    "authors": [
-      "Yannis Papanikolaou",
-      "Andrea Pierleoni"
-    ],
-    "year": 2020,
-    "keywords": [
-      "Relation Extraction",
-      "Data Augmentation",
-      "GPT-2",
-      "BERT models",
-      "Training data generation",
-      "Class imbalance",
-      "Biomedical datasets",
-      "Transformer architectures",
-      "Language models",
-      "Semantic relations",
-      "Natural Language Understanding",
-      "Text classification",
-      "Oversampling techniques",
-      "Supervised learning",
-      "Knowledge graphs"
-    ],
-    "topics": [
-      "Natural Language Processing",
-      "Relation Extraction",
-      "Data Augmentation",
-      "Generative Models"
-    ],
-    "one_sentence_summary": "This work introduces DARE, a method using fine-tuned GPT-2 to generate augmented training data for Relation Extraction, effectively addressing limited data and class imbalance for BERT-based classifiers and achieving state-of-the-art results on biomedical datasets."
-  },
-  "2102.08036v1.pdf": {
-    "title": "Exploring Transformers in Natural Language Generation: GPT, BERT, and XLNet",
-    "authors": [
-      "M. Onat Topal",
-      "Anil Bas",
-      "Imke van Heerden"
-    ],
-    "year": 2021,
-    "keywords": [
-      "Transformer",
-      "Attention Mechanism",
-      "GPT",
-      "BERT",
-      "XLNet",
-      "Natural Language Generation",
-      "Language Models",
-      "Text Generation",
-      "Deep Learning",
-      "Sequence-to-sequence",
-      "Parallelization",
-      "Bidirectional Encoder Representations",
-      "Autoregressive Models",
-      "Vanishing Gradient Problem"
-    ],
-    "topics": [
-      "Transformers",
-      "Natural Language Generation",
-      "Deep Learning Models",
-      "Attention Mechanisms"
-    ],
-    "one_sentence_summary": "This paper explores three major Transformer-based models\u2014GPT, BERT, and XLNet\u2014highlighting their advancements and significant implications for the field of Natural Language Generation by overcoming limitations of prior architectures."
-  },
-  "2104.04466v3.pdf": {
-    "title": "Knowledge-Aware Graph-Enhanced GPT-2 for Dialogue State Tracking",
-    "authors": [
-      "Weizhe Lin",
-      "Bo-Hsiang Tseng",
-      "Bill Byrne"
-    ],
-    "year": 2021,
-    "keywords": [
-      "Dialogue State Tracking",
-      "GPT-2",
-      "Graph Attention Networks",
-      "Multi-domain dialogue systems",
-      "Graph Neural Networks",
-      "Causal sequential prediction",
-      "Inter-slot relationships",
-      "Sparse supervision",
-      "Weak supervision",
-      "Generative models",
-      "MultiWOZ",
-      "Schema-guided DST",
-      "Statistical DST",
-      "Slot value prediction"
-    ],
-    "topics": [
-      "Dialogue Systems",
-      "Natural Language Processing",
-      "Graph Neural Networks",
-      "GPT-2 Augmentation"
-    ],
-    "one_sentence_summary": "This paper presents a novel hybrid architecture that augments GPT-2 with Graph Attention Network representations to improve dialogue state tracking performance, particularly in capturing inter-slot dependencies and robustness under sparse supervision."
-  },
-  "2003.01473v2.pdf": {
-    "title": "XGPT: Cross-modal Generative Pre-Training for Image Captioning",
-    "authors": [
-      "Qiaolin Xia",
-      "Haoyang Huang",
-      "Nan Duan",
-      "Dongdong Zhang",
-      "Lei Ji",
-      "Zhifang Sui",
-      "Edward Cui",
-      "Taroon Bharti",
-      "Xin Liu",
-      "Ming Zhou"
-    ],
-    "year": 2020,
-    "keywords": [
-      "XGPT",
-      "Image Captioning",
-      "Cross-modal Pre-training",
-      "Generative Models",
-      "Vision-and-Language",
-      "Encoder-Decoder Architecture",
-      "Masked Language Modeling",
-      "Denoising Autoencoding",
-      "Image Feature Generation",
-      "State-of-the-art",
-      "COCO Captions",
-      "Flickr30k",
-      "Data Augmentation",
-      "Image Retrieval",
-      "Deep Learning"
-    ],
-    "topics": [
-      "Image Captioning",
-      "Generative AI",
-      "Multimodal Learning",
-      "Pre-training"
-    ],
-    "one_sentence_summary": "XGPT introduces a novel cross-modal generative pre-training method for image captioning, utilizing an encoder-decoder architecture and three new generation tasks to achieve state-of-the-art results and improve understanding tasks like image retrieval."
-  },
-  "2006.01997v1.pdf": {
-    "title": "Automatic Text Summarization of COVID-19 Medical Research Articles using BERT and GPT-2",
-    "authors": [
-      "Bowen Tan",
-      "Virapat Kieuvongngam",
-      "Yiming Niu"
-    ],
-    "year": 2020,
-    "keywords": [
-      "COVID-19",
-      "Text Summarization",
-      "BERT model",
-      "GPT-2 model",
-      "Natural Language Processing",
-      "Medical Research Articles",
-      "Machine Learning",
-      "Abstractive Summarization",
-      "Extractive Summarization",
-      "Transformer Architecture",
-      "ROUGE scores",
-      "CORD-19 dataset",
-      "Language Modeling",
-      "Multitask learning",
-      "Fine-tuning models"
-    ],
-    "topics": [
-      "NLP applications",
-      "COVID-19 research",
-      "Text summarization",
-      "Large language models",
-      "Deep learning"
-    ],
-    "one_sentence_summary": "This work leverages pre-trained BERT and GPT-2 models for automatic abstractive and extractive text summarization of COVID-19 medical literature, providing succinct summaries to aid the medical community in managing the rapidly growing research."
-  },
-  "2005.09123v2.pdf": {
-    "title": "GPT-too: A language-model-\ufb01rst approach for AMR-to-text generation",
-    "authors": [
-      "Manuel Mager",
-      "Ram\u00b4on Fernandez Astudillo",
-      "Tahira Naseem",
-      "Md Arafat Sultan",
-      "Young-Suk Lee",
-      "Radu Florian",
-      "Salim Roukos"
-    ],
-    "year": 2020,
-    "keywords": [
-      "AMR-to-text generation",
-      "Abstract Meaning Representations",
-      "Pre-trained language models",
-      "GPT-2",
-      "Cycle consistency",
-      "Text generation",
-      "Semantic graphs",
-      "Sequence-to-sequence models",
-      "Transformer architectures",
-      "Human evaluation",
-      "Natural Language Processing",
-      "Graph-to-text",
-      "Deep learning",
-      "Re-scoring techniques",
-      "Conditional text generation"
-    ],
-    "topics": [
-      "Natural Language Processing",
-      "Text Generation",
-      "Abstract Meaning Representation",
-      "Deep Learning",
-      "Pre-trained Models"
-    ],
-    "one_sentence_summary": "This paper proposes an AMR-to-text generation approach combining a pre-trained GPT-2 language model with cycle consistency-based re-scoring, demonstrating state-of-the-art performance on the LDC2017T10 dataset through automatic and human evaluations."
-  },
-  "2102.05126v3.pdf": {
-    "title": "AuGPT: Auxiliary Tasks and Data Augmentation for End-To-End Dialogue with Pre-Trained Language Models",
-    "authors": [
-      "Jon\u00e1\u0161 Kulh\u00e1nek",
-      "Vojt\u02c7ech Hude\u02c7cek",
-      "Tom\u00e1\u0161 Nekvinda",
-      "Ond\u02c7rej Du\u0161ek"
+      "Michal Golovanevsky",
+      "Carsten Eickhoff",
+      "Ritambhara Singh"
     ],
     "year": 2022,
     "keywords": [
-      "Pre-trained language models",
-      "End-to-end dialogue modelling",
-      "Task-oriented dialogue",
-      "Data augmentation",
-      "Back-translation",
-      "Auxiliary training objectives",
-      "GPT-2",
-      "MultiWOZ dataset",
-      "Dialogue consistency",
-      "Unlikelihood loss",
-      "Response generation",
-      "Belief state prediction",
-      "Human evaluation",
-      "Automatic evaluation",
-      "Neural networks"
+      "Alzheimer's Disease Diagnosis",
+      "Deep Learning",
+      "Multimodal Attention",
+      "Mild Cognitive Impairment",
+      "Cross-modal Attention",
+      "Clinical Decision Support",
+      "Medical Imaging",
+      "Genetic Data",
+      "Clinical Data",
+      "Machine Learning",
+      "Neurodegenerative Disorders",
+      "Disease Classification",
+      "ADNI Dataset",
+      "Model Performance",
+      "Attention Mechanisms"
     ],
     "topics": [
-      "Natural Language Processing",
-      "Dialogue Systems",
+      "Medical AI",
+      "Alzheimer's Research",
+      "Multimodal Diagnostics",
+      "Deep Learning Applications"
+    ],
+    "one_sentence_summary": "This study develops a novel multimodal deep learning framework (MADDi) leveraging cross-modal attention to integrate imaging, genetic, and clinical data for highly accurate multi-class classification of Alzheimer\u2019s Disease, mild cognitive impairment, and controls."
+  },
+  "2025-12-10_Alice-Robertson_A-Quantitative-Approach-for-Evaluating-Disease-Focus-and-Interpretability-of-Deep-Learning-Models-for-Alzheimers.pdf": {
+    "title": "A Quantitative Approach for Evaluating Disease Focus and Interpretability of Deep Learning Models for Alzheimer\u2019s Disease Classification",
+    "authors": [
+      "Thomas Yu Chow Tam",
+      "Litian Liang",
+      "Ke Chen",
+      "Haohan Wang",
+      "Wei Wu"
+    ],
+    "year": 2024,
+    "keywords": [
+      "Alzheimer\u2019s Disease",
+      "Deep Learning",
+      "Interpretable Deep Learning",
+      "MRI",
+      "CNN Models",
+      "Brain Segmentations",
+      "Saliency Maps",
+      "Disease-Focus Score",
+      "Model Interpretability",
+      "Quantitative Evaluation",
+      "AD Classification",
+      "Medical Imaging",
+      "Clinical Practice",
+      "Data Augmentation",
+      "Neuroimaging"
+    ],
+    "topics": [
+      "Deep Learning in Medicine",
+      "Alzheimer's Disease Diagnosis",
+      "Explainable AI",
+      "Medical Image Analysis",
+      "Neuroimaging"
+    ],
+    "one_sentence_summary": "This study develops a quantitative disease-focusing strategy to enhance the interpretability of deep learning models for Alzheimer's Disease classification by evaluating their focus on pathologically relevant brain regions using saliency maps and brain segmentations."
+  },
+  "2025-11-10_Chloe-Nguyen_Attention-Is-All-You-Need.pdf": {
+    "title": "Attention Is All You Need",
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "\u0141ukasz Kaiser",
+      "Illia Polosukhin"
+    ],
+    "year": 2017,
+    "keywords": [
+      "Transformer architecture",
+      "Self-attention",
+      "Multi-head attention",
+      "Machine translation",
+      "Sequence transduction",
+      "Neural networks",
+      "Encoder-decoder models",
+      "Parallel computation",
+      "Recurrent neural networks",
+      "Convolutional neural networks",
+      "Language modeling",
+      "Attention mechanism",
+      "Deep learning",
+      "Scaled dot-product attention",
+      "Computational efficiency"
+    ],
+    "topics": [
       "Machine Learning",
-      "Language Models",
+      "Natural Language Processing",
+      "Neural Networks",
       "Deep Learning"
     ],
-    "one_sentence_summary": "This paper introduces AuGPT, an end-to-end dialogue model based on GPT-2, which utilizes modified training objectives including a novel dialogue consistency classification task, token unlikelihood loss, and massive data augmentation via back-translation to improve performance and diversity in multi-domain task-oriented dialogue on the MultiWOZ dataset."
+    "one_sentence_summary": "This paper introduces the Transformer, a novel neural network architecture that eschews recurrence and convolutions, relying entirely on attention mechanisms to achieve state-of-the-art results in sequence transduction tasks like machine translation with improved parallelization."
   },
-  "2003.02498v1.pdf": {
-    "title": "RecipeGPT: Generative Pre-training Based Cooking Recipe Generation and Evaluation System",
+  "2025-12-02_Bob-Martinez_Data-driven-spatiotemporal-modeling-reveals-personalized-trajectories-of-cortical-atrophy-in-Alzheimers-disease.pdf": {
+    "title": "Data-driven spatiotemporal modeling reveals personalized trajectories of cortical atrophy in Alzheimer\u2019s disease",
     "authors": [
-      "Helena H. Lee",
-      "Ke Shu",
-      "Palakorn Achananuparp",
-      "Philips Kokoh Prasetyo",
-      "Yue Liu",
-      "Ee-Peng Lim",
-      "Lav R. Varshney"
+      "Chunyan Li",
+      "Yutong Mao",
+      "Xiao Liu",
+      "Wenrui Hao"
     ],
-    "year": 2020,
+    "year": 2025,
     "keywords": [
-      "recipe generation",
-      "natural language generation",
-      "web application",
-      "recipe evaluation",
-      "GPT-2",
-      "transformer models",
-      "natural language processing",
-      "instruction generation",
-      "ingredient generation",
-      "deep neural networks",
-      "pre-trained models",
-      "language models",
-      "fine-tuning",
-      "cooking recipes",
-      "online systems"
+      "Alzheimer\u2019s disease",
+      "Spatiotemporal modeling",
+      "Personalized prediction",
+      "Cortical atrophy",
+      "Brain networks",
+      "Amyloid-\u03b2",
+      "Tau",
+      "Neurodegeneration",
+      "Cognitive decline",
+      "ADNI",
+      "Sensitivity analysis",
+      "Digital twin framework",
+      "Multimodal imaging"
     ],
     "topics": [
-      "AI",
-      "Natural Language Processing",
-      "Generative Models",
-      "Web Applications",
-      "Cooking Systems"
+      "Alzheimer's Disease",
+      "Computational Modeling",
+      "Neuroimaging",
+      "Precision Medicine"
     ],
-    "one_sentence_summary": "RecipeGPT is a novel online system for generating and evaluating cooking recipes, leveraging a fine-tuned GPT-2 model for both instruction and ingredient generation, and providing tools for user evaluation and comparison with reference recipes."
+    "one_sentence_summary": "This paper presents a novel data-driven, personalized graph-based spatiotemporal model that accurately predicts individual trajectories of cortical atrophy and key Alzheimer's disease biomarkers from longitudinal neuroimaging data, supporting precision medicine and therapeutic development."
   },
-  "2006.15437v1.pdf": {
-    "title": "GPT-GNN: Generative Pre-Training of Graph Neural Networks",
+  "2025-12-14_Bob-Martinez_Med3D-Transfer-Learning-for-3D-Medical-Image-Analysis.pdf": {
+    "title": "MED3D: TRANSFER LEARNING FOR 3D MEDICAL IMAGE ANALYSIS",
     "authors": [
-      "Ziniu Hu",
-      "Yuxiao Dong",
-      "Kuansan Wang",
-      "Kai-Wei Chang",
-      "Yizhou Sun"
+      "Sihong Chen",
+      "Kai Ma",
+      "Yefeng Zheng"
     ],
-    "year": 2020,
+    "year": 2019,
     "keywords": [
-      "Generative Pre-Training",
-      "Graph Neural Networks",
-      "Graph Representation Learning",
-      "Network Embedding",
-      "GNN Pre-Training",
-      "Unsupervised learning",
-      "Neural networks",
-      "Learning latent representations"
-    ],
-    "topics": [
-      "Graph Neural Networks",
-      "Pre-training models",
-      "Self-supervised learning",
-      "Graph data analysis",
-      "Machine Learning"
-    ],
-    "one_sentence_summary": "GPT-GNN is a generative pre-training framework for Graph Neural Networks that uses a self-supervised attributed graph generation task to capture structural and semantic graph properties, enabling improved performance on downstream tasks with limited labeled data."
-  },
-  "2007.00659v2.pdf": {
-    "title": "LSTM and GPT-2 Synthetic Speech Transfer Learning for Speaker Recognition to Overcome Data Scarcity",
-    "authors": [
-      "Jordan J. Bird",
-      "Diego R. Faria",
-      "Anik\u00f3 Ek\u00e1rt",
-      "Cristiano Premebida",
-      "Pedro P. S. Ayrosa"
-    ],
-    "year": 2020,
-    "keywords": [
-      "LSTM",
-      "GPT-2",
-      "Synthetic speech",
-      "Transfer learning",
-      "Speaker recognition",
-      "Data scarcity",
-      "MFCC",
-      "Neural networks",
-      "Data augmentation",
-      "Generative models",
-      "Human-Machine Interaction",
-      "Voice biometrics",
-      "Deep learning",
-      "Speech processing"
-    ],
-    "topics": [
-      "Speaker Recognition",
-      "Data Augmentation",
       "Transfer Learning",
-      "Deep Learning Models",
-      "AI for Speech"
+      "3D Medical Imaging",
+      "Deep Learning",
+      "Medical Image Analysis",
+      "Med3D Network",
+      "Large-scale Dataset",
+      "Image Segmentation",
+      "Nodule Classification",
+      "Pre-trained Models",
+      "Data Normalization",
+      "Multi-domain Data",
+      "Convolutional Neural Networks",
+      "Training Convergence",
+      "Accuracy Improvement",
+      "Medical Imaging Modalities"
     ],
-    "one_sentence_summary": "This work addresses data scarcity in speaker recognition by generating synthetic Mel-Frequency Cepstral Coefficients (MFCCs) using LSTM and GPT-2 models, demonstrating that transfer learning with this synthetic data significantly improves speaker classification performance with limited real user data."
+    "topics": [
+      "Medical Imaging",
+      "Deep Learning",
+      "Transfer Learning",
+      "Computer Vision",
+      "Image Segmentation"
+    ],
+    "one_sentence_summary": "This paper introduces Med3D, a heterogeneous 3D network co-trained on a newly aggregated multi-domain 3DSeg-8 dataset, demonstrating significant acceleration of training convergence and improved accuracy for various 3D medical image analysis tasks through transfer learning."
+  },
+  "2025-11-26_Alice-Robertson_A-Systemic-Pathological-Network-Model-and-Combinatorial-Intervention-Strategies-for-Alzheimers-Disease.pdf": {
+    "title": "A Systemic Pathological Network Model and Combinatorial Intervention Strategies for Alzheimer's Disease",
+    "authors": [
+      "She Xutong"
+    ],
+    "year": null,
+    "keywords": [
+      "Alzheimer's disease",
+      "amyloid-\u03b2",
+      "tau pathology",
+      "neuroinflammation",
+      "combination therapy",
+      "multi-target therapy",
+      "precision medicine",
+      "biomarkers"
+    ],
+    "topics": [
+      "AD Pathogenesis",
+      "Pathological Network Models",
+      "Combination Therapies",
+      "Biomarker Diagnostics",
+      "Precision Medicine"
+    ],
+    "one_sentence_summary": "This paper synthesizes evolving understandings of Alzheimer's disease as an intricate pathological network and proposes a roadmap for preemptive, biomarker-guided, and personalized combination interventions targeting amyloid-\u03b2, tau, and neuroinflammation."
+  },
+  "2025-12-24_Daniel-Fischer_LLMs-as-Research-Tools-A-Large-Scale-Survey-of-Researchers-Usage-and-Perceptions.pdf": {
+    "title": "LLMs as Research Tools: A Large Scale Survey of Researchers\u2019 Usage and Perceptions",
+    "authors": [
+      "Zhehui Liao",
+      "Maria Antoniak",
+      "Inyoung Cheong",
+      "Evie Yu-Yen Cheng",
+      "Ai-Heng Lee",
+      "Kyle Lo",
+      "Joseph Chee Chang",
+      "Amy X. Zhang"
+    ],
+    "year": 2024,
+    "keywords": [
+      "LLMs",
+      "Large Language Models",
+      "Survey",
+      "Research Support Tools",
+      "Demographic",
+      "Research Community",
+      "Research Workflow",
+      "Research Equity",
+      "Ethical Concerns",
+      "Adoption Strategies",
+      "Open-source Models",
+      "Commercial Models",
+      "Researcher Perceptions",
+      "Usage Patterns"
+    ],
+    "topics": [
+      "LLM Usage in Research",
+      "Researcher Perceptions",
+      "Research Equity",
+      "AI Ethics",
+      "Large-scale Survey"
+    ],
+    "one_sentence_summary": "This large-scale survey of 816 researchers quantifies how the research community leverages and perceives Large Language Models (LLMs) as research tools, revealing high adoption, potential for research equity, and varying ethical concerns across demographic groups."
+  },
+  "2025-11-20_Chloe-Nguyen_Retrieval-Augmented-Generation-for-Knowledge-Intensive-NLP-Tasks.pdf": {
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": [
+      "Patrick Lewis",
+      "Ethan Perez",
+      "Aleksandra Piktus",
+      "Fabio Petroni",
+      "Vladimir Karpukhin",
+      "Naman Goyal",
+      "Heinrich K\u00fcttler",
+      "Mike Lewis",
+      "Wen-tau Yih",
+      "Tim Rockt\u00e4schel",
+      "Sebastian Riedel",
+      "Douwe Kiela"
+    ],
+    "year": 2021,
+    "keywords": [
+      "Retrieval-Augmented Generation",
+      "Knowledge-Intensive NLP",
+      "Pre-trained Language Models",
+      "Sequence-to-Sequence Models",
+      "Non-parametric Memory",
+      "Neural Retriever",
+      "Language Generation",
+      "Question Answering",
+      "Fact Verification",
+      "End-to-End Fine-tuning",
+      "BART Generator",
+      "Dense Passage Retriever",
+      "Wikipedia Index",
+      "State-of-the-art NLP",
+      "Model Updating"
+    ],
+    "topics": [
+      "Natural Language Processing",
+      "Language Models",
+      "Information Retrieval",
+      "Generative AI"
+    ],
+    "one_sentence_summary": "This paper introduces Retrieval-Augmented Generation (RAG) models, combining pre-trained parametric and non-parametric memory for language generation, which achieve state-of-the-art results on various knowledge-intensive NLP tasks including open-domain question answering."
+  },
+  "2025-11-29_Bob-Martinez_A-single-snapshot-inverse-solver-for-two-species-graph-model-of-tau-pathology-spreading-in-human-Alzheimer-disea.pdf": {
+    "title": "A single-snapshot inverse solver for two-species graph model of tau pathology spreading in human Alzheimer\u2019s disease",
+    "authors": [
+      "Zheyu Wen",
+      "Ali Ghafouri",
+      "George Biros"
+    ],
+    "year": 2025,
+    "keywords": [
+      "Alzheimer\u2019s disease",
+      "Tau pathology",
+      "Biophysical modeling",
+      "Inverse problems",
+      "ODE models",
+      "Optimization",
+      "Sparsity regularization",
+      "Tau-PET imaging",
+      "Fisher-Kolmogorov model",
+      "Graph models",
+      "Neuroimaging",
+      "Clinical data",
+      "Misfolded proteins",
+      "Partial differential equations",
+      "Numerical algorithms"
+    ],
+    "topics": [
+      "Alzheimer's Disease Research",
+      "Neurodegenerative Disease Modeling",
+      "Medical Image Analysis",
+      "Computational Neuroscience",
+      "Inverse Problem Solving"
+    ],
+    "one_sentence_summary": "This paper proposes a single-snapshot inverse solver using a two-species graph model and constrained optimization with sparsity regularization to characterize and calibrate misfolded tau protein spreading in Alzheimer's disease based on clinical neuroimaging data."
+  },
+  "2025-11-22_Chloe-Nguyen_Adam-A-Method-for-Stochastic-Optimization.pdf": {
+    "title": "ADAM: A METHOD FOR STOCHASTIC OPTIMIZATION",
+    "authors": [
+      "Diederik P. Kingma",
+      "Jimmy Lei Ba"
+    ],
+    "year": 2015,
+    "keywords": [
+      "Adam optimization",
+      "Stochastic optimization",
+      "Gradient-based optimization",
+      "Adaptive learning rates",
+      "First-order optimization",
+      "Moment estimation",
+      "Deep learning optimization",
+      "Sparse gradients",
+      "Non-stationary objectives",
+      "Convergence analysis",
+      "Online convex optimization",
+      "AdaMax"
+    ],
+    "topics": [
+      "Machine Learning",
+      "Optimization Algorithms",
+      "Deep Learning",
+      "Stochastic Gradients"
+    ],
+    "one_sentence_summary": "Adam is an efficient, first-order, gradient-based stochastic optimization algorithm that adaptively estimates lower-order moments to provide individual learning rates for parameters, performing well in various machine learning problems and having robust convergence properties."
+  },
+  "2025-12-04_Alice-Robertson_Pathology-Steered-Stratification-Network-for-Subtype-Identification-in-Alzheimers-Disease.pdf": {
+    "title": "Pathology Steered Stratification Network for Subtype Identification in Alzheimer\u2019s Disease",
+    "authors": [
+      "Enze Xu",
+      "Jingwen Zhang",
+      "Jiadi Li",
+      "Qianqian Song",
+      "Defu Yang",
+      "Guorong Wu",
+      "Minghan Chen"
+    ],
+    "year": null,
+    "keywords": [
+      "Alzheimer\u2019s disease",
+      "machine learning",
+      "systems biology",
+      "neuroimaging",
+      "subtype identification",
+      "pathology",
+      "stratification network",
+      "biomarker trajectories",
+      "neurodegeneration",
+      "cognitive decline",
+      "deep learning",
+      "reaction-diffusion model",
+      "AT[N] biomarkers",
+      "ADNI database",
+      "clinical outcomes"
+    ],
+    "topics": [
+      "Alzheimer's Disease",
+      "Machine Learning",
+      "Neuroimaging",
+      "Subtype Identification"
+    ],
+    "one_sentence_summary": "This study proposes a novel pathology steered stratification network (PSSN) that integrates systems biology modeling with deep learning to identify fine-grained Alzheimer's disease subtypes based on pathological domain knowledge and longitudinal multimodal neuroimaging data."
+  },
+  "2025-11-15_Chloe-Nguyen_An-Image-is-Worth-16x16-Words-Transformers-for-Image-Recognition-at-Scale.pdf": {
+    "title": "AN IMAGE IS WORTH 16X16 WORDS: TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE",
+    "authors": [
+      "Alexey Dosovitskiy",
+      "Lucas Beyer",
+      "Alexander Kolesnikov",
+      "Dirk Weissenborn",
+      "Xiaohua Zhai",
+      "Thomas Unterthiner",
+      "Mostafa Dehghani",
+      "Matthias Minderer",
+      "Georg Heigold",
+      "Sylvain Gelly",
+      "Jakob Uszkoreit",
+      "Neil Houlsby"
+    ],
+    "year": 2021,
+    "keywords": [
+      "Transformers",
+      "Image Recognition",
+      "Computer Vision",
+      "Vision Transformer (ViT)",
+      "Image Classification",
+      "Self-Attention",
+      "Deep Learning",
+      "Pre-training",
+      "Large-scale Data",
+      "Convolutional Neural Networks",
+      "Image Patches",
+      "NLP Transfer Learning",
+      "Benchmark Performance"
+    ],
+    "topics": [
+      "Computer Vision",
+      "Deep Learning",
+      "Transformers",
+      "Image Processing"
+    ],
+    "one_sentence_summary": "This paper demonstrates that a pure Transformer architecture, applied directly to image patches and pre-trained on vast datasets, can achieve state-of-the-art image classification performance, challenging traditional convolutional neural networks."
+  },
+  "2025-11-12_Chloe-Nguyen_Deep-Residual-Learning-for-Image-Recognition.pdf": {
+    "title": "Deep Residual Learning for Image Recognition",
+    "authors": [
+      "Kaiming He",
+      "Xiangyu Zhang",
+      "Shaoqing Ren",
+      "Jian Sun"
+    ],
+    "year": 2015,
+    "keywords": [
+      "Deep Residual Learning",
+      "Image Recognition",
+      "Deep Neural Networks",
+      "Residual Networks",
+      "Shortcut Connections",
+      "Network Depth",
+      "Optimization",
+      "Degradation Problem",
+      "ImageNet",
+      "ILSVRC 2015",
+      "COCO Detection",
+      "Convolutional Neural Networks",
+      "Identity Mapping",
+      "CIFAR-10"
+    ],
+    "topics": [
+      "Computer Vision",
+      "Deep Learning",
+      "Image Classification",
+      "Object Detection"
+    ],
+    "one_sentence_summary": "This paper introduces a deep residual learning framework with identity shortcut connections to ease the training of extremely deep neural networks, achieving state-of-the-art accuracy and winning multiple 1st places in ILSVRC and COCO 2015 image recognition competitions."
+  },
+  "2025-12-07_Bob-Martinez_A-Quantitatively-Interpretable-Model-for-Alzheimers-Disease-Prediction-Using-Deep-Counterfactuals.pdf": {
+    "title": "A Quantitatively Interpretable Model for Alzheimer\u2019s Disease Prediction using Deep Counterfactuals",
+    "authors": [
+      "Kwanseok Oh",
+      "Da-Woon Heo",
+      "Ahmad Wisnu Mulyadi",
+      "Wonsik Jung",
+      "Eunsong Kang",
+      "Kun Ho Lee",
+      "Heung-Il Suk"
+    ],
+    "year": 2023,
+    "keywords": [
+      "Alzheimer\u2019s Disease",
+      "Counterfactual Reasoning",
+      "Quantitative Feature Analysis",
+      "Counterfactual-Guided Attention",
+      "Deep Learning",
+      "Medical Imaging",
+      "Interpretability",
+      "Gray Matter Density",
+      "Structural MRI",
+      "Predictive Modeling",
+      "Neurodegenerative Disease",
+      "Explainable AI",
+      "Region of Interest",
+      "Machine Learning",
+      "AD Prediction"
+    ],
+    "topics": [
+      "Alzheimer's Disease",
+      "Deep Learning",
+      "Medical Imaging",
+      "Explainable AI"
+    ],
+    "one_sentence_summary": "This study proposes a novel framework utilizing deep counterfactuals and gray matter density maps from structural MRIs to create a quantitatively interpretable model for Alzheimer's disease prediction, yielding an \"AD-relatedness index\" for enhanced understanding of disease progression."
+  },
+  "2025-12-20_Daniel-Fischer_Freshness-Persistence-and-Success-of-Scientific-Teams.pdf": {
+    "title": "Freshness, Persistence and Success of Scientific Teams",
+    "authors": [
+      "Hanjo D. Boekhout",
+      "Eelke M. Heemskerk",
+      "Niccol\u00f2 Pisani",
+      "Frank W. Takes"
+    ],
+    "year": 2025,
+    "keywords": [
+      "Team science",
+      "Scientific teams",
+      "Team success",
+      "Team freshness",
+      "Team persistence",
+      "Scientific collaboration",
+      "Knowledge production",
+      "High impact research",
+      "Co-authorship networks",
+      "Temporal networks",
+      "Citation analysis",
+      "Research dynamics",
+      "Academic performance",
+      "Network analysis"
+    ],
+    "topics": [
+      "Sociology of Science",
+      "Network Science",
+      "Bibliometrics",
+      "Collaboration Studies",
+      "Research Management"
+    ],
+    "one_sentence_summary": "This study leverages a network-driven approach on large-scale publication data to show that team freshness and openness to new collaborations, rather than just persistence, are key to producing high-impact scientific research early in a team's lifespan."
+  },
+  "2026-01-27_Daniel-Fischer_Weekly-Sync.pdf": {
+    "title": "Meeting Summary: Tau-Protein Data Gap and Model Progress",
+    "authors": [
+      "Daniel Fischer"
+    ],
+    "year": 2026,
+    "keywords": [
+      "Tau-protein data gap",
+      "AD-Fusion-v2 pipeline",
+      "Data quality issues",
+      "PET-Tau tracers",
+      "Data auditing",
+      "ETL scripts",
+      "Latent diffusion training",
+      "Transformer architecture",
+      "Dynamic masking",
+      "Cross-attention layer",
+      "Multimodal inputs",
+      "H100 cluster",
+      "OASIS-3 data standard",
+      "Explainable AI",
+      "Generative models"
+    ],
+    "topics": [
+      "Neuroscience data",
+      "Machine learning models",
+      "Data quality management",
+      "AI development workflow",
+      "Biomedical imaging"
+    ],
+    "one_sentence_summary": "This meeting addressed a critical Tau-protein data gap affecting the AD-Fusion-v2 pipeline, necessitating an audit, while concurrently developing architectural adaptations using dynamic masking to manage incomplete multimodal inputs for the generative model."
+  },
+  "2026-01-16_Chloe-Nguyen_Hyperparameter-Sweep.pdf": {
+    "title": "Optimization and Convergence Analysis: Comprehensive Hyperparameter Sweep Results",
+    "authors": [
+      "Chloe Nguyen"
+    ],
+    "year": 2026,
+    "keywords": [
+      "Hyperparameter optimization",
+      "Convergence analysis",
+      "Deep learning",
+      "Neurodegenerative disease",
+      "Cross-modal fusion",
+      "Learning rate",
+      "Batch size",
+      "AdamW optimizer",
+      "Overfitting",
+      "Generalization performance",
+      "Geometric augmentation",
+      "OneCycleLR scheduler",
+      "Multimodal architectures",
+      "Training stability",
+      "Weights & Biases"
+    ],
+    "topics": [
+      "Deep Learning Optimization",
+      "Neuroimaging AI",
+      "Hyperparameter Tuning",
+      "Multimodal Learning"
+    ],
+    "one_sentence_summary": "This report details a comprehensive hyperparameter optimization study for a cross-modal deep learning architecture predicting neurodegenerative disease, analyzing the impact of learning rates, batch sizes, and scheduling on convergence, stability, and generalization, highlighting the crucial role of geometric augmentation."
+  },
+  "2025-12-16_Chloe-Nguyen_Generative-Adversarial-Network-in-Medical-Imaging-A-Review.pdf": {
+    "title": "Generative Adversarial Network in Medical Imaging: A Review",
+    "authors": [
+      "Xin Yi",
+      "Ekta Walia",
+      "Paul Babyn"
+    ],
+    "year": 2019,
+    "keywords": [
+      "Deep learning",
+      "Generative adversarial network",
+      "Generative model",
+      "Medical imaging",
+      "Review",
+      "Adversarial training",
+      "Data generation",
+      "Image reconstruction",
+      "Segmentation",
+      "Detection",
+      "Classification",
+      "Image-to-image translation",
+      "Data augmentation",
+      "Domain adaptation"
+    ],
+    "topics": [
+      "Generative Adversarial Networks",
+      "Medical Image Analysis",
+      "Deep Learning Reviews",
+      "Computer Vision"
+    ],
+    "one_sentence_summary": "This paper provides a comprehensive review of recent advances and promising applications of Generative Adversarial Networks (GANs) in medical imaging, covering tasks such as image reconstruction, segmentation, and classification, while also addressing challenges."
+  },
+  "2026-01-22_Bob-Martinez_Synthetic-Data-Gen.pdf": {
+    "title": "Synthetic Data Generation",
+    "authors": [
+      "Bob Martinez"
+    ],
+    "year": 2026,
+    "keywords": [
+      "Synthetic data",
+      "Data augmentation",
+      "Class imbalance",
+      "Neurodegeneration",
+      "Early-Onset",
+      "SMOTE",
+      "MRI augmentation",
+      "Deep learning",
+      "Cross-scanner generalization",
+      "Tabular data",
+      "Image transformations",
+      "Model robustness",
+      "Clinical data",
+      "CSF biomarkers",
+      "T1-weighted MRI"
+    ],
+    "topics": [
+      "Neurodegeneration Research",
+      "Machine Learning",
+      "Medical Image Processing",
+      "Data Science",
+      "Bias Mitigation"
+    ],
+    "one_sentence_summary": "This work details a strategy using synthetic data augmentation, combining SMOTE for tabular clinical data and elastic transformations/rotations for MRI, to mitigate class imbalance and improve cross-scanner generalization in Early-Onset neurodegeneration modeling."
+  },
+  "2026-01-05_Alice-Robertson_Compliance-Review.pdf": {
+    "title": "Urgent Compliance Violation and Directive to Halt All External Data Transfers",
+    "authors": [
+      "Dr. Alice Robertson"
+    ],
+    "year": null,
+    "keywords": [
+      "Compliance violation",
+      "Data transfer",
+      "GDPR",
+      "Data processing agreement",
+      "Pseudonymization",
+      "Anonymization",
+      "Neuroimaging data",
+      "MRI scans",
+      "Re-identification risk",
+      "Data governance",
+      "Ethical risk",
+      "Legal risk",
+      "Privacy impact assessment",
+      "Multimodal AI-AD project",
+      "Data security"
+    ],
+    "topics": [
+      "Data Protection",
+      "Research Ethics",
+      "GDPR Compliance",
+      "Data Security"
+    ],
+    "one_sentence_summary": "The Principal Investigator of the Multimodal AI-AD project issues an urgent directive to halt all external transfers of pseudonymized high-resolution MRI data to a third-party commercial provider due to severe GDPR and contractual violations, emphasizing the re-identification risk and demanding immediate remediation actions."
   }
 }
