@@ -8,45 +8,49 @@ os.makedirs(PDF_FOLDER, exist_ok=True)
 os.makedirs(os.path.dirname(DATABASE_FILE), exist_ok=True)
 
 
-###   1. ADD 15 PDFS TO THE DATABASE INITIALLY, TO HAVE SOME EXAMPLES
+###   1. ADD 20 PDFS TO THE DATABASE INITIALLY, TO HAVE SOME EXAMPLES
 ###      (this part is skipped automatically if they are already on the database)
 ### -------------------------------------------------------------------
 
-N_TO_IMPORT = 15
-researchers = ["Alice Robertson", "Bob Martinez", "Chloe Nguyen", "Daniel Fischer"]
+N_TO_IMPORT = 20
 
-# Load PDFs from example folder
-pdf_files = [f for f in os.listdir(EXAMPLE_FOLDER) if f.lower().endswith(".pdf")]
-if len(pdf_files) < N_TO_IMPORT:
-    raise ValueError(f"Not enough PDFs in example_pdfs_to_upload" )
-selected_pdfs = pdf_files[:N_TO_IMPORT]
-
-
-# Upload them to the database
 dm = DataManager()
-client = arxiv.Client()
-for i, pdf_file in enumerate(selected_pdfs):
-    arxiv_id = pdf_file.replace(".pdf", "")
-    pdf_path = os.path.join(EXAMPLE_FOLDER, pdf_file)
 
-    out_path = os.path.join(dm.pdf_folder, f"{arxiv_id}.pdf")
-    if os.path.exists(out_path):
-        print(f"Skipping already uploaded PDF: {arxiv_id}.pdf")
-        continue
-    
-    print(f"\n[{i+1}/{N_TO_IMPORT}] Importing arXiv:{arxiv_id}")
+existing_pdf_names = {doc["pdf_name"] for doc in dm.database}
+pdf_files = [f for f in os.listdir(EXAMPLE_FOLDER) if f.lower().endswith('.pdf')]
 
-    # Find title of paper with arXiv ID
-    search = arxiv.Search(id_list=[arxiv_id], max_results=1)
-    results = list(client.results(search))
-    if not results:
-        print("Could not resolve title for:", arxiv_id)
+# Sort files chronologically and select the first 20
+pdf_files.sort()
+files_to_process = pdf_files[:N_TO_IMPORT]
+
+print(f"Found {len(pdf_files)} PDFs. Processing {len(files_to_process)} files...")
+
+for filename in files_to_process:
+
+    if filename in existing_pdf_names:
+        print(f"   Skipping {filename}: Already exists in database.json.")
         continue
+
+    file_path = os.path.join(EXAMPLE_FOLDER, filename)
+    name_without_ext = filename.replace(".pdf", "") 
+    parts = name_without_ext.split("_")
+
+    if len(parts) >= 3:
+        date_str = parts[0]
+        researcher = parts[1]
+        title = parts[2].replace("-", " ") # Replace hyphens with spaces for the title to make it readable
+        print(f"Uploading: {filename}...")
+        
+        try:
+            dm.upload_pdf(
+                file_path=file_path, 
+                title=title, 
+                researcher=researcher, 
+                file_name=name_without_ext)
+        except Exception as e:
+            print(f"   Failed to upload: {e}")
     else:
-        title = results[0].title.strip().replace("\n", " ")
-
-    researcher = researchers[i % len(researchers)]
-    dm.upload_pdf(pdf_path, title, researcher, arxiv_id)
+        print(f"   Skipping {filename}: Filename does not follow the YYYY-MM-DD_Name_Title format.")
 
 print("\n\n\n")
 
@@ -63,9 +67,17 @@ while True:
 
     # ------------------ UPLOAD ------------------
     if action == "1":
-        # ---------------- examples:
-        # example_pdfs_to_upload/2104.10157v2.pdf   - VideoGPT: Video Generation using VQ-VAE and Transformers
-        # example_pdfs_to_upload/2109.07830v3.pdf   - Reframing Instructional Prompts to GPTk's Language
+        # -------------------- examples: -----------------------------
+        # 1. 
+        #       example_pdfs_to_upload/2026-01-05_Alice-Robertson_Compliance-Review.pdf
+        #       Compliance Review
+        #       Alice Robertson
+        #       2026-01-05      
+        # 2. 
+        #       example_pdfs_to_upload/2026-01-08_Chloe-Nguyen_Multimodal-Fusion-Logic.pdf
+        #       Multimodal Fusion Logic
+        #       Chloe Nguyen
+        #       2026-01-08
         # ------------------------------------------------------------
 
         # Select pdf

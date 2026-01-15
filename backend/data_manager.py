@@ -44,9 +44,9 @@ class DataManager:
     # ------------------------------
     # INTERNAL UTILITIES
     # ------------------------------
-    def _save_pdf_to_db(self, file_path, arxiv_id=None):
+    def _save_pdf_to_db(self, file_path, file_name=None):
         """Assigns a DB filename and copies the PDF inside /data/pdfs."""
-        pdf_name = f"{arxiv_id}.pdf" if arxiv_id else f"{uuid.uuid4()}.pdf"
+        pdf_name = f"{file_name}.pdf"
         out_path = os.path.join(self.pdf_folder, pdf_name)
         with open(file_path, "rb") as src, open(out_path, "wb") as dst:
             dst.write(src.read())
@@ -69,10 +69,10 @@ class DataManager:
     # MAIN UPLOAD METHODS
     # ------------------------------
 
-    def upload_pdf(self, file_path, title, researcher, arxiv_id):
+    def upload_pdf(self, file_path, title, researcher, file_name):
         """UPLOAD from a local file path and index it immediately."""
         self.database = self.load_database()
-        pdf_name = self._save_pdf_to_db(file_path, arxiv_id)
+        pdf_name = self._save_pdf_to_db(file_path, file_name)
         entry = self._create_database_entry(title, pdf_name, researcher)
         self.process_pdf(entry)
         print(f"Uploaded & indexed: {title}")
@@ -87,9 +87,6 @@ class DataManager:
         text = "".join([page.get_text() for page in doc])
         doc.close()
         return text
-
-    def chunk_text(self, text, max_chars=1000):
-        return [text[i:i + max_chars] for i in range(0, len(text), max_chars)]
 
     def chunk_text(self, text, chunk_size=400, chunk_overlap=50):
         # 1. Convert text to token IDs (integers)
