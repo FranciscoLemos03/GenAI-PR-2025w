@@ -678,5 +678,267 @@
       "Data Security"
     ],
     "one_sentence_summary": "The Principal Investigator of the Multimodal AI-AD project issues an urgent directive to halt all external transfers of pseudonymized high-resolution MRI data to a third-party commercial provider due to severe GDPR and contractual violations, emphasizing the re-identification risk and demanding immediate remediation actions."
+  },
+  "2026-01-12_Alice-Robertson_Evaluation-Standards.pdf": {
+    "title": "Mandatory Recalibration of Model Evaluation Standards: A Critique of Current Practices and Directive for Clinical Validity",
+    "authors": [
+      "Dr. Alice Robertson"
+    ],
+    "year": 2026,
+    "keywords": [
+      "Model Evaluation Standards",
+      "Clinical Validity",
+      "Alzheimer's Disease",
+      "Machine Learning Metrics",
+      "Simple Accuracy Fallacy",
+      "Error Asymmetry",
+      "False Negatives",
+      "Sensitivity",
+      "Precision-Recall Curve",
+      "F1-Score",
+      "Cohen's Kappa Coefficient",
+      "External Validation",
+      "OASIS-3 Dataset",
+      "Diagnostic AI",
+      "Statistical Rigor"
+    ],
+    "topics": [
+      "AI in Medicine",
+      "Machine Learning Evaluation",
+      "Clinical Diagnostics",
+      "Alzheimer's Research",
+      "Medical Ethics"
+    ],
+    "one_sentence_summary": "This memorandum critiques the over-reliance on simple accuracy in early-stage Alzheimer's disease classification models, mandating a comprehensive suite of clinically relevant evaluation metrics and external validation on heterogeneous datasets to ensure statistical rigor and ethical deployment."
+  },
+  "2026-01-18_Daniel-Fischer_Environment-Setup.pdf": {
+    "title": "Pipeline Standardization and DevOps Procedures",
+    "authors": [
+      "Daniel Fischer"
+    ],
+    "year": 2026,
+    "keywords": [
+      "AD-Fusion-v2",
+      "Pipeline standardization",
+      "DevOps procedures",
+      "Docker environment",
+      "Numerical instability",
+      "H100 cluster",
+      "PyTorch MONAI",
+      "NumPy SciPy conflict",
+      "Data preprocessing",
+      "Containerization",
+      "Data privacy",
+      "Local training",
+      "Reproducibility",
+      "GPU computing"
+    ],
+    "topics": [
+      "DevOps",
+      "ML Infrastructure",
+      "Data Security",
+      "Scientific Computing",
+      "Containerization"
+    ],
+    "one_sentence_summary": "This document standardizes the AD-Fusion-v2 project's development environment using a Docker-based architecture, detailing the resolution of numerical instabilities, establishing hardware constraints for data privacy, and providing instructions for accessing the new containerized setup."
+  },
+  "2026-01-14_Bob-Martinez_Proteomics-Integration.pdf": {
+    "title": "CSF and Volumetric Correlation Audit",
+    "authors": [
+      "Bob Martinez"
+    ],
+    "year": 2026,
+    "keywords": [
+      "CSF proteomics",
+      "MRI volumetrics",
+      "Hippocampal atrophy",
+      "Amyloid-beta 42",
+      "Neurodegeneration biomarkers",
+      "Cross-modal consistency",
+      "Statistical correlation",
+      "Data integrity issue",
+      "Tau-protein",
+      "Missing data",
+      "Multimodal integration",
+      "Amyloid cascade hypothesis"
+    ],
+    "topics": [
+      "Neuroscience",
+      "Biomarker research",
+      "Data quality",
+      "Medical imaging",
+      "Statistical analysis"
+    ],
+    "one_sentence_summary": "This audit validated a strong negative correlation between CSF Amyloid-beta 42 levels and hippocampal atrophy, but identified a major data integrity issue with missing Tau-protein data that is currently blocking multimodal fusion model training."
+  },
+  "2025-12-22_Daniel-Fischer_The-Link-Between-Large-Scientific-Collaboration-and-Productivity-Rethinking-How-to-Estimate-the-Monetary-Value-o.pdf": {
+    "title": "The Link Between Large Scientific Collaboration and Productivity. Rethinking How to Estimate the Monetary Value of Publications",
+    "authors": [
+      "Francesco Giffoni",
+      "Louis Colnot",
+      "Emanuela Sirtori"
+    ],
+    "year": 2024,
+    "keywords": [
+      "Scientific collaboration",
+      "Research productivity",
+      "Monetary value of publications",
+      "Co-authorship",
+      "Marginal Cost of Production",
+      "High-Energy Physics",
+      "Large Hadron Collider",
+      "CERN",
+      "Research impact assessment",
+      "Science policy",
+      "Output evaluation",
+      "Multi-author papers",
+      "Academic valuation"
+    ],
+    "topics": [
+      "Bibliometrics",
+      "Research evaluation",
+      "Economics of science",
+      "High-energy physics",
+      "Collaborative research"
+    ],
+    "one_sentence_summary": "This paper proposes a generalized Marginal Cost of Production model to estimate the monetary value of scientific publications, specifically accounting for the impact of large-scale, multi-author collaborations on scientists' productivity, using High-Energy Physics at CERN as a case study."
+  },
+  "2026-01-08_Chloe-Nguyen_Multimodal-Fusion-Logic.pdf": {
+    "title": "Cross-Modal Transformer Architectures for Multimodal Medical Data Integration",
+    "authors": [
+      "Chloe Nguyen"
+    ],
+    "year": 2026,
+    "keywords": [
+      "Cross-Modal Transformers",
+      "Multimodal Medical Data",
+      "Bottleneck Fusion",
+      "3D-MRI Neuroimaging",
+      "Clinical Assessment Scores",
+      "Neurodegenerative Disease",
+      "Cognitive Decline",
+      "Intermediate Fusion",
+      "Latent Space Regularization",
+      "KL Divergence",
+      "Scaled Dot-Product Attention",
+      "Cortical Thinning",
+      "Deep Learning Architecture",
+      "Brain Changes",
+      "Multimodal Embeddings"
+    ],
+    "topics": [
+      "Medical AI",
+      "Deep Learning",
+      "Neuroscience",
+      "Multimodal Learning",
+      "Transformer Models"
+    ],
+    "one_sentence_summary": "This technical proposal introduces a novel Bottleneck Fusion architecture, utilizing cross-modal transformers and KL regularization, to integrate high-dimensional 3D-MRI neuroimaging features with longitudinal clinical assessment scores for analyzing neurodegenerative disease progression and cognitive decline."
+  },
+  "2025-11-05_Alice-Robertson_Multimodal-Machine-Learning-A-Survey-and-Taxonomy.pdf": {
+    "title": "Multimodal Machine Learning: A Survey and Taxonomy",
+    "authors": [
+      "Tadas Baltru\u02c7saitis",
+      "Chaitanya Ahuja",
+      "Louis-Philippe Morency"
+    ],
+    "year": 2017,
+    "keywords": [
+      "Multimodal Machine Learning",
+      "Survey",
+      "Taxonomy",
+      "Representation Learning",
+      "Modality Translation",
+      "Multimodal Alignment",
+      "Information Fusion",
+      "Co-learning",
+      "Artificial Intelligence",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Audio-Visual Speech Recognition",
+      "Media Description",
+      "Cross-modal Retrieval"
+    ],
+    "topics": [
+      "Multimodal AI",
+      "ML Taxonomy",
+      "Cross-modal Learning",
+      "Data Fusion",
+      "AI Challenges"
+    ],
+    "one_sentence_summary": "This paper surveys recent advances in multimodal machine learning and presents a common taxonomy identifying five core challenges: representation, translation, alignment, fusion, and co-learning."
+  },
+  "2025-12-05_Bob-Martinez_SUTD-TrafficQA-A-Question-Answering-Benchmark-and-an-Efficient-Network-for-Video-Reasoning-over-Traffic-Events.pdf": {
+    "title": "SUTD-Traf\ufb01cQA: A Question Answering Benchmark and an Ef\ufb01cient Network for Video Reasoning over Traf\ufb01c Events",
+    "authors": [
+      "Li Xu",
+      "He Huang",
+      "Jun Liu"
+    ],
+    "year": 2021,
+    "keywords": [
+      "Video reasoning",
+      "Traffic events",
+      "Question answering",
+      "Intelligent transportation",
+      "Autonomous vehicles",
+      "Causal inference",
+      "Dynamic inference",
+      "Computation efficiency",
+      "Video QA dataset",
+      "Glimpse network",
+      "Spatio-temporal reasoning",
+      "Assisted driving",
+      "Event understanding",
+      "SUTD-Traf\ufb01cQA"
+    ],
+    "topics": [
+      "Video Question Answering",
+      "Traffic Systems",
+      "AI Efficiency",
+      "Computer Vision"
+    ],
+    "one_sentence_summary": "This paper introduces SUTD-TrafficQA, a new video question answering benchmark with 10,080 videos and 62,535 QA pairs for causal inference in complex traffic scenarios, and proposes Eclipse, an efficient glimpse network for reliable and computation-efficient video reasoning."
+  },
+  "2025-12-12_Chloe-Nguyen_Exploring-the-Requirements-of-Clinicians-for-Explainable-AI-Decision-Support-Systems-in-Intensive-Care.pdf": {
+    "title": "EXPLORING THE REQUIREMENTS OF CLINICIANS FOR EXPLAINABLE AI DECISION SUPPORT SYSTEMS IN INTENSIVE CARE",
+    "authors": [
+      "Jeffrey N. Clark",
+      "Matthew Wragg",
+      "Emily Nielsen",
+      "Miquel Perello-Nieto",
+      "Nawid Keshtmand",
+      "Michael Ambler",
+      "Shiv Sharma",
+      "Christopher P. Bourdeaux",
+      "Amberly Brigden",
+      "Raul Santos-Rodriguez"
+    ],
+    "year": 2024,
+    "keywords": [
+      "Artificial intelligence",
+      "Explainability",
+      "Clinical decision-making",
+      "Intensive care",
+      "Decision support systems",
+      "Clinician requirements",
+      "Explainable AI (xAI)",
+      "Patient care",
+      "Human-AI collaboration",
+      "Thematic analysis",
+      "Design recommendations",
+      "Cognitive load",
+      "Trustworthiness",
+      "Shared decision-making"
+    ],
+    "topics": [
+      "AI in Healthcare",
+      "User Needs for AI",
+      "Human-Centered AI",
+      "Medical Decision Support",
+      "Intensive Care Medicine"
+    ],
+    "one_sentence_summary": "This study explores the requirements of intensive care clinicians for explainable AI decision support systems through group interviews and thematic analysis, providing design recommendations for future AI tools to enhance clinical decision-making and patient care."
   }
 }
