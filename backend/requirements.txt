@@ -4,3 +4,5 @@ numpy
 pymupdf
 requests
 arxiv
+fitz
+python-dotenv
