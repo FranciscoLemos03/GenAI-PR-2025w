@@ -212,6 +212,27 @@ def main():
         print(f"❌ Pasta não encontrada: {PDF_FOLDER}")
         return
 
+    # -----------------------
+    # Carregar base existente
+    # -----------------------
+    if os.path.exists(OUTPUT_FILE):
+        print(f"📂 A carregar base existente: {OUTPUT_FILE}")
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            database = json.load(f)
+    else:
+        print("📄 Nenhuma base existente encontrada. A criar nova.")
+        database = []
+
+    # Criar set rápido para lookup
+    existing_pdfs = {
+        doc.get("pdf_name")
+        for doc in database
+        if "pdf_name" in doc
+    }
+
+    # -----------------------
+    # Encontrar PDFs
+    # -----------------------
     pdfs = [
         f for f in os.listdir(PDF_FOLDER)
         if f.lower().endswith(".pdf")
@@ -221,20 +242,26 @@ def main():
         print("⚠️ Nenhum PDF encontrado")
         return
 
-    database = []
-
     print(f"📚 Encontrados {len(pdfs)} PDFs")
+    print(f"🧠 PDFs já processados: {len(existing_pdfs)}")
 
+    # -----------------------
+    # Processar só os novos
+    # -----------------------
     for pdf in pdfs:
+        if pdf in existing_pdfs:
+            print(f"⏭️ A saltar (já existe): {pdf}")
+            continue
+
         doc = process_pdf(os.path.join(PDF_FOLDER, pdf))
         database.append(doc)
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(database, f, ensure_ascii=False, indent=2)
+        # Guarda incrementalmente (segurança contra crash)
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            json.dump(database, f, ensure_ascii=False, indent=2)
 
-    print(f"\n🔥 Base de dados criada: {OUTPUT_FILE}")
-    print(f"📄 Documentos: {len(database)}")
-
+    print(f"\n🔥 Base de dados atualizada: {OUTPUT_FILE}")
+    print(f"📄 Total de documentos: {len(database)}")
 
 if __name__ == "__main__":
     main()
