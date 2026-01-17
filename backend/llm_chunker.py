@@ -19,7 +19,7 @@ load_dotenv(dotenv_path=env_path)
 API_KEY = os.getenv("GEMMA_API_KEY")
 
 if not API_KEY:
-    raise RuntimeError("❌ GEMMA_API_KEY não encontrada no .env")
+    raise RuntimeError("❌ GEMMA_API_KEY not found in .env")
 
 GEMMA_URL = (
     "https://generativelanguage.googleapis.com/v1beta/"
@@ -103,7 +103,7 @@ def extract_metadata_and_chunks(text: str, pdf_name: str):
     researchers = []
 
     for i, block in enumerate(blocks):
-        print(f"🤖 {pdf_name} — bloco {i+1}/{len(blocks)}")
+        print(f"🤖 {pdf_name} — block {i+1}/{len(blocks)}")
 
         prompt = f"""
 You are a document analysis system.
@@ -172,7 +172,7 @@ TEXT:
 def process_pdf(pdf_path: str):
     pdf_name = os.path.basename(pdf_path)
 
-    print(f"\n📄 A processar: {pdf_name}")
+    print(f"\n📄 Processing: {pdf_name}")
 
     text = extract_text_from_pdf(pdf_path)
 
@@ -209,21 +209,21 @@ def process_pdf(pdf_path: str):
 
 def main():
     if not os.path.exists(PDF_FOLDER):
-        print(f"❌ Pasta não encontrada: {PDF_FOLDER}")
+        print(f"❌ Folder not found: {PDF_FOLDER}")
         return
 
     # -----------------------
-    # Carregar base existente
+    #  Load existing base
     # -----------------------
     if os.path.exists(OUTPUT_FILE):
-        print(f"📂 A carregar base existente: {OUTPUT_FILE}")
+        print(f"📂 Loading existing base: {OUTPUT_FILE}")
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
             database = json.load(f)
     else:
-        print("📄 Nenhuma base existente encontrada. A criar nova.")
+        print("📄 No existing database found. Create a new one.")
         database = []
 
-    # Criar set rápido para lookup
+    # Create quick set for lookup
     existing_pdfs = {
         doc.get("pdf_name")
         for doc in database
@@ -231,7 +231,7 @@ def main():
     }
 
     # -----------------------
-    # Encontrar PDFs
+    # Find PDFs
     # -----------------------
     pdfs = [
         f for f in os.listdir(PDF_FOLDER)
@@ -239,18 +239,18 @@ def main():
     ]
 
     if not pdfs:
-        print("⚠️ Nenhum PDF encontrado")
+        print("⚠️ No PDF found")
         return
 
-    print(f"📚 Encontrados {len(pdfs)} PDFs")
-    print(f"🧠 PDFs já processados: {len(existing_pdfs)}")
+    print(f"📚 Found {len(pdfs)} PDFs")
+    print(f"🧠 Already processed PDFs: {len(existing_pdfs)}")
 
     # -----------------------
     # Processar só os novos
     # -----------------------
     for pdf in pdfs:
         if pdf in existing_pdfs:
-            print(f"⏭️ A saltar (já existe): {pdf}")
+            print(f"⏭️ Skipping (already exist): {pdf}")
             continue
 
         doc = process_pdf(os.path.join(PDF_FOLDER, pdf))
@@ -260,8 +260,8 @@ def main():
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(database, f, ensure_ascii=False, indent=2)
 
-    print(f"\n🔥 Base de dados atualizada: {OUTPUT_FILE}")
-    print(f"📄 Total de documentos: {len(database)}")
+    print(f"\n🔥 Updated database: {OUTPUT_FILE}")
+    print(f"📄 Total documents: {len(database)}")
 
 if __name__ == "__main__":
     main()
