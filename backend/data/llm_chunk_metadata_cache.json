@@ -1,0 +1,5577 @@
+{
+  "28c3e8fe3248eea7db2aee1f413f3fb4": {
+    "main_concept": "P-Tuning: A novel method using trainable continuous prompt embeddings to stabilize and improve natural language understanding (NLU) performance.",
+    "type": "method",
+    "keywords": [
+      "P-Tuning",
+      "continuous prompt embeddings",
+      "natural language understanding",
+      "NLU tasks",
+      "language models",
+      "prompting",
+      "performance stability",
+      "SuperGLUE",
+      "LAMA"
+    ]
+  },
+  "1a192d95ceb92472e2fd2e38b2acf850": {
+    "main_concept": "Pretrained Language Models (PLMs) and Prompting",
+    "type": "background",
+    "keywords": [
+      "Pretrained language models",
+      "PLMs",
+      "Natural language understanding",
+      "NLU",
+      "Prompting",
+      "Language modeling objectives",
+      "Finetuning"
+    ]
+  },
+  "a7050876e95f4270a5a6def9f992e912": {
+    "main_concept": "Addressing prompt instability and improving performance using P-Tuning compared to discrete prompts",
+    "type": "result",
+    "keywords": [
+      "P-Tuning",
+      "Discrete prompts",
+      "Prompt instability",
+      "Performance stabilization",
+      "Language models",
+      "LAMA-TREx",
+      "BERT-base-cased",
+      "Continuous prompts"
+    ]
+  },
+  "2f7b539535ed8d03b9af7a4041a4c234": {
+    "main_concept": "P-Tuning to reduce instability of discrete prompts",
+    "type": "method",
+    "keywords": [
+      "discrete prompts instability",
+      "automatic prompting",
+      "P-Tuning",
+      "continuous prompt embeddings",
+      "language model optimization"
+    ]
+  },
+  "839faf46608a2317aea631a688139774": {
+    "main_concept": "P-Tuning",
+    "type": "result",
+    "keywords": [
+      "P-Tuning",
+      "Prompt encoder",
+      "Continuous embeddings",
+      "NLU benchmarks",
+      "LAMA",
+      "SuperGLUE",
+      "Performance stability",
+      "Discrete prompts"
+    ]
+  },
+  "192ea518783175eadc6165f1e1069d85": {
+    "main_concept": "Challenges and unstable performance of discrete prompts in NLP tasks, particularly manual prompts, and the motivation for automated prompt search.",
+    "type": "result",
+    "keywords": [
+      "discrete prompts",
+      "NLP tasks",
+      "manual prompts",
+      "unstable performance",
+      "LAMA knowledge probing",
+      "automated prompt search"
+    ]
+  },
+  "7db43feceb8e4ffd4c6bf3c92bdf84db": {
+    "main_concept": "P-Tuning methodology and prompt encoder",
+    "type": "method",
+    "keywords": [
+      "P-Tuning",
+      "prompt template",
+      "embedding function",
+      "prompt encoder",
+      "mapping function",
+      "trainable embeddings",
+      "task loss function"
+    ]
+  },
+  "e808a0f305866c399d1777d031eb18a1": {
+    "main_concept": "Experimental evaluation of NLU benchmarks",
+    "type": "result",
+    "keywords": [
+      "NLU benchmarks",
+      "LAMA",
+      "SuperGLUE",
+      "Fully-supervised learning",
+      "Few-shot learning",
+      "P-tuning",
+      "Performance improvement",
+      "Training stabilization"
+    ]
+  },
+  "2386200f8b0aef621e10aa3287138a83": {
+    "main_concept": "Prompt Tuning and Knowledge Probing of Language Models",
+    "type": "method",
+    "keywords": [
+      "language models",
+      "prompt tuning",
+      "continuous prompts",
+      "knowledge probing",
+      "fact retrieval",
+      "LAMA dataset",
+      "P-Tuning",
+      "model evaluation"
+    ]
+  },
+  "5f5e215b3a5dbe97fba1f2338827ae03": {
+    "main_concept": "P-tuning performance in knowledge probing",
+    "type": "result",
+    "keywords": [
+      "P-tuning",
+      "Knowledge probing",
+      "LAMA datasets",
+      "Precision@1",
+      "Prompting methods",
+      "AutoPrompt",
+      "Model performance"
+    ]
+  },
+  "258f7ab649441842fc18493a6d73dff0": {
+    "main_concept": "Experimental setup for language models using LAMA prompts",
+    "type": "method",
+    "keywords": [
+      "LAMA-29k",
+      "Data construction",
+      "Prompt engineering",
+      "Bidirectional models",
+      "Unidirectional models",
+      "Template configuration"
+    ]
+  },
+  "5d6786a90b080d806155e3cc294130e8": {
+    "main_concept": "P-tuning's performance improvements in knowledge probing and its evaluation setup for fully-supervised learning tasks on the SuperGLUE benchmark.",
+    "type": "result",
+    "keywords": [
+      "P-tuning",
+      "knowledge probing",
+      "LAMA-34k",
+      "LAMA-29k",
+      "discrete prompts",
+      "SuperGLUE benchmark",
+      "fully-supervised learning",
+      "natural language understanding",
+      "Adam optimizer"
+    ]
+  },
+  "6252b2bbc4d120cb1d9dbe94932bfc3c": {
+    "main_concept": "Comparison of P-tuning with other fine-tuning methods",
+    "type": "method",
+    "keywords": [
+      "P-tuning",
+      "Fine-tuning",
+      "BERT models",
+      "GPT models",
+      "PET",
+      "NLP benchmarks",
+      "Supervised learning"
+    ]
+  },
+  "ced01f32d0e10ce8608f789ba4c20662": {
+    "main_concept": "Fully-supervised performance of large-scale models",
+    "type": "result",
+    "keywords": [
+      "Fully-supervised performance",
+      "Large-scale models",
+      "P-tuning",
+      "BERT",
+      "GPT2",
+      "CLS-FT",
+      "PET-FT",
+      "Performance metrics"
+    ]
+  },
+  "83038a0bc8ccf61408ae3529bd549983": {
+    "main_concept": "P-tuning performance improvement on SuperGLUE",
+    "type": "result",
+    "keywords": [
+      "P-tuning",
+      "SuperGLUE",
+      "Fully-supervised learning",
+      "BERT models",
+      "GPT models",
+      "Training parameters",
+      "Early stopping"
+    ]
+  },
+  "3e174de74458fcef808c047fb277033b": {
+    "main_concept": "P-tuning performance and its application to few-shot learning",
+    "type": "result",
+    "keywords": [
+      "P-tuning",
+      "few-shot learning",
+      "low-resource tasks",
+      "high-resource tasks",
+      "GPT2 models",
+      "performance improvement",
+      "evaluation variance"
+    ]
+  },
+  "326aa20e98dd90f554a0e5dc4ae7ef69": {
+    "main_concept": "Experimental setup and evaluation for few-shot learning",
+    "type": "method",
+    "keywords": [
+      "few-shot evaluation strategy",
+      "FewNLU evaluation",
+      "few-shot SuperGLUE",
+      "FewGLUE benchmark",
+      "P-tuning",
+      "PET",
+      "ALBERT-xxLarge",
+      "hyper-parameters",
+      "model selection"
+    ]
+  },
+  "616cb624cfe1518f7c1294394c947043": {
+    "main_concept": "Few-shot performance comparison of prompt-based learning models",
+    "type": "result",
+    "keywords": [
+      "Prompt patterns",
+      "P-tuning",
+      "PET",
+      "Few-shot learning",
+      "Hyperparameter search"
+    ]
+  },
+  "34a08a80ec6caa1ba16029dafb8d6ad5": {
+    "main_concept": "Ablation study of prompt encoder types and location of prompt tokens for NLU tasks.",
+    "type": "result",
+    "keywords": [
+      "Ablation study",
+      "Prompt encoder",
+      "LSTM",
+      "MLP",
+      "EMB",
+      "Prompt token location"
+    ]
+  },
+  "369722f7d420c7ea8452a049020264e9": {
+    "main_concept": "Impact of prompt token placement and number on performance",
+    "type": "result",
+    "keywords": [
+      "Prompt token placement",
+      "Continuous prompt tokens",
+      "Sentence segmentation",
+      "Number of prompt tokens",
+      "Few-shot performance",
+      "Pattern candidates"
+    ]
+  },
+  "b05214cf373ea6f8f92b6607e36f95d9": {
+    "main_concept": "Comparison of P-Tuning with discrete prompt search methods",
+    "type": "method",
+    "keywords": [
+      "P-Tuning",
+      "Discrete prompt search",
+      "Continuous prompt tokens",
+      "LM-BFF",
+      "GLUE tasks",
+      "RoBERTa-Large",
+      "Few-shot performance"
+    ]
+  },
+  "d95515ce66fd0c15fe1539f2c592c968": {
+    "main_concept": "P-tuning: a novel method using continuous prompt embeddings for stable NLU",
+    "type": "method",
+    "keywords": [
+      "p-tuning",
+      "prompting",
+      "NLU",
+      "continuous embeddings",
+      "language models",
+      "performance stability"
+    ]
+  },
+  "8e20ed45a85a0ef658f483d830433036": {
+    "main_concept": "Multimodal deep learning for Alzheimer's disease diagnosis",
+    "type": "method",
+    "keywords": [
+      "Alzheimer's disease",
+      "deep learning",
+      "multimodal data",
+      "diagnosis",
+      "Maddi"
+    ]
+  },
+  "eb682a6c2bd35c653e7803cec5092e09": {
+    "main_concept": "MADDI: A novel method for classifying MCI and AD using cross-modal attention",
+    "type": "method",
+    "keywords": [
+      "MCI",
+      "AD",
+      "classification",
+      "cross-modal attention",
+      "imaging data",
+      "genetic data",
+      "clinical data"
+    ]
+  },
+  "8af51df5c7e3f012acb463b40b92d635": {
+    "main_concept": "Importance of structured clinical data for machine learning models in Alzheimer's disease diagnosis.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "clinical data",
+      "machine learning",
+      "diagnosis"
+    ]
+  },
+  "b4ec8d32f6943ad8a0ac0d032cf9e2e3": {
+    "main_concept": "Early detection of Alzheimer's disease and mild cognitive impairment",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "mild cognitive impairment",
+      "early detection",
+      "clinical symptoms",
+      "pathology",
+      "disease progression",
+      "ADNI"
+    ]
+  },
+  "8fa56bee66e5d295dda85d46a750f2c4": {
+    "main_concept": "Multimodal vs. unimodal machine learning for AD diagnosis",
+    "type": "background",
+    "keywords": [
+      "multimodal",
+      "unimodal",
+      "machine learning",
+      "AD diagnosis",
+      "deep learning"
+    ]
+  },
+  "f3c01b7c478283ae854cfe2b08423099": {
+    "main_concept": "Multimodal Alzheimer's disease diagnosis framework using cross-modal interactions",
+    "type": "method",
+    "keywords": [
+      "Alzheimer's disease",
+      "multimodal learning",
+      "cross-modal interactions",
+      "deep learning",
+      "feature concatenation",
+      "shared representation",
+      "MADDIM"
+    ]
+  },
+  "c972b4e2799536dace1680d6f49b4207": {
+    "main_concept": "Novel multi-modal Alzheimer's disease diagnosis framework (MADDI)",
+    "type": "method",
+    "keywords": [
+      "Alzheimer's disease diagnosis",
+      "multi-modal framework",
+      "cross-modal attention",
+      "imaging data",
+      "genetic data",
+      "clinical data"
+    ]
+  },
+  "98bb81f4394d41c68b54e9c46faa0d12": {
+    "main_concept": "Evaluating multimodal learning for Alzheimer's disease diagnosis using imaging, clinical, and genetic data.",
+    "type": "result",
+    "keywords": [
+      "test accuracy",
+      "model initialization",
+      "unimodal models",
+      "multimodal learning",
+      "ADNI database"
+    ]
+  },
+  "ed6fb130fad8558f7e621b82ca36fc58": {
+    "main_concept": "Alzheimer's Disease Neuroimaging Initiative (ADNI) data for MCI and AD progression study",
+    "type": "background",
+    "keywords": [
+      "ADNI",
+      "imaging data",
+      "genetic data",
+      "clinical data",
+      "MCI",
+      "AD progression"
+    ]
+  },
+  "8e74a0418ebd40b7efce2d5811737179": {
+    "main_concept": "ADNI study participant demographics and diagnosis progression",
+    "type": "background",
+    "keywords": [
+      "ADNI study",
+      "participants",
+      "diagnosis",
+      "disease progression"
+    ]
+  },
+  "362bbaed86bf08662065bcfdd929cc96": {
+    "main_concept": "Challenges in combining multiple diagnostic modalities and defining ground truth for disease progression studies, with a focus on classifying patients at their most recent state.",
+    "type": "background",
+    "keywords": [
+      "diagnostic modalities",
+      "ground truth",
+      "disease progression",
+      "clinical evaluation",
+      "MRI scans",
+      "genetic testing"
+    ]
+  },
+  "23325a7ae8ad574868c910d48690cf62": {
+    "main_concept": "Pre-processing of clinical and genetic data for Alzheimer's disease research",
+    "type": "method",
+    "keywords": [
+      "clinical data",
+      "genetic data",
+      "pre-processing",
+      "feature engineering",
+      "Alzheimer's disease"
+    ]
+  },
+  "405c73453f6715a0d88f1e8568827dc5": {
+    "main_concept": "SNP selection and feature reduction for Alzheimer's prediction",
+    "type": "method",
+    "keywords": [
+      "SNPs",
+      "VCF files",
+      "feature selection",
+      "random forest",
+      "Alzheimer's prediction"
+    ]
+  },
+  "4c58279910d277d2d7716df182d87a37": {
+    "main_concept": "SNP feature reduction and imaging data preprocessing for ADNI1",
+    "type": "method",
+    "keywords": [
+      "feature space reduction",
+      "SNPs",
+      "model testing",
+      "imaging data",
+      "MRI",
+      "ADNI1",
+      "data preprocessing"
+    ]
+  },
+  "019c1becff23bb55b6d8f3442fb7082d": {
+    "main_concept": "Multimodal architecture training dataset preparation",
+    "type": "method",
+    "keywords": [
+      "imaging input",
+      "training dataset",
+      "multimodal architecture",
+      "adni pre-processing",
+      "mri brain volume"
+    ]
+  },
+  "80797c816cbd22e40a7f84fa0738c6df": {
+    "main_concept": "Multimodal framework for diagnosis using clinical, genetic, and imaging data",
+    "type": "method",
+    "keywords": [
+      "multimodal framework",
+      "data merging",
+      "patient selection",
+      "demographic information",
+      "neural network architecture"
+    ]
+  },
+  "e9f9c06904890b7b12337add1482dd48": {
+    "main_concept": "Multi-modal neural network architecture for diagnosis",
+    "type": "method",
+    "keywords": [
+      "neural network",
+      "modality",
+      "attention layer",
+      "diagnosis"
+    ]
+  },
+  "150138dd22cede7035ab9759007a1343": {
+    "main_concept": "modal attention for multimodal data",
+    "type": "method",
+    "keywords": [
+      "modal attention",
+      "multimodal data",
+      "neural network",
+      "decision making",
+      "data inputs",
+      "self-attention"
+    ]
+  },
+  "0401ed71a597c3e3373b5b8ecbd0b620": {
+    "main_concept": "multimodal deep learning for Alzheimer's diagnosis using attention mechanisms",
+    "type": "method",
+    "keywords": [
+      "neural networks",
+      "self-attention",
+      "cross-modal attention",
+      "Alzheimer's diagnosis"
+    ]
+  },
+  "b90dc4c4b35adaa2c05639ec9e00a5f7": {
+    "main_concept": "Generalized attention mechanism in multimodal interactions",
+    "type": "method",
+    "keywords": [
+      "attention mechanism",
+      "multimodal interactions",
+      "self-attention",
+      "cross-modal attention"
+    ]
+  },
+  "152e3c8ea48f7a10de1072af9f742815": {
+    "main_concept": "self-attention mechanism for multi-modal data",
+    "type": "method",
+    "keywords": [
+      "self-attention",
+      "multi-head attention",
+      "queries",
+      "keys",
+      "values",
+      "imaging",
+      "genetic",
+      "clinical"
+    ]
+  },
+  "754a0a1e8ac79fc7512f2a8e6e4f43d5": {
+    "main_concept": "Self-attention and cross-modal attention mechanisms",
+    "type": "method",
+    "keywords": [
+      "self-attention",
+      "cross-modal attention",
+      "imaging",
+      "genetic",
+      "clinical"
+    ]
+  },
+  "4c2912eedcac4d71e304095ed70ee633": {
+    "main_concept": "Cross-modal attention module operations and baseline model.",
+    "type": "method",
+    "keywords": [
+      "attention module",
+      "cross-modal attention",
+      "concatenation",
+      "hyperparameter tuning"
+    ]
+  },
+  "cf3fcd3d43eeda38ab57aad9a505150f": {
+    "main_concept": "Hyperparameter tuning for multimodal models",
+    "type": "method",
+    "keywords": [
+      "hyperparameter tuning",
+      "attention mechanism",
+      "multimodal models",
+      "training set"
+    ]
+  },
+  "e99ee793326e8700ac04dd8a23a1f1d2": {
+    "main_concept": "Model evaluation and parameter tuning",
+    "type": "method",
+    "keywords": [
+      "cross-validation",
+      "accuracy",
+      "f1-score",
+      "evaluation metrics"
+    ]
+  },
+  "431f47603848c94509c186bb8930de22": {
+    "main_concept": "Model performance evaluation using accuracy.",
+    "type": "result",
+    "keywords": [
+      "accuracy",
+      "model performance",
+      "evaluation",
+      "hyperparameter tuning"
+    ]
+  },
+  "afc3b6308b354cd497ab93d00a3e0220": {
+    "main_concept": "Model performance and training details for clinical and imaging data.",
+    "type": "result",
+    "keywords": [
+      "neural network",
+      "accuracy",
+      "MRI",
+      "training"
+    ]
+  },
+  "5595b19b24916ef6909c91e0a9c1f37d": {
+    "main_concept": "Model performance evaluation on MRI data.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "neural network",
+      "accuracy",
+      "modality"
+    ]
+  },
+  "70171fbe1fcc4517911bc451182d719c": {
+    "main_concept": "Performance comparison of multimodal models for AD classification.",
+    "type": "result",
+    "keywords": [
+      "multimodal models",
+      "AD classification",
+      "performance",
+      "accuracy"
+    ]
+  },
+  "c864b7b2a3dea41e2f94be3b5b54359d": {
+    "main_concept": "Multi-class classification accuracy using various methods and data.",
+    "type": "result",
+    "keywords": [
+      "classification",
+      "accuracy",
+      "MRI",
+      "PET"
+    ]
+  },
+  "25fe6df9b078b809bf7b970af28a8c00": {
+    "main_concept": "Comparison of multimodal classification studies and performance.",
+    "type": "result",
+    "keywords": [
+      "multimodal classification",
+      "accuracy",
+      "deep learning",
+      "performance"
+    ]
+  },
+  "c9c437a66baed8ade6e3c4b83cfcf02e": {
+    "main_concept": "Performance comparison of multimodal classification studies.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "PET",
+      "classification",
+      "accuracy",
+      "f1-score"
+    ]
+  },
+  "193a8f6cda99767cf34fcc1d60180fb1": {
+    "main_concept": "Ablation study of self-attention and cross-modal attention.",
+    "type": "result",
+    "keywords": [
+      "attention mechanisms",
+      "f1-score",
+      "ablation study",
+      "model robustness"
+    ]
+  },
+  "0143b624f6e0d9636d4f3696c9434dc7": {
+    "main_concept": "Attention mechanisms improve multimodal model performance.",
+    "type": "result",
+    "keywords": [
+      "attention layers",
+      "f1-score",
+      "multimodal",
+      "cross-modal attention"
+    ]
+  },
+  "91b91fa79027bee7d50d3cc883b67ef6": {
+    "main_concept": "Attention improves multimodal data integration.",
+    "type": "result",
+    "keywords": [
+      "attention",
+      "f1-score",
+      "deep learning",
+      "multimodal"
+    ]
+  },
+  "13a2b004fe50f1c07f7fe4b0bf88df55": {
+    "main_concept": "Performance of self-attention and cross-attention model (maddi) on AD/MCI/Control classification.",
+    "type": "result",
+    "keywords": [
+      "self-attention",
+      "cross-attention",
+      "maddi",
+      "AD",
+      "MCI",
+      "classification"
+    ]
+  },
+  "f7c3af5e698c1f4206a6286903d696a2": {
+    "main_concept": "Performance evaluation of a model on different cognitive classes.",
+    "type": "result",
+    "keywords": [
+      "performance metrics",
+      "alzheimer's disease",
+      "mci",
+      "modality importance"
+    ]
+  },
+  "b37fa73c4d1fb5f67b6c940790c0c41b": {
+    "main_concept": "Evaluating modality contribution to disease classification using attention mechanisms.",
+    "type": "result",
+    "keywords": [
+      "modality",
+      "attention",
+      "disease classification",
+      "MRI",
+      "clinical data"
+    ]
+  },
+  "f1434485c98e99d66359edb1fa74a6ff": {
+    "main_concept": "Clinical data improves AD prediction performance.",
+    "type": "result",
+    "keywords": [
+      "clinical data",
+      "AD prediction",
+      "performance",
+      "modalities"
+    ]
+  },
+  "88d1f6b219b2dc0432f4c52eff6680ea": {
+    "main_concept": "Clinical data importance in Alzheimer's detection.",
+    "type": "result",
+    "keywords": [
+      "random forest",
+      "clinical data",
+      "modality importance",
+      "Alzheimer's disease"
+    ]
+  },
+  "cca73bd8843e333f53fb685d45fe5e32": {
+    "main_concept": "Clinical importance of accurate Alzheimer's disease detection and multimodal data integration.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "clinical importance",
+      "multimodal data",
+      "diagnosis"
+    ]
+  },
+  "ea8582ea5c147c4d60d427ebd7d040d0": {
+    "main_concept": "Future applications and extensions of the multimodal model.",
+    "type": "application",
+    "keywords": [
+      "multimodal",
+      "clinical applications",
+      "cancer detection",
+      "data modalities"
+    ]
+  },
+  "94ab920da40b67d492429ebcfc1a49a2": {
+    "main_concept": "Limitations of genetic data labeling and patient selection.",
+    "type": "result",
+    "keywords": [
+      "genetic data",
+      "mci",
+      "diagnosis",
+      "patient selection"
+    ]
+  },
+  "69b51af3090231640f0942278528c1c1": {
+    "main_concept": "MRI data processing simplification for Alzheimer's diagnosis.",
+    "type": "method",
+    "keywords": [
+      "MRI",
+      "Alzheimer's",
+      "deep learning",
+      "image processing"
+    ]
+  },
+  "a0c905b45abe0862c7ead6ab23fa3029": {
+    "main_concept": "Multimodal Alzheimer's disease diagnosis framework (MADD)",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "deep learning",
+      "multimodal",
+      "attention mechanism"
+    ]
+  },
+  "73c4ccdc34621385422df40389f374fb": {
+    "main_concept": "Attention-based deep learning for disease diagnosis.",
+    "type": "result",
+    "keywords": [
+      "deep learning",
+      "disease diagnosis",
+      "attention mechanism",
+      "accuracy"
+    ]
+  },
+  "347c0991b6f2475b865421097118a1c9": {
+    "main_concept": "Data acknowledgement and research contributions.",
+    "type": "background",
+    "keywords": [
+      "ADNI",
+      "data availability",
+      "funding",
+      "Alzheimer's disease"
+    ]
+  },
+  "c32bcd1cd39372368630c0fde83c791e": {
+    "main_concept": "Alzheimer's disease statistics and progression",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "statistics",
+      "progression",
+      "references"
+    ]
+  },
+  "c373a08c942f4513dea55d701532e0d2": {
+    "main_concept": "Alzheimer's disease progression and diagnosis",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "mild cognitive impairment",
+      "ADNI",
+      "diagnosis"
+    ]
+  },
+  "3c53f4353f7cb5bff7f9dd64a5265daf": {
+    "main_concept": "Early Alzheimer's disease diagnosis using neuroimaging and machine learning.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "neuroimaging",
+      "machine learning",
+      "diagnosis"
+    ]
+  },
+  "53affdcd0c1fd4ae9ff98aaa99fb344c": {
+    "main_concept": "Alzheimer's disease diagnosis using machine learning and MRI",
+    "type": "application",
+    "keywords": [
+      "Alzheimer's disease",
+      "machine learning",
+      "MRI",
+      "diagnosis"
+    ]
+  },
+  "44c3b9745076538ad13a5450baecaf01": {
+    "main_concept": "Alzheimer's disease classification and prediction using machine learning.",
+    "type": "application",
+    "keywords": [
+      "Alzheimer's disease",
+      "machine learning",
+      "MRI",
+      "prediction"
+    ]
+  },
+  "563b650f191c219a8347a664bb4d949d": {
+    "main_concept": "References to neuroimaging and disease progression studies.",
+    "type": "background",
+    "keywords": [
+      "neuroimaging",
+      "disease progression",
+      "MRI",
+      "Alzheimer's"
+    ]
+  },
+  "f9d4046afba6114cea5539f4f1da26b4": {
+    "main_concept": "Alzheimer's disease diagnosis using machine learning",
+    "type": "application",
+    "keywords": [
+      "Alzheimer's disease",
+      "machine learning",
+      "diagnosis",
+      "hippocampal atrophy"
+    ]
+  },
+  "cd8804a920e495ba990c9e400bee36fd": {
+    "main_concept": "Alzheimer's disease diagnosis and prediction using machine learning",
+    "type": "application",
+    "keywords": [
+      "Alzheimer's disease",
+      "machine learning",
+      "diagnosis",
+      "prediction"
+    ]
+  },
+  "2cdccde8774bb28915b10434fc088f07": {
+    "main_concept": "Multimodal deep learning for biomedical data fusion",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "biomedical data",
+      "data fusion",
+      "multimodal"
+    ]
+  },
+  "35725df15726a9df314293ac68d40e95": {
+    "main_concept": "Deep learning models for Alzheimer's progression detection",
+    "type": "application",
+    "keywords": [
+      "Alzheimer's disease",
+      "deep learning",
+      "progression detection"
+    ]
+  },
+  "ec1f395e2de700888a5b8fb486b524e7": {
+    "main_concept": "Alzheimer's disease severity prediction",
+    "type": "application",
+    "keywords": [
+      "decision support system",
+      "Alzheimer's disease",
+      "prediction",
+      "computerized"
+    ]
+  },
+  "aa6c264200fbe61ea14be91b28eb56c1": {
+    "main_concept": "References to research papers on disease detection.",
+    "type": "background",
+    "keywords": [
+      "expert systems",
+      "deep learning",
+      "alzheimer's disease",
+      "scientific reports"
+    ]
+  },
+  "5143e8d78f2318d39d1d9c478ff9e7ac": {
+    "main_concept": "References to research papers on deep learning and Alzheimer's disease.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "Alzheimer's disease",
+      "research papers"
+    ]
+  },
+  "9417fe3b604589eff0fb87cca5ce36f1": {
+    "main_concept": "Computational neurodegenerative disease progression score",
+    "type": "method",
+    "keywords": [
+      "Alzheimer's disease",
+      "neuroimaging",
+      "disease progression"
+    ]
+  },
+  "d9f37f22f5bdbfad234118db83fb1e50": {
+    "main_concept": "Research paper citations",
+    "type": "background",
+    "keywords": [
+      "citations",
+      "research papers",
+      "neurology",
+      "alzheimer's"
+    ]
+  },
+  "04d9aa4c8d4170e9e5954ef36ed9f764": {
+    "main_concept": "Gaussian discriminative component analysis for Alzheimer's detection",
+    "type": "method",
+    "keywords": [
+      "Alzheimer's disease",
+      "dimensionality reduction",
+      "component analysis",
+      "detection"
+    ]
+  },
+  "ef600854c5402ab68e3002f9ec2dade0": {
+    "main_concept": "Deep learning for medical image classification",
+    "type": "application",
+    "keywords": [
+      "deep learning",
+      "skin cancer",
+      "lung cancer",
+      "image classification"
+    ]
+  },
+  "cc78c8e20b2c4f75d4bdcef5e55d9b72": {
+    "main_concept": "API design for machine learning and genetic data pre-processing.",
+    "type": "background",
+    "keywords": [
+      "machine learning",
+      "scikit-learn",
+      "genetic data",
+      "ADNI",
+      "WGS"
+    ]
+  },
+  "bc797a0778f0e3eb979ff93a3485691b": {
+    "main_concept": "SNP filtering criteria for variant calls.",
+    "type": "method",
+    "keywords": [
+      "SNP filtering",
+      "Hardy-Weinberg",
+      "genotype quality",
+      "MAF"
+    ]
+  },
+  "37e8b866371442af6bd1e6df951e0ac6": {
+    "main_concept": "Filtering SNPs based on Alzheimer's disease related genes and missing data.",
+    "type": "method",
+    "keywords": [
+      "SNP filtering",
+      "Alzheimer's disease",
+      "gene selection",
+      "data quality"
+    ]
+  },
+  "a8f3a76b31d19154cfb85ef3c1ee97eb": {
+    "main_concept": "Feature selection using random forest classifier.",
+    "type": "method",
+    "keywords": [
+      "random forest",
+      "feature selection",
+      "hyperparameter tuning",
+      "SNP"
+    ]
+  },
+  "b08cf6f0746c733a3edf10526fcdea08": {
+    "main_concept": "Random forest feature importance analysis.",
+    "type": "method",
+    "keywords": [
+      "random forest",
+      "feature importance",
+      "scikit-learn",
+      "clinical features"
+    ]
+  },
+  "8e9e9119e0abf5e8b09540e386e8eab5": {
+    "main_concept": "Image pre-processing steps used in the study.",
+    "type": "method",
+    "keywords": [
+      "image correction",
+      "gradwarp",
+      "b1 non-uniformity",
+      "ADNI"
+    ]
+  },
+  "8841562e10c1b4cabb8561d0f785d5ea": {
+    "main_concept": "Image intensity non-uniformity correction using B1 calibration and N3 algorithm.",
+    "type": "method",
+    "keywords": [
+      "B1 calibration",
+      "N3 algorithm",
+      "intensity correction",
+      "image processing"
+    ]
+  },
+  "b65b3859b99ebe3aa4e7dce88b63cd39": {
+    "main_concept": "Impact of additional brain slices on model performance.",
+    "type": "result",
+    "keywords": [
+      "imaging model",
+      "brain slices",
+      "performance",
+      "validation"
+    ]
+  },
+  "21b12f4a59138c411ab3ff234a38ea45": {
+    "main_concept": "Model performance with varying MRI slice locations and hyperparameter tuning.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "model performance",
+      "hyperparameter tuning",
+      "image data"
+    ]
+  },
+  "54b45218937daf9a2d7baf1889c0d361": {
+    "main_concept": "Hyperparameter tuning for neural networks.",
+    "type": "method",
+    "keywords": [
+      "hyperparameter tuning",
+      "cross-validation",
+      "learning rate",
+      "batch size"
+    ]
+  },
+  "84e71338313f13e004015831692fd174": {
+    "main_concept": "Best hyperparameters for different models.",
+    "type": "result",
+    "keywords": [
+      "hyperparameters",
+      "learning rate",
+      "batch size",
+      "dropout"
+    ]
+  },
+  "0c41b64516e5a9f04c2028cbb499725b": {
+    "main_concept": "Performance evaluation of multi-class models using F1-score, accuracy, precision, and recall.",
+    "type": "result",
+    "keywords": [
+      "F1-score",
+      "accuracy",
+      "precision",
+      "recall",
+      "performance metrics"
+    ]
+  },
+  "23da7429a8a332135946d2599f9e7a32": {
+    "main_concept": "Performance of unimodal and attention-based models.",
+    "type": "result",
+    "keywords": [
+      "neural networks",
+      "imaging",
+      "genetics",
+      "attention mechanisms"
+    ]
+  },
+  "307e8c95eea20015b0bb6c1cb66982a7": {
+    "main_concept": "Performance comparison of attention mechanisms.",
+    "type": "result",
+    "keywords": [
+      "self-attention",
+      "cross-modal attention",
+      "performance",
+      "robustness"
+    ]
+  },
+  "c9ee8e1625390f8f05423d6874221914": {
+    "main_concept": "Model performance with different random seeds and cross-validation.",
+    "type": "result",
+    "keywords": [
+      "confusion matrix",
+      "random seed",
+      "cross-validation",
+      "F1-score"
+    ]
+  },
+  "50c84b47d9837b639e66cc1260c065b4": {
+    "main_concept": "Evaluation of modality importance and attention mechanisms.",
+    "type": "result",
+    "keywords": [
+      "modality importance",
+      "attention",
+      "performance",
+      "metrics"
+    ]
+  },
+  "8f5ec90d68aceba773bd4837bc4a5f11": {
+    "main_concept": "Performance metrics (F1-score) across different data types.",
+    "type": "result",
+    "keywords": [
+      "f1-score",
+      "clinical data",
+      "genetic data",
+      "imaging data",
+      "performance"
+    ]
+  },
+  "b47f1fee2e282f570a38793b7850e73e": {
+    "main_concept": "Clinical data with percentages and standard deviations.",
+    "type": "result",
+    "keywords": [
+      "clinical",
+      "data",
+      "percentages",
+      "standard deviation"
+    ]
+  },
+  "4ae173d44012df74bee0cf0a7ed7cd07": {
+    "main_concept": "Evaluating deep learning models for Alzheimer's disease classification.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "alzheimer's disease",
+      "classification",
+      "interpretability",
+      "disease focus"
+    ]
+  },
+  "76e99183a65f441e65e1f2a21405e2c2": {
+    "main_concept": "Improving interpretability of deep learning models for Alzheimer's Disease (AD) classification using saliency maps and brain segmentations.",
+    "type": "method",
+    "keywords": [
+      "deep learning",
+      "Alzheimer's disease",
+      "saliency maps",
+      "brain segmentation",
+      "interpretability"
+    ]
+  },
+  "282f514e7ea9f42440c449f3b67e83bb": {
+    "main_concept": "Evaluation of deep learning models for Alzheimer's Disease classification using MRI data, focusing on disease-relevant regions.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "MRI",
+      "deep learning",
+      "classification",
+      "medical imaging"
+    ]
+  },
+  "a57116e6388cafaea97ac961a1808897": {
+    "main_concept": "Alzheimer's disease diagnosis using MRI and deep learning.",
+    "type": "background",
+    "keywords": [
+      "alzheimer's disease",
+      "MRI",
+      "deep learning",
+      "diagnosis",
+      "brain imaging"
+    ]
+  },
+  "07d6d3888e0a4544f7a2d604f641b229": {
+    "main_concept": "MRI is used for early detection and diagnosis of Alzheimer's disease (AD) by identifying brain atrophy and ventricular enlargement.",
+    "type": "background",
+    "keywords": [
+      "MRI",
+      "Alzheimer's disease",
+      "atrophy",
+      "biomarkers",
+      "diagnosis"
+    ]
+  },
+  "9115785831c1cf75f2d6ff2ba74aa39a": {
+    "main_concept": "Deep learning models, particularly CNNs, are used for Alzheimer's disease classification and progression prediction using MRI scans.",
+    "type": "application",
+    "keywords": [
+      "Alzheimer's disease",
+      "deep learning",
+      "CNN",
+      "MRI",
+      "image classification"
+    ]
+  },
+  "10544405036d9880d2311840668c87d0": {
+    "main_concept": "Lack of interpretability in deep learning models hinders clinical adoption, addressed by saliency maps.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "interpretability",
+      "saliency maps",
+      "clinical application",
+      "CNN",
+      "black box"
+    ]
+  },
+  "3a3b5e8aa52e089a5487a6e8ee350918": {
+    "main_concept": "Using saliency maps and brain segmentations to improve interpretability of deep learning models for Alzheimer's disease classification.",
+    "type": "method",
+    "keywords": [
+      "saliency maps",
+      "brain segmentation",
+      "deep learning",
+      "Alzheimer's disease",
+      "interpretability",
+      "CNN"
+    ]
+  },
+  "7e06af4120eff11e5569f8deeed70314": {
+    "main_concept": "Comparison of CNN-based deep learning models for Alzheimer's disease detection using MRI scans.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "Alzheimer's disease",
+      "deep learning",
+      "CNN",
+      "data augmentation"
+    ]
+  },
+  "89bf6d6ed132c54bc1ba03bb1137d1d3": {
+    "main_concept": "Developing a strategy to compare deep learning models' ability to focus on disease-relevant areas for Alzheimer's disease classification.",
+    "type": "method",
+    "keywords": [
+      "deep learning",
+      "Alzheimer's disease",
+      "CNN",
+      "MRI",
+      "classification"
+    ]
+  },
+  "86e4c462a7ae261a84b50a56db9ea242": {
+    "main_concept": "Utilizing 3D ResNet for Alzheimer's disease classification with 3D MRI data.",
+    "type": "method",
+    "keywords": [
+      "3D ResNet",
+      "MRI",
+      "Alzheimer's disease",
+      "convolutional neural networks",
+      "image classification"
+    ]
+  },
+  "3f1b134d67db9e9bfa3ddafc2c6cd11d": {
+    "main_concept": "Utilizing 3D ResNet models (MedicalNet) for MRI data analysis, with pretraining on the Medical Decathlon dataset and data augmentation.",
+    "type": "method",
+    "keywords": [
+      "3D ResNet",
+      "MedicalNet",
+      "MRI",
+      "data augmentation",
+      "medical imaging"
+    ]
+  },
+  "2c10512dea34b9100acbfbc6cdaa7308": {
+    "main_concept": "Data augmentation techniques were used to improve model generalization and prevent overfitting during training.",
+    "type": "method",
+    "keywords": [
+      "data augmentation",
+      "overfitting",
+      "generalization",
+      "MRI scans",
+      "image processing"
+    ]
+  },
+  "5c7132c80ffcee6eae0575cf9d374d32": {
+    "main_concept": "Using FastSurfer for ROI segmentation and volumetric measurements in brain MRI scans to study Alzheimer's disease.",
+    "type": "method",
+    "keywords": [
+      "FastSurfer",
+      "ROI segmentation",
+      "volumetric measurements",
+      "brain MRI",
+      "Alzheimer's disease"
+    ]
+  },
+  "623cccb22c6c35522d938b6d4d2c1ff7": {
+    "main_concept": "Using saliency maps and brain segmentations to interpret CNN models' focus on brain regions for Alzheimer's disease prediction.",
+    "type": "method",
+    "keywords": [
+      "CNN models",
+      "saliency maps",
+      "brain segmentation",
+      "Alzheimer's disease",
+      "interpretability"
+    ]
+  },
+  "52d298941702710ed4a4ab1fa36a8575": {
+    "main_concept": "Calculating saliency maps to identify important brain regions based on gradient intensity.",
+    "type": "method",
+    "keywords": [
+      "saliency map",
+      "gradient",
+      "brain regions",
+      "normalization",
+      "median intensity"
+    ]
+  },
+  "4b1db244b60b52f7341b9399cf6a5dae": {
+    "main_concept": "Calculating median gradient intensity to assess model focus on brain regions and identify important areas for prediction.",
+    "type": "method",
+    "keywords": [
+      "gradient intensity",
+      "saliency maps",
+      "brain regions",
+      "disease-focus score",
+      "deep learning"
+    ]
+  },
+  "64b1c348833c275a22312a809f6004fc": {
+    "main_concept": "Development of a disease-focus score based on MRI biomarkers and clinical knowledge to assess pathological importance of brain regions in Alzheimer's disease.",
+    "type": "method",
+    "keywords": [
+      "MRI biomarkers",
+      "Alzheimer's disease",
+      "brain regions",
+      "scoring system",
+      "pathology"
+    ]
+  },
+  "cf256845ba19d5c7d9ab3ec188808c56": {
+    "main_concept": "Calculation of a disease-focus (DF) score to assess model performance in identifying pathological brain regions associated with Alzheimer's disease.",
+    "type": "method",
+    "keywords": [
+      "disease-focus score",
+      "Alzheimer's disease",
+      "brain regions",
+      "pathology",
+      "model performance"
+    ]
+  },
+  "ea3f07e6afeb8bcbe729cb3a2a45de4b": {
+    "main_concept": "Quantitative evaluation of DL model focus using ADNI dataset and MRI scans.",
+    "type": "method",
+    "keywords": [
+      "disease focus score",
+      "DL model",
+      "MRI",
+      "ADNI dataset",
+      "preprocessing"
+    ]
+  },
+  "1d4a13aff9934cf48c908048f34c9331": {
+    "main_concept": "Details of the training and testing datasets used for model evaluation, including participant and image counts for AD and CN subjects.",
+    "type": "background",
+    "keywords": [
+      "training set",
+      "test set",
+      "data leakage",
+      "ADNI",
+      "AIBL",
+      "MRI scans"
+    ]
+  },
+  "7fccf134ef5b8be408b8beb44d57e2a6": {
+    "main_concept": "Details the dataset and methods used for Alzheimer's disease classification using MRI data and deep learning models.",
+    "type": "method",
+    "keywords": [
+      "MRI",
+      "deep learning",
+      "CNN",
+      "Alzheimer's disease",
+      "brain segmentation",
+      "data preprocessing"
+    ]
+  },
+  "dcf5d18b9afe6637abe98f53d458513e": {
+    "main_concept": "CNN and volumetric feature-based machine learning methods were used for Alzheimer's disease classification with MRI data and ROI segmentation.",
+    "type": "method",
+    "keywords": [
+      "CNN",
+      "MRI",
+      "Alzheimer's disease",
+      "machine learning",
+      "ROI segmentation",
+      "feature extraction"
+    ]
+  },
+  "7dbc710ad921beed9e730586af9218a1": {
+    "main_concept": "Model training and evaluation for Alzheimer's disease classification using volumetric features and deep learning.",
+    "type": "method",
+    "keywords": [
+      "deep learning",
+      "alzheimer's disease",
+      "classification",
+      "f-1 score",
+      "auroc",
+      "pytorch"
+    ]
+  },
+  "6858d9808ca458f67931fd0393b80d6d": {
+    "main_concept": "Details of the deep learning model training and independent testing using the AIBL dataset.",
+    "type": "method",
+    "keywords": [
+      "deep learning",
+      "pytorch",
+      "scikit-learn",
+      "MRI",
+      "saliency maps"
+    ]
+  },
+  "bb926f127d0497a9a496fe5ee0d223c9": {
+    "main_concept": "Analysis of saliency maps to quantify model attention to brain regions for Alzheimer's disease.",
+    "type": "method",
+    "keywords": [
+      "saliency maps",
+      "brain regions",
+      "gradient",
+      "pytorch",
+      "alzheimer's disease"
+    ]
+  },
+  "852e5257714fde8aa9c175d4b9a456cb": {
+    "main_concept": "Evaluation of machine learning methods for Alzheimer's disease diagnosis using brain imaging data.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "machine learning",
+      "classification",
+      "brain imaging",
+      "CNN",
+      "medicalnet"
+    ]
+  },
+  "d4c311eb92c8c473c8d451f223babcb9": {
+    "main_concept": "Comparison of 3D ResNet and MedicalNet performance with MRI and brain segmentation data for Alzheimer's disease classification.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "MRI",
+      "brain segmentation",
+      "3D ResNet",
+      "MedicalNet",
+      "classification performance"
+    ]
+  },
+  "2ee307aa8866ebc670ef9c42d020d988": {
+    "main_concept": "Performance comparison of different models on the AIBL dataset for medical image segmentation.",
+    "type": "result",
+    "keywords": [
+      "resnet",
+      "segmentation",
+      "medicalnet",
+      "svm",
+      "xgboost",
+      "volumetric features",
+      "auroc",
+      "auprc"
+    ]
+  },
+  "19db1bf0c4e845579fc5f056e99af435": {
+    "main_concept": "Performance metrics for various medical image segmentation and classification models.",
+    "type": "result",
+    "keywords": [
+      "medicalnet",
+      "MRI",
+      "segmentation",
+      "volumetric features",
+      "machine learning"
+    ]
+  },
+  "b3aa10ae4e8421468bdbdc26c6be3026": {
+    "main_concept": "Comparison of volumetric feature-machine learning (VF-ML) models and deep learning (DL) models on MRI data, showing SVM outperforms others.",
+    "type": "result",
+    "keywords": [
+      "logistic regression",
+      "SVM",
+      "volumetric features",
+      "AUROC",
+      "AUPRC",
+      "MRI",
+      "deep learning"
+    ]
+  },
+  "d2c1140dd85270163e4e64ce0be9086c": {
+    "main_concept": "MedicalNet and other ML models demonstrate strong performance on MRI data, with good generalization between ADNI and AIBL datasets.",
+    "type": "result",
+    "keywords": [
+      "MRI data",
+      "MedicalNet",
+      "ADNI",
+      "AIBL",
+      "data augmentation",
+      "model performance"
+    ]
+  },
+  "5e9bbb076eb483b33573338dba313fef": {
+    "main_concept": "Volumetric feature-based machine learning models show robust performance with MRI data, but performance decreases with brain segmentation data.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "segmentation",
+      "machine learning",
+      "CNN",
+      "saliency maps",
+      "performance"
+    ]
+  },
+  "4f61950418cbe59572c332b3852c7ae2": {
+    "main_concept": "Analysis of saliency maps from CNN models (3D ResNet, MedicalNet, MedicalNet+DA) to understand their interpretability in Alzheimer's disease detection.",
+    "type": "result",
+    "keywords": [
+      "saliency maps",
+      "CNN models",
+      "3D ResNet",
+      "MedicalNet",
+      "Alzheimer's disease"
+    ]
+  },
+  "da93ad0fceaf3cee8f27bf3a3f9d292e": {
+    "main_concept": "Model pretraining on diverse medical images can lead to focus on irrelevant background features during fine-tuning on consistent MRI data.",
+    "type": "result",
+    "keywords": [
+      "medical imaging",
+      "MRI",
+      "fine-tuning",
+      "saliency maps",
+      "deep learning"
+    ]
+  },
+  "53597ff374096ed3ad771920aa3b2b4e": {
+    "main_concept": "MedicalNet with data augmentation improves attention on key pathological areas in MRI scans, resolving background attention issues.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "MedicalNet",
+      "data augmentation",
+      "attention mechanism",
+      "Alzheimer's disease"
+    ]
+  },
+  "b620b3a3351aac32d295df52f0ce1682": {
+    "main_concept": "Fine-tuning MedicalNet improves focus on brain regions critical for understanding Alzheimer's disease.",
+    "type": "result",
+    "keywords": [
+      "MedicalNet",
+      "Alzheimer's disease",
+      "saliency maps",
+      "attention mechanism",
+      "brain regions"
+    ]
+  },
+  "b1dd012ceab59ce4ac0ed67efda0df03": {
+    "main_concept": "Model performance improves with attention to critical regions and data augmentation.",
+    "type": "result",
+    "keywords": [
+      "model performance",
+      "attention mechanisms",
+      "data augmentation",
+      "medical imaging",
+      "CNN models"
+    ]
+  },
+  "ab325c336755304ddcd5c53fadde6dba": {
+    "main_concept": "Brain region activations, primarily focusing on left and right hemisphere structures including the hippocampus, amygdala, and entorhinal cortex.",
+    "type": "result",
+    "keywords": [
+      "brain regions",
+      "hippocampus",
+      "amygdala",
+      "entorhinal cortex",
+      "hemisphere activation"
+    ]
+  },
+  "411da1c2b7256a17c907e1dc066d8d5b": {
+    "main_concept": "Saliency map analysis of brain regions using medicalnet + da, categorized by Alzheimer's disease classification results.",
+    "type": "result",
+    "keywords": [
+      "saliency map",
+      "brain regions",
+      "medicalnet",
+      "Alzheimer's disease",
+      "classification"
+    ]
+  },
+  "10bb456db95de755585398318c8cc6e4": {
+    "main_concept": "Brain region activation values, focusing on hippocampus, entorhinal cortex, and parahippocampal cortex.",
+    "type": "result",
+    "keywords": [
+      "hippocampus",
+      "entorhinal cortex",
+      "parahippocampal cortex",
+      "brain activation",
+      "ctx"
+    ]
+  },
+  "d61aecb8678bfaa9671744790161f914": {
+    "main_concept": "Brain region activation values.",
+    "type": "result",
+    "keywords": [
+      "brain regions",
+      "activation values",
+      "amygdala",
+      "entorhinal cortex",
+      "inferiortemporal cortex"
+    ]
+  },
+  "7d3f55df70111486e0cc75f5cabe2aed": {
+    "main_concept": "Analysis of 3D ResNet, MedicalNet, and MedicalNet+DA model rankings based on true positive and true negative Alzheimer's disease classification using MRI data.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "Alzheimer's disease",
+      "3D ResNet",
+      "MedicalNet",
+      "model ranking",
+      "feature learning"
+    ]
+  },
+  "d0388eea21849ee75dc6fab147573fd8": {
+    "main_concept": "Disease-focus scores are calculated for brain regions to assess model understanding of Alzheimer's disease pathology.",
+    "type": "method",
+    "keywords": [
+      "disease-focus score",
+      "brain regions",
+      "Alzheimer's disease",
+      "MRI biomarkers",
+      "pathology"
+    ]
+  },
+  "7ba78e254270bca75e6a09a44863de85": {
+    "main_concept": "CNN model confidence is higher for true positives, indicated by stronger gradient magnitudes in saliency maps.",
+    "type": "result",
+    "keywords": [
+      "CNN",
+      "gradient magnitude",
+      "saliency maps",
+      "false positives",
+      "false negatives"
+    ]
+  },
+  "0d5168c2a941dc88221ee4ad3fb7ec12": {
+    "main_concept": "Analysis of brain regions (amygdala, hippocampus) using voxel counts and volume measurements to understand Alzheimer's disease classification.",
+    "type": "result",
+    "keywords": [
+      "amygdala",
+      "hippocampus",
+      "voxel counts",
+      "brain volume",
+      "Alzheimer's disease"
+    ]
+  },
+  "64c18f141a417efbc6f2f3cbe482c694": {
+    "main_concept": "VF-ML models perform well due to capturing distinguishing features in AD samples, identified through mutual information analysis of predictive features like the entorhinal cortex, hippocampus, and amygdala.",
+    "type": "result",
+    "keywords": [
+      "VF-ML",
+      "mutual information",
+      "Alzheimer's disease",
+      "predictive features",
+      "brain regions"
+    ]
+  },
+  "c8c977dc22213506b0ca23010bb3dc52": {
+    "main_concept": "A two-step approach using saliency maps and brain segmentations to improve interpretability and quantify attention in deep learning models for Alzheimer's disease classification.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "deep learning",
+      "interpretability",
+      "saliency maps",
+      "brain segmentation",
+      "CNN models"
+    ]
+  },
+  "7bc4e29cedd33854ade77f8739c0a1da": {
+    "main_concept": "Improving interpretability of deep learning models for Alzheimer's disease classification using brain volumetric statistics.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "deep learning",
+      "interpretability",
+      "brain volumetrics",
+      "MRI"
+    ]
+  },
+  "aaf0157acb76dd23a5319487c31d1610": {
+    "main_concept": "References related to Alzheimer's disease and brain imaging.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "brain imaging",
+      "MRI",
+      "neurology",
+      "dementia"
+    ]
+  },
+  "2d25a6e3e79e80f122c56129c288a769": {
+    "main_concept": "Convolutional neural networks for Alzheimer's disease classification and deep learning visualization.",
+    "type": "background",
+    "keywords": [
+      "convolutional neural networks",
+      "alzheimer's disease",
+      "deep learning",
+      "image classification"
+    ]
+  },
+  "4fcf060c95ce331b9f9df53957a09d70": {
+    "main_concept": "References to research papers on saliency maps, medical imaging, and action recognition.",
+    "type": "background",
+    "keywords": [
+      "saliency maps",
+      "medical imaging",
+      "action recognition",
+      "neural networks"
+    ]
+  },
+  "e531edcacd2a66a054b0ceafd7d25739": {
+    "main_concept": "References to research papers on image analysis and medical imaging.",
+    "type": "background",
+    "keywords": [
+      "image analysis",
+      "medical imaging",
+      "deep learning",
+      "data augmentation"
+    ]
+  },
+  "d07ac7ca03e5991071aa5132e0bc9841": {
+    "main_concept": "References to research papers on image data augmentation, neuroimaging, and Alzheimer's disease.",
+    "type": "background",
+    "keywords": [
+      "image augmentation",
+      "deep learning",
+      "neuroimaging",
+      "Alzheimer's disease",
+      "research papers"
+    ]
+  },
+  "53b3995ec6a8a5b9c2fd26a69d677ffb": {
+    "main_concept": "References to studies on Alzheimer's disease, mild cognitive impairment, and dementia.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "dementia",
+      "cognitive impairment",
+      "brain morphology",
+      "neuroimaging"
+    ]
+  },
+  "0fd06548f61998157aa43ee1e276e653": {
+    "main_concept": "Studies on brain structures and Alzheimer's disease using neuroimaging techniques.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "dementia",
+      "neuroimaging",
+      "brain structures",
+      "fMRI"
+    ]
+  },
+  "f2f9792d6aca5b8ab72156d147ea991e": {
+    "main_concept": "Attention is all you need - a new sequence transduction model.",
+    "type": "background",
+    "keywords": [
+      "attention mechanism",
+      "sequence transduction",
+      "neural networks",
+      "encoder-decoder"
+    ]
+  },
+  "029b9dedb659a094002ed3c25271d49b": {
+    "main_concept": "Introducing the Transformer, a new network architecture based solely on attention mechanisms for machine translation.",
+    "type": "result",
+    "keywords": [
+      "transformer",
+      "attention mechanism",
+      "machine translation",
+      "neural networks",
+      "BLEU score"
+    ]
+  },
+  "9fd3de20e505d4a2c6034d35e3aaab63": {
+    "main_concept": "Transformer model training and generalization to parsing tasks.",
+    "type": "result",
+    "keywords": [
+      "transformer",
+      "self-attention",
+      "parsing",
+      "training",
+      "generalization"
+    ]
+  },
+  "7579848f8d92c36e6ba23c77b632f9ff": {
+    "main_concept": "Recurrent neural networks, LSTM, and gated recurrent units are state-of-the-art for sequence modeling and transduction.",
+    "type": "background",
+    "keywords": [
+      "recurrent neural networks",
+      "LSTM",
+      "sequence modeling",
+      "machine translation",
+      "encoder-decoder"
+    ]
+  },
+  "f5c0e6ce1f89c4fe2e8763f424aaba94": {
+    "main_concept": "Recurrent models process sequences sequentially, limiting parallelization and posing challenges with longer sequences.",
+    "type": "background",
+    "keywords": [
+      "recurrent models",
+      "sequence modeling",
+      "attention mechanisms",
+      "parallelization",
+      "computational efficiency"
+    ]
+  },
+  "b544fffb8d0f71da168cbe65a9fc4ecb": {
+    "main_concept": "The Transformer model architecture replaces recurrence with attention mechanisms for improved parallelization and translation quality.",
+    "type": "background",
+    "keywords": [
+      "transformer",
+      "attention mechanism",
+      "sequence modeling",
+      "parallelization",
+      "translation"
+    ]
+  },
+  "d2b6f5fccdd64f6c50bb6c815eaa5b3e": {
+    "main_concept": "Comparison of computational complexity and dependencies between convolutional and self-attention models.",
+    "type": "background",
+    "keywords": [
+      "convolutional neural networks",
+      "self-attention",
+      "transformer",
+      "computational complexity",
+      "attention mechanism"
+    ]
+  },
+  "bf41bf0cde9726c57ac2cc3ba0cd2337": {
+    "main_concept": "Discussion of the Transformer model and self-attention mechanisms for sequence transduction.",
+    "type": "background",
+    "keywords": [
+      "self-attention",
+      "transformer",
+      "sequence transduction",
+      "encoder-decoder",
+      "neural networks"
+    ]
+  },
+  "e4d38ed029b726801a46d641ef3ad1f5": {
+    "main_concept": "Encoder-decoder structure for neural sequence transduction models.",
+    "type": "background",
+    "keywords": [
+      "encoder-decoder",
+      "neural transduction",
+      "sequence modeling",
+      "self-attention",
+      "transformer"
+    ]
+  },
+  "905d81a941aeb6433070896d59229786": {
+    "main_concept": "Description of the encoder and decoder stacks, each with 6 identical layers using self-attention and feed-forward networks.",
+    "type": "method",
+    "keywords": [
+      "encoder",
+      "decoder",
+      "self-attention",
+      "feed-forward network",
+      "residual connection",
+      "layer normalization"
+    ]
+  },
+  "cca0e52ca3cca412c7c656e382cc046f": {
+    "main_concept": "Decoder architecture with masked self-attention and encoder-decoder attention.",
+    "type": "background",
+    "keywords": [
+      "decoder",
+      "attention",
+      "self-attention",
+      "encoder-decoder",
+      "masking"
+    ]
+  },
+  "dfb6ebf5af00504e86e0556d2c13cd4e": {
+    "main_concept": "Scaled dot-product attention and multi-head attention mechanisms.",
+    "type": "method",
+    "keywords": [
+      "attention mechanism",
+      "scaled dot-product",
+      "multi-head attention",
+      "vector",
+      "softmax"
+    ]
+  },
+  "8e52e32008afc9ee29c63830d8c40de4": {
+    "main_concept": "Description of attention mechanisms, specifically dot-product and additive attention, and their mathematical formulation.",
+    "type": "method",
+    "keywords": [
+      "attention mechanism",
+      "dot-product attention",
+      "additive attention",
+      "softmax",
+      "matrix multiplication"
+    ]
+  },
+  "b14b409186882cb87789d6e65dc24dfc": {
+    "main_concept": "Scaling dot-product attention to counteract large gradients for larger dk values and using multi-head attention with linear projections.",
+    "type": "method",
+    "keywords": [
+      "attention mechanism",
+      "dot product attention",
+      "scaling",
+      "multi-head attention",
+      "gradients"
+    ]
+  },
+  "b17813ee1d5eb611bc48c7433dddfe63": {
+    "main_concept": "Explanation of multi-head attention mechanism and its advantages over single attention heads.",
+    "type": "background",
+    "keywords": [
+      "attention mechanism",
+      "multi-head attention",
+      "dot product",
+      "projections",
+      "variance"
+    ]
+  },
+  "459fc67956d3341928efdb9df53f6545": {
+    "main_concept": "Multi-head attention mechanism within a Transformer model, detailing parameter matrices and layer configurations.",
+    "type": "method",
+    "keywords": [
+      "multi-head attention",
+      "transformer model",
+      "attention layers",
+      "encoder-decoder attention"
+    ]
+  },
+  "c6bf65591712d47c85860016e8f9ef26": {
+    "main_concept": "Description of self-attention layers within an encoder-decoder architecture, focusing on attention mechanisms and preventing information flow.",
+    "type": "background",
+    "keywords": [
+      "encoder-decoder",
+      "self-attention",
+      "attention mechanism",
+      "auto-regressive",
+      "masking"
+    ]
+  },
+  "300cb8f0c274012f79e0c071db9db948": {
+    "main_concept": "Position-wise feed-forward networks are used in both encoder and decoder layers, consisting of two linear transformations with a ReLU activation.",
+    "type": "method",
+    "keywords": [
+      "feed-forward networks",
+      "attention",
+      "relu activation",
+      "linear transformations",
+      "auto-regressive"
+    ]
+  },
+  "961bde29a25cfb21d04f303c65dbe0ab": {
+    "main_concept": "Details of the model architecture, including convolutions, embeddings, and linear transformations.",
+    "type": "background",
+    "keywords": [
+      "convolution",
+      "embeddings",
+      "softmax",
+      "sequence transduction",
+      "dmodel",
+      "dff"
+    ]
+  },
+  "c5154a8839062fbd7ec497796e01e436": {
+    "main_concept": "Complexity analysis of different layer types (self-attention, recurrent, convolutional) in neural networks.",
+    "type": "background",
+    "keywords": [
+      "complexity",
+      "self-attention",
+      "convolutional",
+      "recurrent",
+      "sequence length"
+    ]
+  },
+  "3639b77cebcb5acc1bf0a7423f7aebe3": {
+    "main_concept": "Positional encodings are added to input embeddings to provide information about token position in a sequence.",
+    "type": "method",
+    "keywords": [
+      "positional encoding",
+      "embeddings",
+      "sequence",
+      "transformer",
+      "sine",
+      "cosine"
+    ]
+  },
+  "afb3c348fd200b42f2864e3318ef092b": {
+    "main_concept": "Positional encoding using sinusoids for attention mechanisms, allowing for extrapolation to longer sequences.",
+    "type": "method",
+    "keywords": [
+      "positional encoding",
+      "self-attention",
+      "sinusoids",
+      "relative positions",
+      "sequence length"
+    ]
+  },
+  "f670b1b69eb0cfb14913405d5e6f1a41": {
+    "main_concept": "Comparison of self-attention layers to recurrent and convolutional layers for sequence transduction.",
+    "type": "background",
+    "keywords": [
+      "self-attention",
+      "recurrent layers",
+      "convolutional layers",
+      "sequence transduction",
+      "computational complexity"
+    ]
+  },
+  "ede64085a980368aa2906ae85888b8d7": {
+    "main_concept": "Path length impacts learning long-range dependencies; self-attention is faster than recurrent layers for typical sequence lengths.",
+    "type": "result",
+    "keywords": [
+      "path length",
+      "long-range dependencies",
+      "self-attention",
+      "recurrent layers",
+      "computational complexity"
+    ]
+  },
+  "db8b4ebf66a8ea8e4da02133269395fb": {
+    "main_concept": "Discusses computational performance improvements for long sequences using restricted self-attention and convolutional layers.",
+    "type": "background",
+    "keywords": [
+      "self-attention",
+      "convolutional layers",
+      "computational performance",
+      "long sequences",
+      "dilated convolutions"
+    ]
+  },
+  "9945bd0d7370f9b03b026ba933c16242": {
+    "main_concept": "Comparison of computational complexity between convolutional, separable convolutional, and self-attention layers.",
+    "type": "result",
+    "keywords": [
+      "convolutional layers",
+      "recurrent layers",
+      "separable convolutions",
+      "self-attention",
+      "complexity",
+      "training data"
+    ]
+  },
+  "d052f74b1f7ba6dfc75bc41344fb8ad8": {
+    "main_concept": "Details of the training data, batching, hardware, and schedule used for training machine translation models.",
+    "type": "method",
+    "keywords": [
+      "training data",
+      "batching",
+      "WMT 2014",
+      "byte-pair encoding",
+      "Nvidia P100 GPUs"
+    ]
+  },
+  "c8fffc99b2acc2d4ee00ff582e6ecc8d": {
+    "main_concept": "Details of the training process, including step times, total steps, optimizer used (Adam), and learning rate schedule.",
+    "type": "method",
+    "keywords": [
+      "training",
+      "optimizer",
+      "learning rate",
+      "warmup steps",
+      "Adam"
+    ]
+  },
+  "7f1d91b1704f59f0a041d6d936b1055a": {
+    "main_concept": "Training details including warmup steps and regularization techniques, and a comparison of BLEU scores and training costs for different models.",
+    "type": "result",
+    "keywords": [
+      "warmup steps",
+      "regularization",
+      "BLEU score",
+      "training cost",
+      "transformer"
+    ]
+  },
+  "28035d3970318c82974eb187f55f803e": {
+    "main_concept": "Performance metrics of different models (convs2s, moe, deep-att, gnmt, transformer) and dropout application.",
+    "type": "result",
+    "keywords": [
+      "models",
+      "performance",
+      "dropout",
+      "transformer",
+      "convs2s"
+    ]
+  },
+  "fc6648e9be6852e94898f0e056dd88f3": {
+    "main_concept": "Details on model training and machine translation results on WMT 2014 English-to-German.",
+    "type": "result",
+    "keywords": [
+      "dropout",
+      "label smoothing",
+      "machine translation",
+      "BLEU score",
+      "WMT 2014"
+    ]
+  },
+  "f738d633fc2ee0362f5a8f9d08ce29ce": {
+    "main_concept": "Transformer model achieves state-of-the-art BLEU scores on English-to-French translation with reduced training costs.",
+    "type": "result",
+    "keywords": [
+      "BLEU score",
+      "transformer model",
+      "machine translation",
+      "training cost",
+      "WMT 2014"
+    ]
+  },
+  "db6944432bbeef04d513f9121159d9ff": {
+    "main_concept": "Details of model training and hyperparameter selection using checkpoint averaging and beam search.",
+    "type": "method",
+    "keywords": [
+      "checkpoint averaging",
+      "beam search",
+      "hyperparameters",
+      "transformer",
+      "training"
+    ]
+  },
+  "512a0a09c88d106cd997496c09f3e580": {
+    "main_concept": "Performance metrics for different model configurations, likely related to machine translation or language modeling.",
+    "type": "result",
+    "keywords": [
+      "BLEU",
+      "parameters",
+      "steps",
+      "model performance",
+      "training"
+    ]
+  },
+  "60d1f520c6d1801e0d4a058e8989ad6b": {
+    "main_concept": "Experimenting with attention head number and key/value dimensions to optimize model quality, showing trade-offs in BLEU score.",
+    "type": "result",
+    "keywords": [
+      "attention heads",
+      "key dimensions",
+      "BLEU score",
+      "model quality",
+      "beam search"
+    ]
+  },
+  "00390461505e9d83d79831d69b8be935": {
+    "main_concept": "Reducing attention key size impacts model quality; larger models and dropout improve performance. Transformer generalizes to constituency parsing.",
+    "type": "result",
+    "keywords": [
+      "attention key size",
+      "model quality",
+      "dropout",
+      "transformer",
+      "constituency parsing"
+    ]
+  },
+  "c943e1bb41e1a4c9dddb1d363cf42326": {
+    "main_concept": "Training a 4-layer transformer model on the Wall Street Journal and Penn Treebank corpora.",
+    "type": "result",
+    "keywords": [
+      "transformer",
+      "sequence-to-sequence",
+      "training",
+      "WSJ",
+      "Penn Treebank"
+    ]
+  },
+  "625c1c478b0659210a8a456d4d417b5c": {
+    "main_concept": "Transformer performance on English constituency parsing, compared to other models.",
+    "type": "result",
+    "keywords": [
+      "transformer",
+      "parsing",
+      "WSJ",
+      "F1 score",
+      "discriminative"
+    ]
+  },
+  "a84b676f7c0e73e71db497e1deeec37d": {
+    "main_concept": "Performance comparison of different models on a task, showing results and hyperparameter settings.",
+    "type": "result",
+    "keywords": [
+      "semi-supervised learning",
+      "transformer",
+      "neural networks",
+      "machine translation",
+      "model performance"
+    ]
+  },
+  "f483d05ab7c687524467a2e8bbf3bb81": {
+    "main_concept": "The Transformer model achieves state-of-the-art results in translation tasks, outperforming previous models including recurrent and convolutional architectures.",
+    "type": "result",
+    "keywords": [
+      "transformer",
+      "translation",
+      "attention",
+      "sequence transduction",
+      "state-of-the-art"
+    ]
+  },
+  "a5c608261427048b85242fdedb96b6f0": {
+    "main_concept": "The authors achieved state-of-the-art results with their attention-based model and plan to extend it to other modalities.",
+    "type": "result",
+    "keywords": [
+      "attention models",
+      "transformer",
+      "state-of-the-art",
+      "Tensor2Tensor",
+      "layer normalization"
+    ]
+  },
+  "063fc99999a0450d5f732052faf938c9": {
+    "main_concept": "References to research papers on neural machine translation and related techniques.",
+    "type": "background",
+    "keywords": [
+      "neural machine translation",
+      "layer normalization",
+      "LSTM networks",
+      "research papers"
+    ]
+  },
+  "8f3185fa25cba463c4abe599ff81d8a2": {
+    "main_concept": "References to research papers on recurrent neural networks and machine translation.",
+    "type": "background",
+    "keywords": [
+      "RNN",
+      "machine translation",
+      "deep learning",
+      "neural networks",
+      "sequence modeling"
+    ]
+  },
+  "f1cbb79ab1020e3f34c11ef7b5135ac5": {
+    "main_concept": "References to research papers on recurrent neural networks, convolutional sequence to sequence learning, and deep residual learning.",
+    "type": "background",
+    "keywords": [
+      "recurrent neural networks",
+      "convolutional learning",
+      "deep learning",
+      "sequence modeling",
+      "computer vision"
+    ]
+  },
+  "58511c2bd8abfa4a7b12ef6ebc207fae": {
+    "main_concept": "References to research papers on recurrent neural networks, long short-term memory, and language modeling.",
+    "type": "background",
+    "keywords": [
+      "recurrent neural networks",
+      "long short-term memory",
+      "language modeling",
+      "gradient flow",
+      "natural language processing"
+    ]
+  },
+  "88a108d1b1b30b76010497171924b19d": {
+    "main_concept": "List of research papers and their titles related to neural networks and language modeling.",
+    "type": "background",
+    "keywords": [
+      "research papers",
+      "neural networks",
+      "language modeling",
+      "attention mechanisms"
+    ]
+  },
+  "6a0318bff531561b8bbc57de57c0d80f": {
+    "main_concept": "References to research papers on neural networks and optimization methods.",
+    "type": "background",
+    "keywords": [
+      "attention networks",
+      "LSTM",
+      "stochastic optimization",
+      "sentence embedding"
+    ]
+  },
+  "5fc334112ee14d702280e3c34726a6c8": {
+    "main_concept": "References to research papers on sequence-to-sequence learning, neural machine translation, and parsing.",
+    "type": "background",
+    "keywords": [
+      "sequence to sequence",
+      "neural machine translation",
+      "parsing",
+      "treebank",
+      "attention mechanisms"
+    ]
+  },
+  "a5bf37da2c3a9496272a3b20a94de582": {
+    "main_concept": "List of research papers and their publications.",
+    "type": "background",
+    "keywords": [
+      "research papers",
+      "NLP",
+      "ACL",
+      "machine learning"
+    ]
+  },
+  "c3297894042ecca6ef18f6971baa7026": {
+    "main_concept": "List of research papers and preprints related to computational linguistics and neural networks.",
+    "type": "background",
+    "keywords": [
+      "computational linguistics",
+      "neural networks",
+      "machine translation",
+      "language models",
+      "arxiv"
+    ]
+  },
+  "1706619385a5abe1be3ad2e6cbbc740a": {
+    "main_concept": "References to research papers on neural networks and machine learning.",
+    "type": "background",
+    "keywords": [
+      "neural networks",
+      "machine learning",
+      "dropout",
+      "memory networks",
+      "sequence to sequence"
+    ]
+  },
+  "2a8f687a705f66bd20d47dbdc35902d9": {
+    "main_concept": "References to research papers on neural networks and sequence learning.",
+    "type": "background",
+    "keywords": [
+      "neural networks",
+      "sequence learning",
+      "computer vision",
+      "inception architecture"
+    ]
+  },
+  "57cc9aaa6d959d9056bf41c0ee692a5d": {
+    "main_concept": "References to research papers on neural machine translation and parsing.",
+    "type": "background",
+    "keywords": [
+      "neural machine translation",
+      "parsing",
+      "research papers",
+      "ACL"
+    ]
+  },
+  "f8f73a64569e94d2f6fee19e75c97b49": {
+    "main_concept": "Attention mechanism visualization showing long-distance dependencies in encoder self-attention.",
+    "type": "result",
+    "keywords": [
+      "attention mechanism",
+      "self-attention",
+      "encoder",
+      "visualization",
+      "long-distance dependencies"
+    ]
+  },
+  "eda6cc51d0b0335430a027491b6d8185": {
+    "main_concept": "Attention mechanisms and anaphora resolution in a language model.",
+    "type": "application",
+    "keywords": [
+      "attention heads",
+      "anaphora resolution",
+      "language model",
+      "attention mechanism"
+    ]
+  },
+  "17fe582ec05da1d0b230f0e8c2fdd0f2": {
+    "main_concept": "Attention head behavior related to sentence structure and just application of law.",
+    "type": "result",
+    "keywords": [
+      "attention heads",
+      "sentence structure",
+      "law application",
+      "phora resolution"
+    ]
+  },
+  "4c19e7b5cdbfcb0e4afebc0226d675f1": {
+    "main_concept": "Personalized modeling of cortical atrophy in Alzheimer\u2019s disease using spatiotemporal data.",
+    "type": "method",
+    "keywords": [
+      "Alzheimer's disease",
+      "cortical atrophy",
+      "spatiotemporal modeling",
+      "MRI",
+      "PET",
+      "graph-based model"
+    ]
+  },
+  "4d874ba05377940cd0286d822d89cde1": {
+    "main_concept": "A network-based digital twin model predicts Alzheimer's disease progression using longitudinal MRI and PET data.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "neurodegeneration",
+      "MRI",
+      "PET",
+      "digital twin",
+      "biomarkers",
+      "prediction"
+    ]
+  },
+  "2e2a7ad0edaf84f9407dec63ae3f452a": {
+    "main_concept": "Alzheimer's disease progression and the need for improved therapeutic development.",
+    "type": "background",
+    "keywords": [
+      "alzheimer's disease",
+      "amyloid-beta",
+      "tau",
+      "neuroimaging",
+      "dementia"
+    ]
+  },
+  "09690dc08b00cbd83cafdb71c6fa481e": {
+    "main_concept": "Alzheimer's disease pathogenesis involves tau tangles, amyloid plaques, neuroinflammation, and biomarker imaging for in vivo study.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "tau",
+      "amyloid",
+      "neuroinflammation",
+      "biomarkers",
+      "PET imaging"
+    ]
+  },
+  "68fd12c22df1f4d1c3eb549819da8bd1": {
+    "main_concept": "Functional imaging reveals network alterations in Alzheimer's disease, prompting the use of mathematical modeling to understand disease propagation.",
+    "type": "background",
+    "keywords": [
+      "functional imaging",
+      "Alzheimer's disease",
+      "network alterations",
+      "mathematical modeling",
+      "disease propagation"
+    ]
+  },
+  "4ca2389793728dbc3c81aa05b887b896": {
+    "main_concept": "Modeling of amyloid beta production, tau hyperphosphorylation, and disease progression using mechanistic and machine learning approaches.",
+    "type": "background",
+    "keywords": [
+      "amyloid beta",
+      "tau",
+      "neuroinflammation",
+      "machine learning",
+      "modeling",
+      "biomarkers"
+    ]
+  },
+  "f2b89774e7271368def6fbbbc17572af": {
+    "main_concept": "Current models lack the ability to capture the integrated spatiotemporal dynamics of Alzheimer's disease biomarkers, hindering personalized predictions and targeted interventions.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "biomarkers",
+      "spatiotemporal dynamics",
+      "imaging",
+      "modeling"
+    ]
+  },
+  "6f579fd60fc05e5007d99b9b2eb6aea2": {
+    "main_concept": "A mechanistic spatiotemporal model integrating biomarkers for personalized Alzheimer's disease progression prediction.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "biomarkers",
+      "modeling",
+      "neuroimaging",
+      "brain networks"
+    ]
+  },
+  "8d1163f94013e75b964644cd779f560d": {
+    "main_concept": "Personalized Alzheimer's disease (AD) progression modeling using biomarkers and neuroimaging.",
+    "type": "result",
+    "keywords": [
+      "precision medicine",
+      "Alzheimer's disease",
+      "biomarkers",
+      "neuroimaging",
+      "modeling"
+    ]
+  },
+  "0a4e805f5f7ac2843022e68b494ea866": {
+    "main_concept": "Model predicts biomarker levels and identifies vulnerable brain regions for personalized cognitive decline assessment.",
+    "type": "result",
+    "keywords": [
+      "biomarker prediction",
+      "cognitive decline",
+      "brain regions",
+      "model performance",
+      "individualized trajectories"
+    ]
+  },
+  "55cf68373356326bbd2e43227c0cab8b": {
+    "main_concept": "The nonhomogeneous model outperforms the homogeneous model in biomarker trajectory forecasting, showing improved adaptability to spatial heterogeneity.",
+    "type": "result",
+    "keywords": [
+      "biomarker trajectories",
+      "spatial heterogeneity",
+      "model performance",
+      "personalized medicine",
+      "disease progression"
+    ]
+  },
+  "3a49ec216cea55537b6fb0ea55a2e21d": {
+    "main_concept": "A personalized digital twin model for Alzheimer's disease progression using graph theory and neuroimaging biomarkers.",
+    "type": "application",
+    "keywords": [
+      "graph theory",
+      "biomarkers",
+      "AD progression",
+      "digital twin",
+      "PDE model"
+    ]
+  },
+  "6a1dcedec3fc8244984ee517020c1cd0": {
+    "main_concept": "Model simulations of biomarkers (A\u03b2, tau, n) for individuals, showing high accuracy in predictions.",
+    "type": "result",
+    "keywords": [
+      "biomarkers",
+      "simulation",
+      "predictions",
+      "A\u03b2",
+      "tau",
+      "regional heterogeneity"
+    ]
+  },
+  "6a949f0e7cc57303772ce892fef49511": {
+    "main_concept": "Biomarker fit and test performance for homogeneous and nonhomogeneous models.",
+    "type": "result",
+    "keywords": [
+      "biomarker",
+      "model fit",
+      "test performance",
+      "Abeta",
+      "tau",
+      "n"
+    ]
+  },
+  "9d07a55f7d2705edc20e8b24166a7def": {
+    "main_concept": "Impact of training strategies and homotopy regularization on performance, using functional connectivity matrices.",
+    "type": "result",
+    "keywords": [
+      "training strategies",
+      "homotopy regularization",
+      "functional connectivity",
+      "performance",
+      "AD biomarkers"
+    ]
+  },
+  "c1c1f288df28a47db86dbe65efcf6034": {
+    "main_concept": "Model using AD biomarkers approximates functional connectivity with comparable accuracy to SVD.",
+    "type": "result",
+    "keywords": [
+      "functional connectivity",
+      "AD biomarkers",
+      "rank approximation",
+      "sensitivity analysis",
+      "network propagation"
+    ]
+  },
+  "69617c61aae55d100793f13f805abf42": {
+    "main_concept": "Disease spread is linked to dynamic network propagation, with temporal and frontal lobes most affected and increasing involvement over time.",
+    "type": "result",
+    "keywords": [
+      "network propagation",
+      "disease spread",
+      "temporal lobe",
+      "frontal lobe",
+      "sensitivity analysis"
+    ]
+  },
+  "79affe6082a9f72f2d32264064feb4ed": {
+    "main_concept": "Brain network hubs in frontal and temporal lobes are central to Alzheimer's disease progression.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "brain networks",
+      "frontal lobe",
+      "temporal lobe",
+      "biomarkers"
+    ]
+  },
+  "3e7415bcb844b3dea5955ff14187feac": {
+    "main_concept": "Sensitivity analysis of model parameters across age and brain lobes.",
+    "type": "result",
+    "keywords": [
+      "sensitivity analysis",
+      "model parameters",
+      "brain lobes",
+      "Sobol index",
+      "variance"
+    ]
+  },
+  "5558d37ce7fcc88cf64c26587f135e03": {
+    "main_concept": "Second-order index (S2) captures pairwise interactions and sensitivity analysis is performed on region-specific parameters.",
+    "type": "method",
+    "keywords": [
+      "second-order index",
+      "sensitivity analysis",
+      "pairwise interactions",
+      "parameter ranges",
+      "biomarkers"
+    ]
+  },
+  "7b1f2dd42ef502208274eaa5ea7e884b": {
+    "main_concept": "Data representing counts of various markers (a\u03b2, \u03c4) across different stages and lobes.",
+    "type": "result",
+    "keywords": [
+      "a\u03b2",
+      "tau",
+      "lobe",
+      "counts",
+      "stages"
+    ]
+  },
+  "e0d2ccfa618d33141bbf1054f5c5abd9": {
+    "main_concept": "Lobe counts and associated parameters (t, p, o, l, f).",
+    "type": "result",
+    "keywords": [
+      "lobe count",
+      "parameters",
+      "data",
+      "values"
+    ]
+  },
+  "8279b11bb34d4b922af8001fb50312d5": {
+    "main_concept": "Spatiotemporal model of Alzheimer's disease progression integrating biomarker dynamics.",
+    "type": "result",
+    "keywords": [
+      "AD progression",
+      "biomarker dynamics",
+      "ATN framework",
+      "PDEs",
+      "sensitivity analysis"
+    ]
+  },
+  "1846b9dabfac53bc3ad5fe62d821bb8d": {
+    "main_concept": "A personalized PDE model to capture biomarker dynamics and predict Alzheimer's disease progression.",
+    "type": "result",
+    "keywords": [
+      "AD biomarkers",
+      "PDE model",
+      "neurodegeneration",
+      "precision medicine",
+      "biomarker trajectories"
+    ]
+  },
+  "61a0888c899ebab29b615e8970cb3684": {
+    "main_concept": "Homotopy-regularized training improves model convergence and predictive reliability for biomarker dynamics and cognitive decline.",
+    "type": "result",
+    "keywords": [
+      "biomarker dynamics",
+      "cognitive decline",
+      "homotopy regularization",
+      "predictive modeling",
+      "functional connectivity"
+    ]
+  },
+  "5e2b56abcbb3b62092ae5fe64ffdd722": {
+    "main_concept": "Disease progression affects brain regions in a specific order: temporal lobe first, then frontal, with sparing of insular/occipital lobes.",
+    "type": "result",
+    "keywords": [
+      "disease progression",
+      "temporal lobe",
+      "frontal lobe",
+      "tau pathology",
+      "neurodegeneration"
+    ]
+  },
+  "a19c3d54a45c731321db9802b6041fea": {
+    "main_concept": "Model of amyloid, tau, and neurodegeneration trajectories in Alzheimer's disease progression.",
+    "type": "result",
+    "keywords": [
+      "amyloid",
+      "tau",
+      "neurodegeneration",
+      "Alzheimer's disease",
+      "biomarkers",
+      "frontal lobe"
+    ]
+  },
+  "1b34d56149cd6ff2eec588171aa87d09": {
+    "main_concept": "Alzheimer's disease spreads as a coordinated network disruption, impacting functional connectivity and symptom evolution.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "functional connectivity",
+      "network disruption",
+      "atrophy",
+      "connectome"
+    ]
+  },
+  "aa660371df9d60cae96bf8c40ac653a9": {
+    "main_concept": "Limitations of the study include a static functional connectome and uniform diffusion parameters. Future work will focus on dynamic networks and multimodal calibration.",
+    "type": "result",
+    "keywords": [
+      "functional connectome",
+      "diffusion parameters",
+      "dynamic networks",
+      "multimodal calibration",
+      "disease progression"
+    ]
+  },
+  "1b953ab65211c403110f257ee9a8a619": {
+    "main_concept": "Description of data accessed from the ADNI website for A\u03b2-PET and tau-PET analysis.",
+    "type": "method",
+    "keywords": [
+      "ADNI",
+      "A\u03b2-PET",
+      "tau-PET",
+      "SUVR",
+      "data access"
+    ]
+  },
+  "4b59d5d7761618b58d95c56abb3f3b05": {
+    "main_concept": "Quantifying neurodegeneration using cortical thickness and PET imaging biomarkers (SUVRs) to assess Alzheimer's disease pathology.",
+    "type": "method",
+    "keywords": [
+      "cortical thickness",
+      "SUVR",
+      "PET imaging",
+      "Alzheimer's disease",
+      "neurodegeneration",
+      "MRI biomarker"
+    ]
+  },
+  "a6cce147c034a0a2e6f27cf988885ca6": {
+    "main_concept": "Correlation between brain regions and Alzheimer's disease biomarkers.",
+    "type": "result",
+    "keywords": [
+      "amyloid",
+      "tau",
+      "Alzheimer's disease",
+      "cortical thickness",
+      "functional connectivity",
+      "rsfmri"
+    ]
+  },
+  "8c2b08e464241ee3fcf10d2f25c30d40": {
+    "main_concept": "Description of data sources and inclusion criteria for a study using ADNI data.",
+    "type": "background",
+    "keywords": [
+      "ADNI",
+      "MRI",
+      "MMSE",
+      "PET",
+      "cognitive impairment"
+    ]
+  },
+  "b98e3888bb2ddf4c5febfdba92ab9ee2": {
+    "main_concept": "Normalization of biomarker measurements across subjects and brain subregions using a reference value.",
+    "type": "method",
+    "keywords": [
+      "biomarker normalization",
+      "amyloid beta",
+      "tau protein",
+      "neurodegeneration",
+      "cognitive impairment"
+    ]
+  },
+  "c2dffc9a9d44586b6d292779636ba9c9": {
+    "main_concept": "Biomarker data (amyloid \u03b2 and tau) across different cognitive stages (CN, MCI, AD).",
+    "type": "result",
+    "keywords": [
+      "amyloid \u03b2",
+      "tau proteins",
+      "biomarkers",
+      "alzheimer's disease",
+      "disease progression"
+    ]
+  },
+  "c3d13341e2c5efb4757fdca00d9b192b": {
+    "main_concept": "Normalization of neurodegeneration and cognitive decline biomarkers for Alzheimer's disease modeling.",
+    "type": "method",
+    "keywords": [
+      "neurodegeneration",
+      "cognitive decline",
+      "biomarkers",
+      "normalization",
+      "Alzheimer's disease"
+    ]
+  },
+  "23958ec1c36eeba80391bcfabb11b319": {
+    "main_concept": "A graph-based model for spatiotemporal disease progression in neurodegenerative diseases using partial differential equations.",
+    "type": "method",
+    "keywords": [
+      "graph theory",
+      "network science",
+      "PDE model",
+      "neuroimaging",
+      "disease progression"
+    ]
+  },
+  "7f573b3cb82fd93c949e317ccf760cd3": {
+    "main_concept": "Spatial discretization of a partial differential equation (PDE) within the adbc framework to model brain dynamics.",
+    "type": "method",
+    "keywords": [
+      "adbc framework",
+      "partial differential equation",
+      "spatial discretization",
+      "amyloid pathology",
+      "brain dynamics"
+    ]
+  },
+  "1df8a51b29193ba2b6030ff04f93f603": {
+    "main_concept": "Mathematical model describing amyloid pathology, tau pathology, neuronal dysfunction, and cognitive impairment.",
+    "type": "background",
+    "keywords": [
+      "amyloid pathology",
+      "tau pathology",
+      "neuronal dysfunction",
+      "cognitive impairment",
+      "mathematical model",
+      "biomarkers"
+    ]
+  },
+  "7b99cf39c914524157fabeef21ca2901": {
+    "main_concept": "Representation of the human brain as a graph for modeling Alzheimer's disease progression.",
+    "type": "background",
+    "keywords": [
+      "brain networks",
+      "graph theory",
+      "functional connectivity",
+      "Alzheimer's disease",
+      "biomarkers"
+    ]
+  },
+  "62dd85ada644d3ab5389ae811545dddf": {
+    "main_concept": "Functional connectivity network analysis using graph theory and biomarker cascades.",
+    "type": "background",
+    "keywords": [
+      "functional connectivity",
+      "graph laplacian",
+      "biomarker cascades",
+      "neuroimaging",
+      "network topology"
+    ]
+  },
+  "67f61fe4b83201a26b31bd82c02bdfea": {
+    "main_concept": "Definition of graph Laplacian (Lg) using degree and adjacency matrices for undirected weighted graphs.",
+    "type": "method",
+    "keywords": [
+      "graph Laplacian",
+      "adjacency matrix",
+      "degree matrix",
+      "functional connectivity",
+      "finite difference method"
+    ]
+  },
+  "e50e99315652ba3cffb42137840c9c3a": {
+    "main_concept": "Construction of a brain graph from functional connectivity (FC) data using a Pearson correlation threshold.",
+    "type": "method",
+    "keywords": [
+      "functional connectivity",
+      "brain graph",
+      "Pearson correlation",
+      "fMRI",
+      "adjacency matrix"
+    ]
+  },
+  "59808ce2a05dc72d0ab017bbfbe5037b": {
+    "main_concept": "Challenges and need for a novel method to learn patient-specific functional connectivity (FC) matrices from limited data.",
+    "type": "background",
+    "keywords": [
+      "fMRI",
+      "data processing",
+      "longitudinal studies",
+      "FC matrix",
+      "computational cost"
+    ]
+  },
+  "49834e30e5b771e4eb3bcb96a005a86a": {
+    "main_concept": "Patient-specific functional connectivity variation is quantified using rank-two matrix approximation and unit vectors.",
+    "type": "method",
+    "keywords": [
+      "functional connectivity",
+      "rank-two approximation",
+      "unit vectors",
+      "adjacency matrix",
+      "ode stability"
+    ]
+  },
+  "c443301098f2a54c5de7c115fdc2d366": {
+    "main_concept": "Using a rank-two matrix improves upon rank-one matrix limitations by reducing unnecessary coupling between weights.",
+    "type": "method",
+    "keywords": [
+      "rank-two matrix",
+      "rank-one matrix",
+      "matrix approximation",
+      "weight coupling"
+    ]
+  },
+  "a0e40f9bf0adf642d7306d4ef8d602ab": {
+    "main_concept": "Rank-two matrix representation with constraints on the sum of squares of elements.",
+    "type": "method",
+    "keywords": [
+      "rank-two representation",
+      "matrix decomposition",
+      "constraints",
+      "expressive capability"
+    ]
+  },
+  "4e72b7505f29e689e59ba477250ce280": {
+    "main_concept": "Rank-two representation improves functional connectivity modeling by removing constraints present in rank-one matrices.",
+    "type": "background",
+    "keywords": [
+      "rank-one matrix",
+      "rank-two representation",
+      "functional connectivity",
+      "brain network",
+      "edge weights"
+    ]
+  },
+  "2315130244c4ccd801ef6562b8650893": {
+    "main_concept": "Modifications to network topology and edge weights are considered, including adding new edges and altering existing weights based on node activity.",
+    "type": "method",
+    "keywords": [
+      "network topology",
+      "edge weights",
+      "functional connectivity",
+      "weight modification",
+      "node activity"
+    ]
+  },
+  "02439be6ceba12f8ce6df6a517b25cbd": {
+    "main_concept": "Patient-specific brain network analysis using graph Laplacian and functional connectivity.",
+    "type": "method",
+    "keywords": [
+      "graph Laplacian",
+      "functional connectivity",
+      "brain networks",
+      "topology",
+      "edge weights"
+    ]
+  },
+  "0d031d3f9b62917171dd0108d38d88c8": {
+    "main_concept": "Derivation of a patient-specific graph Laplacian and biomarker vector representation.",
+    "type": "method",
+    "keywords": [
+      "graph Laplacian",
+      "adjacency matrix",
+      "biomarker vector",
+      "parameters inference",
+      "structured training"
+    ]
+  },
+  "75b1f728065bf9cfdb08cb8b548b3768": {
+    "main_concept": "Biomarker vector obtained by solving a generalized adbc model and inferring model parameters through constrained optimization.",
+    "type": "method",
+    "keywords": [
+      "biomarker vector",
+      "adbc model",
+      "constrained optimization",
+      "model parameters",
+      "clinical data"
+    ]
+  },
+  "403ca1399aed0b5d83d429d5edc7190d": {
+    "main_concept": "Optimization problem to minimize l2 loss with constraints on biomarkers and patient data.",
+    "type": "method",
+    "keywords": [
+      "optimization",
+      "biomarkers",
+      "graph laplacian",
+      "l2 loss",
+      "patient data"
+    ]
+  },
+  "7421b44ac943949a3bc0c5b3592f5f3f": {
+    "main_concept": "A hierarchical structured training strategy with homotopy regularization is used to solve a high-dimensional optimization problem for biomarker data.",
+    "type": "method",
+    "keywords": [
+      "optimization",
+      "homotopy regularization",
+      "hierarchical structure",
+      "biomarker",
+      "parameter learning"
+    ]
+  },
+  "ac1ccf952755a6444e91393336b475bf": {
+    "main_concept": "Hierarchical model homogenization for optimization with homotopy regularization.",
+    "type": "method",
+    "keywords": [
+      "homogenized model",
+      "hierarchical structure",
+      "homotopy regularization",
+      "optimization",
+      "initial condition"
+    ]
+  },
+  "3456451550426c02fe36773268930e3a": {
+    "main_concept": "Model parameter optimization with initial conditions and a penalty term to enforce a sigmoid-like solution.",
+    "type": "method",
+    "keywords": [
+      "model parameters",
+      "optimization",
+      "initial conditions",
+      "sigmoid function",
+      "penalty term"
+    ]
+  },
+  "cb8d6146706206754bbbfad016adbe95": {
+    "main_concept": "Parameter optimization using fmincon with bounds and initial guesses, and solving a spatial PDE model with ode45.",
+    "type": "method",
+    "keywords": [
+      "fmincon",
+      "parameter optimization",
+      "PDE model",
+      "ode45",
+      "initial guess"
+    ]
+  },
+  "5b1078eaa143ffc6ff118c7f5a44dea3": {
+    "main_concept": "Optimization problem formulation with L1 regularization to account for regional variability in parameters.",
+    "type": "method",
+    "keywords": [
+      "optimization",
+      "regularization",
+      "parameters",
+      "L1 regularization",
+      "regional variability"
+    ]
+  },
+  "86b48fe382b4214dd0c617eb68fbf7c9": {
+    "main_concept": "L1 regularization is used to prevent overfitting when learning model parameters and initial conditions.",
+    "type": "method",
+    "keywords": [
+      "L1 regularization",
+      "overfitting",
+      "initial conditions",
+      "optimization",
+      "fmincon"
+    ]
+  },
+  "12438982e6629ce1f776db4b08bd1de5": {
+    "main_concept": "Patient-specific functional connectivity matrix learning using low-rank variation and constrained optimization.",
+    "type": "method",
+    "keywords": [
+      "functional connectivity",
+      "optimization",
+      "low-rank variation",
+      "PET scan",
+      "patient-specific"
+    ]
+  },
+  "aae8fc901f90657db71bc89a2b616b4a": {
+    "main_concept": "Optimization using homotopy regularization with constraints to ensure model stability and prevent overfitting.",
+    "type": "method",
+    "keywords": [
+      "optimization",
+      "homotopy regularization",
+      "stability",
+      "overfitting",
+      "MATLAB fmincon"
+    ]
+  },
+  "0de9aab7c5b758b3d2bd7f23d19e3462": {
+    "main_concept": "A homotopy regularization technique to improve optimization stability and prevent overfitting during model training.",
+    "type": "method",
+    "keywords": [
+      "homotopy regularization",
+      "optimization",
+      "stability",
+      "overfitting",
+      "model training"
+    ]
+  },
+  "ae01a8a5bd41fde473ad11bf284ab79e": {
+    "main_concept": "Iterative regularization reduction for stable convergence and avoiding local minima.",
+    "type": "method",
+    "keywords": [
+      "regularization",
+      "convergence",
+      "homotopy",
+      "optimization",
+      "warm-start"
+    ]
+  },
+  "debaad54b4484be30247d5b7df8681f6": {
+    "main_concept": "Sobol method for sensitivity analysis of model parameters to understand their influence on model output.",
+    "type": "method",
+    "keywords": [
+      "Sobol method",
+      "sensitivity analysis",
+      "model parameters",
+      "variance-based estimates"
+    ]
+  },
+  "d2f86253defeedc997ba7784e2dcb4a6": {
+    "main_concept": "Definition of first and second-order parameter indices to measure model output sensitivity.",
+    "type": "method",
+    "keywords": [
+      "sensitivity analysis",
+      "parameter indices",
+      "variance",
+      "model output",
+      "interactions"
+    ]
+  },
+  "1165440df068ee2648344956ce2a9d4c": {
+    "main_concept": "Total index of parameter contribution to output variance, including interactions.",
+    "type": "method",
+    "keywords": [
+      "total index",
+      "parameter contribution",
+      "output variance",
+      "interactions",
+      "ADNI",
+      "PET imaging"
+    ]
+  },
+  "82541d2cbf71c34ad37b8090380685c9": {
+    "main_concept": "Data acquisition details for PET, cortical thickness, MMSE, and resting-state fMRI from ADNI datasets.",
+    "type": "background",
+    "keywords": [
+      "PET imaging",
+      "cortical thickness",
+      "MMSE",
+      "fMRI",
+      "ADNI",
+      "data acquisition"
+    ]
+  },
+  "1f1f3b58b4c60e7d8c6c08410e81313d": {
+    "main_concept": "Details data collection and code availability for an AD digital twin model using resting-state fMRI and graph theory.",
+    "type": "method",
+    "keywords": [
+      "fMRI",
+      "graph theory",
+      "AD digital twin",
+      "functional connectivity",
+      "code availability"
+    ]
+  },
+  "d30e658e4bf570d78bcfb689e98ec51e": [
+    {
+      "main_concept": "Tau pathology distribution in Alzheimer\u2019s disease",
+      "type": "result",
+      "keywords": [
+        "tau pathology",
+        "alzheimer\u2019s disease",
+        "regional distribution"
+      ]
+    },
+    {
+      "main_concept": "Mathematical models of androgen resistance",
+      "type": "method",
+      "keywords": [
+        "androgen resistance",
+        "prostate cancer",
+        "mathematical models"
+      ]
+    }
+  ],
+  "e79f28d9f3e88f70de43849a02a373cb": {
+    "main_concept": "Brain region analysis using CNN models for disease classification.",
+    "type": "result",
+    "keywords": [
+      "CNN models",
+      "brain regions",
+      "disease classification",
+      "resnet",
+      "medicalnet"
+    ]
+  },
+  "6e04eecd2839c87d9efa9628550fb409": {
+    "main_concept": "Pretraining enhances feature learning stability and accuracy in classification, improving model generalization.",
+    "type": "result",
+    "keywords": [
+      "feature learning",
+      "pretraining",
+      "classification",
+      "generalization",
+      "medical imaging"
+    ]
+  },
+  "fce74b12c1ab8bf8847899aced27ec53": {
+    "main_concept": "MedicalNet and MedicalNet+DA models outperform 3D ResNet in Alzheimer's disease classification and pathological area identification.",
+    "type": "result",
+    "keywords": [
+      "MedicalNet",
+      "Alzheimer's disease",
+      "classification",
+      "CNN",
+      "pathology",
+      "disease focus"
+    ]
+  },
+  "0f585293a02e4c09c80236ba73088e8d": {
+    "main_concept": "Evaluation of transformer model variations on English-to-German translation, varying components like TFLOPs and model dimensions.",
+    "type": "result",
+    "keywords": [
+      "transformer",
+      "translation",
+      "GPU",
+      "model variation",
+      "performance"
+    ]
+  },
+  "72b2bb971348269d7454eb5d0c88e57a": {
+    "main_concept": "Attention heads exhibit behaviour related to sentence structure.",
+    "type": "result",
+    "keywords": [
+      "attention heads",
+      "sentence structure",
+      "encoder self-attention"
+    ]
+  },
+  "855c2e9893b5a5a8c6da81ab92e770a2": {
+    "main_concept": "Neuroimaging and disease stratification in Amyotrophic Lateral Sclerosis (ALS) and Alzheimer's disease.",
+    "type": "background",
+    "keywords": [
+      "neuroimaging",
+      "ALS",
+      "Alzheimer's",
+      "disease subtypes",
+      "tau pathology",
+      "amyloid cascade"
+    ]
+  },
+  "47693945e8444e4f077d1fb7f4c77184": {
+    "main_concept": "Mathematical modeling of Alzheimer's disease progression and the role of amyloid and tau proteins.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "mathematical model",
+      "amyloid",
+      "tau proteins"
+    ]
+  },
+  "36a323ac57a1c1e9c34e309681ae8d2e": {
+    "main_concept": "Studies on Alzheimer's disease pathologies and related neuropathological changes.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "neuropathology",
+      "brain",
+      "microglial activation"
+    ]
+  },
+  "392394ffed2b6d442f60f4134fce5f68": {
+    "main_concept": "Research publications related to neurology and computational biology.",
+    "type": "background",
+    "keywords": [
+      "neurology",
+      "computational biology",
+      "PET",
+      "MRI",
+      "amyloid"
+    ]
+  },
+  "685ebfe15617656461b953e5918971f2": {
+    "main_concept": "Studies on Alzheimer's disease diagnosis and treatment using MRI, CSF, and computational methods.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "MRI",
+      "CSF",
+      "drug repurposing",
+      "computational analysis"
+    ]
+  },
+  "7b63a572629e924270a696131af2e58f": {
+    "main_concept": "MRI studies for early Alzheimer's diagnosis and cortical labeling.",
+    "type": "method",
+    "keywords": [
+      "MRI",
+      "Alzheimer's disease",
+      "diagnosis",
+      "cortical labeling",
+      "atrophy"
+    ]
+  },
+  "914c84daa700c658fc3ed5d2db339d83": {
+    "main_concept": "MRI-based cortical thickness as a biomarker for Alzheimer's disease and cognitive decline.",
+    "type": "result",
+    "keywords": [
+      "MRI",
+      "cortical thickness",
+      "Alzheimer's disease",
+      "biomarker",
+      "cognitive decline"
+    ]
+  },
+  "69b2ef4bb5ea3765b6fb812dfe0ff702": {
+    "main_concept": "Research citations related to Alzheimer's disease, cognitive decline, and mathematical modeling.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "cognitive decline",
+      "mathematical modeling",
+      "neurology",
+      "cortical thinning"
+    ]
+  },
+  "47812dab5537c0f78d51a8224ca8285c": {
+    "main_concept": "Research on Alzheimer's disease, focusing on amyloid beta and tau proteins, and utilizing reaction-diffusion models for treatment optimization.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "amyloid beta",
+      "tau protein",
+      "reaction-diffusion model",
+      "cortical thickness"
+    ]
+  },
+  "405077f955d09e0c8bf3f5329cd5b0e3": {
+    "main_concept": "References to research papers on tumor-immune interactions and Alzheimer's disease.",
+    "type": "background",
+    "keywords": [
+      "tumor immunology",
+      "Alzheimer's disease",
+      "mathematical modeling",
+      "multi-omics",
+      "post-mortem brain"
+    ]
+  },
+  "6ec6c750527a47a4c266c0c0d423f357": {
+    "main_concept": "Research articles on Alzheimer's disease, including vascular dysregulation, functional connectivity, and tau PET imaging.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "vascular dysregulation",
+      "PET imaging",
+      "functional connectivity",
+      "tau protein"
+    ]
+  },
+  "723299baa525c2956cd1b713c34424e6": {
+    "main_concept": "Research articles on Alzheimer's disease, colon cancer, and related neurological topics.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "colon cancer",
+      "neurology",
+      "imaging",
+      "mathematical model"
+    ]
+  },
+  "b72ae768ef622028e1c98479c7c34039": {
+    "main_concept": "Mathematical modeling for cancer treatment and disease prediction using patient data.",
+    "type": "application",
+    "keywords": [
+      "glioblastoma",
+      "osteosarcoma",
+      "Alzheimer's disease",
+      "mathematical modeling",
+      "treatment optimization"
+    ]
+  },
+  "e7d692baa68d49679f6a5f32115dc1f3": {
+    "main_concept": "Alzheimer's disease diagnosis and modeling using MRI and the amyloid/tau/neurodegeneration framework.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "MRI",
+      "biomarkers",
+      "amyloid",
+      "tau",
+      "modeling"
+    ]
+  },
+  "5c8dc534b59ae49c8617a1a1405999b5": {
+    "main_concept": "Research publications on Alzheimer's disease and breast tumor progression.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "breast tumor",
+      "MRI",
+      "PET",
+      "research publications"
+    ]
+  },
+  "66ac6c83483c964df3f0c7f7f36ff70f": {
+    "main_concept": "Correlations between PET imaging and Alzheimer's disease subtypes.",
+    "type": "result",
+    "keywords": [
+      "Alzheimer's disease",
+      "PET imaging",
+      "neuroimaging",
+      "tau",
+      "memory"
+    ]
+  },
+  "a9a771b0f47e9d6dccb326071143c2ff": {
+    "main_concept": "Research on Alzheimer's disease biomarkers and neuroimaging.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "biomarkers",
+      "neuroimaging",
+      "amyloid beta",
+      "tau protein"
+    ]
+  },
+  "08b8d6bdcb2c5ea5d77ca834077967b7": {
+    "main_concept": "References to research papers on Alzheimer's disease, fMRI analysis, and sensitivity analysis.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "fMRI",
+      "sensitivity analysis",
+      "neurobiology",
+      "imaging neuroscience"
+    ]
+  },
+  "4b4c23edb3e5f2cf8c226602cfe791cd": {
+    "main_concept": "Research papers related to Alzheimer's disease and model analysis.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "model analysis",
+      "biomarkers",
+      "neurobiology",
+      "sensitivity analysis"
+    ]
+  },
+  "db82f58fe183ae72b15417d2861ad1fc": {
+    "main_concept": "Studies on predicting tau progression and regional atrophy in Alzheimer\u2019s disease.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "tau progression",
+      "regional atrophy",
+      "MRI",
+      "neuroimaging"
+    ]
+  },
+  "456da6ef8243d64e405770a7a3fa2d82": {
+    "main_concept": "Research papers on Alzheimer's disease, cortical thinning, and global sensitivity analysis.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "cortical thinning",
+      "sensitivity analysis",
+      "research papers"
+    ]
+  },
+  "176b5e048b1cc67eb7e96f855f7291b6": {
+    "main_concept": "Research publications on Alzheimer's disease and related modeling.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "A\u03b2 deposition",
+      "tau progression",
+      "connectome",
+      "mathematical modeling"
+    ]
+  },
+  "7b801d59311cbc72e8e8b490e49098da": {
+    "main_concept": "Research publications on Alzheimer's disease, including diagnosis, prognosis, and related factors.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "diagnosis",
+      "prognosis",
+      "neurobiology",
+      "cardiovascular risk"
+    ]
+  },
+  "b50782059744acecad26f1644068db3a": [
+    {
+      "main_concept": "Cardiometabolic risk factors and white matter alterations in Alzheimer\u2019s disease.",
+      "type": "background",
+      "keywords": [
+        "Alzheimer's disease",
+        "white matter",
+        "risk factors"
+      ]
+    },
+    {
+      "main_concept": "Mathematical modeling of glioblastoma dynamics.",
+      "type": "method",
+      "keywords": [
+        "glioblastoma",
+        "mathematical modeling",
+        "dynamics"
+      ]
+    },
+    {
+      "main_concept": "Spatiotemporal variability of Alzheimer\u2019s disease pathology.",
+      "type": "result",
+      "keywords": [
+        "Alzheimer\u2019s disease",
+        "pathology",
+        "spatiotemporal variability"
+      ]
+    }
+  ],
+  "b1a8e0df63f7e74f2831660e34765cc4": {
+    "main_concept": "Studies on spatiotemporal variability and biomarker dynamics in Alzheimer's disease pathology.",
+    "type": "background",
+    "keywords": [
+      "alzheimer's disease",
+      "pathology",
+      "biomarkers",
+      "spatial dynamics",
+      "tau protein"
+    ]
+  },
+  "51f13423807635902aa1d50f84ac3825": {
+    "main_concept": "Studies on spatio-spectral relationships and progression of Alzheimer's disease pathology.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "pathology",
+      "cognitive impairment",
+      "amyloid beta",
+      "tau"
+    ]
+  },
+  "546710ad5693d2cf682474f236f4728d": {
+    "main_concept": "Alzheimer's disease modeling and prediction using computational methods.",
+    "type": "application",
+    "keywords": [
+      "Alzheimer's disease",
+      "modeling",
+      "prediction",
+      "computational methods",
+      "data-driven"
+    ]
+  },
+  "cb0244a9e972f3d725abec4d22dd96e8": {
+    "main_concept": "Author contributions to the research and manuscript preparation.",
+    "type": "method",
+    "keywords": [
+      "author contributions",
+      "modeling framework",
+      "methodology",
+      "data analysis"
+    ]
+  },
+  "1498cb69a371fd37aba5e4897b3cceb3": {
+    "main_concept": "Med3D is a heterogeneous 3D network for transfer learning in 3D medical image analysis, addressing the challenge of limited data.",
+    "type": "background",
+    "keywords": [
+      "3D medical imaging",
+      "transfer learning",
+      "deep learning",
+      "Med3D",
+      "dataset aggregation"
+    ]
+  },
+  "42ea24dcf935162c49f764124dacfd22": {
+    "main_concept": "Med3D, a heterogeneous 3D network, is designed for co-training multi-domain 3D segmentation and classification tasks.",
+    "type": "method",
+    "keywords": [
+      "3D medical imaging",
+      "Med3D",
+      "segmentation",
+      "classification",
+      "transfer learning"
+    ]
+  },
+  "3b1a2ffed4b9206534841b9ce39599b4": {
+    "main_concept": "Data-driven approaches, particularly deep convolutional neural networks, require large datasets for optimal performance, which is challenging in medical imaging.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "medical imaging",
+      "datasets",
+      "image classification",
+      "data driven"
+    ]
+  },
+  "998a899b427c0e659ddaa31a29399b29": {
+    "main_concept": "Challenges in creating large-scale 3D medical datasets and strategies to overcome limited data for training 3D deep convolutional neural networks.",
+    "type": "background",
+    "keywords": [
+      "3D medical imaging",
+      "data limitations",
+      "transfer learning",
+      "2D to 3D conversion",
+      "pre-trained models"
+    ]
+  },
+  "0e4043e504182a165eef1b45ee17b2d2": {
+    "main_concept": "Addressing bias in transferring 3D medical image networks from natural scene videos by building a large 3D medical dataset and training a baseline network.",
+    "type": "method",
+    "keywords": [
+      "3D medical imaging",
+      "transfer learning",
+      "dataset construction",
+      "network training",
+      "image segmentation"
+    ]
+  },
+  "98b58a484c229b3892698751161175ad": {
+    "main_concept": "A heterogeneous medical image segmentation network (med3d) for 3D multi-domain medical data.",
+    "type": "result",
+    "keywords": [
+      "medical image segmentation",
+      "med3d",
+      "deep learning",
+      "3D data",
+      "transfer learning"
+    ]
+  },
+  "f315aba819d3d53bda298685a77f7bad": {
+    "main_concept": "Introducing Med3D, a network for 3D multi-domain medical data and its application to new tasks.",
+    "type": "application",
+    "keywords": [
+      "Med3D",
+      "3D medical imaging",
+      "deep learning",
+      "pre-trained models",
+      "multi-domain"
+    ]
+  },
+  "907cad9501de4a6942ca45efe1db9241": {
+    "main_concept": "Pre-trained models and large datasets are beneficial for image analysis, but biomedical imaging challenges often lack sufficient data for stable pre-training.",
+    "type": "background",
+    "keywords": [
+      "pre-trained models",
+      "large datasets",
+      "image segmentation",
+      "biomedical imaging",
+      "transfer learning"
+    ]
+  },
+  "e825718b81f31bf685d5eb289f8dc491": {
+    "main_concept": "Addressing the challenge of limited 3D medical image datasets for pre-training models by aggregating small datasets and utilizing transfer learning techniques.",
+    "type": "method",
+    "keywords": [
+      "3D segmentation",
+      "transfer learning",
+      "pre-training",
+      "medical images",
+      "dataset aggregation"
+    ]
+  },
+  "1361195682cf6aea246138bb109019d8": {
+    "main_concept": "Transfer learning for 3D medical image classification, specifically lung nodule malignancy detection, using pre-trained models.",
+    "type": "method",
+    "keywords": [
+      "transfer learning",
+      "3D medical imaging",
+      "lung nodules",
+      "convolutional neural networks",
+      "domain adaptation"
+    ]
+  },
+  "e0c493b28a380562198095b06fc9ebc0": {
+    "main_concept": "Training deep learning models on 3D medical images across different domains is challenging, and existing natural image methods are not directly applicable.",
+    "type": "background",
+    "keywords": [
+      "3D medical images",
+      "domain adaptation",
+      "deep learning",
+      "image processing"
+    ]
+  },
+  "934dc8379602172df71675edfb4c112f": {
+    "main_concept": "A three-step workflow for 3D medical image segmentation using a DCNN model (Med3D) and transfer learning.",
+    "type": "method",
+    "keywords": [
+      "3D segmentation",
+      "DCNN",
+      "transfer learning",
+      "medical imaging",
+      "Med3D"
+    ]
+  },
+  "7b00b49efa76c4f7cc17d6c148118c41": {
+    "main_concept": "Data selection and normalization from 3D medical segmentation datasets.",
+    "type": "background",
+    "keywords": [
+      "data selection",
+      "normalization",
+      "3D segmentation",
+      "medical imaging",
+      "generalization"
+    ]
+  },
+  "b063c1253bb20b200cb0d7381bd258c2": {
+    "main_concept": "Addressing data variation in 3D medical image segmentation to improve neural network training.",
+    "type": "background",
+    "keywords": [
+      "data variation",
+      "medical imaging",
+      "segmentation",
+      "normalization",
+      "neural networks"
+    ]
+  },
+  "f35447d1ac52811243e1149a416fecb5": {
+    "main_concept": "Spatial normalization addresses heterogeneous voxel spacing in medical volumes to reduce the effect of spacing variation.",
+    "type": "method",
+    "keywords": [
+      "spatial normalization",
+      "voxel spacing",
+      "image resampling",
+      "medical imaging",
+      "CNN"
+    ]
+  },
+  "492d889380feb80b80ff394603489808": {
+    "main_concept": "Spacing and intensity normalization for image data, calculating new image size based on median spacing.",
+    "type": "method",
+    "keywords": [
+      "image normalization",
+      "spacing normalization",
+      "median calculation",
+      "image size",
+      "intensity normalization"
+    ]
+  },
+  "dbc73c90973f5084cf57ad3c0ffef9fe": {
+    "main_concept": "Intensity normalization and preprocessing techniques for medical images, specifically CT scans, to address varying pixel value ranges and outliers.",
+    "type": "background",
+    "keywords": [
+      "intensity normalization",
+      "medical images",
+      "CT scans",
+      "pixel values",
+      "preprocessing"
+    ]
+  },
+  "2777aa8d6bc2b219a019010cd9553184": {
+    "main_concept": "Utilizing ResNet architectures for 3D medical image segmentation, focusing on feature extraction and training.",
+    "type": "method",
+    "keywords": [
+      "ResNet",
+      "3D segmentation",
+      "feature extraction",
+      "medical imaging",
+      "encoder-decoder"
+    ]
+  },
+  "f945f571f8b0aff0c5a4052756df1242": {
+    "main_concept": "Addressing incomplete annotation in 3D medical image segmentation using a multi-branch decoder.",
+    "type": "background",
+    "keywords": [
+      "3D segmentation",
+      "medical imaging",
+      "incomplete annotation",
+      "multi-branch decoder"
+    ]
+  },
+  "f93968d1ba4e3c4899203a3e539ff11c": {
+    "main_concept": "A multi-branch decoder is proposed to address incomplete annotation problems in 3D medical image segmentation.",
+    "type": "method",
+    "keywords": [
+      "multi-branch decoder",
+      "3D segmentation",
+      "incomplete annotation",
+      "medical imaging"
+    ]
+  },
+  "8279e604feb4b741da32a1fdb4d5d6e5": {
+    "main_concept": "Transfer learning with a 3D Med3D backbone network for medical image segmentation and classification.",
+    "type": "result",
+    "keywords": [
+      "transfer learning",
+      "Med3D",
+      "segmentation",
+      "classification",
+      "3D backbone"
+    ]
+  },
+  "fbe9608a12fbd63bd811a7b5faf32c9f": {
+    "main_concept": "Lung segmentation using Med3D features and 3D decoders to analyze large receptive fields.",
+    "type": "method",
+    "keywords": [
+      "lung segmentation",
+      "Med3D",
+      "3D decoder",
+      "feature extraction",
+      "convolutional layers"
+    ]
+  },
+  "6134af5e0a3987346354d031940416de": {
+    "main_concept": "Utilizing MED3D for pulmonary nodule classification as a non-segmentation task, employing transfer learning with the encoder as a feature extractor.",
+    "type": "application",
+    "keywords": [
+      "pulmonary nodules",
+      "classification",
+      "MED3D",
+      "transfer learning",
+      "feature extraction"
+    ]
+  },
+  "012f3162dbb63925cf8d36951c157d40": {
+    "main_concept": "Applying the med3d model to pulmonary nodule and liver segmentation tasks to evaluate its versatility and performance.",
+    "type": "application",
+    "keywords": [
+      "pulmonary nodules",
+      "liver segmentation",
+      "med3d model",
+      "image segmentation",
+      "deep learning"
+    ]
+  },
+  "f5892e9bdb8fc1be3ad0a9b193ea0c38": {
+    "main_concept": "Two-stage segmentation network for liver segmentation using a region of interest (ROI) approach.",
+    "type": "method",
+    "keywords": [
+      "liver segmentation",
+      "ROI",
+      "deep learning",
+      "image segmentation",
+      "3D medical imaging"
+    ]
+  },
+  "eb6a9b4106ca642e40888fd28de0bee5": {
+    "main_concept": "Liver segmentation using a multi-stage approach with denseASPP and 3D segmentation datasets.",
+    "type": "method",
+    "keywords": [
+      "liver segmentation",
+      "denseASPP",
+      "3D segmentation",
+      "medical imaging",
+      "CT",
+      "MRI"
+    ]
+  },
+  "2bcb75b0a118b8f3a4115cddc9a7f30b": {
+    "main_concept": "Implementation of a denseASPP segmentation network with 3D kernels and data augmentation for improved liver segmentation.",
+    "type": "method",
+    "keywords": [
+      "segmentation",
+      "denseASPP",
+      "3D kernels",
+      "data augmentation",
+      "liver"
+    ]
+  },
+  "895ce0f471f57cab72b3ab4e0f800fba": {
+    "main_concept": "Experiments and results of the Med3D models are presented, including comparisons with other datasets and training methods.",
+    "type": "result",
+    "keywords": [
+      "Med3D",
+      "experiments",
+      "results",
+      "3Dseg-8",
+      "liver segmentation"
+    ]
+  },
+  "8a7bca5ec858db2046fc8a4d0815c01d": {
+    "main_concept": "Details the training and network architecture for a 3D medical image analysis model.",
+    "type": "method",
+    "keywords": [
+      "data augmentation",
+      "resnet",
+      "training set",
+      "network architecture",
+      "medical imaging"
+    ]
+  },
+  "0445a16ac2de2aa78638303deb96ee83": {
+    "main_concept": "Modifications to a convolutional neural network architecture for 3D data processing and balanced training.",
+    "type": "method",
+    "keywords": [
+      "convolutional neural network",
+      "3D convolution",
+      "data augmentation",
+      "decoder",
+      "dilated convolution"
+    ]
+  },
+  "86370d57d478a9b264048ec7f8b914c8": {
+    "main_concept": "Training a Med3D network with varying amounts of training data to evaluate performance impact.",
+    "type": "method",
+    "keywords": [
+      "training data",
+      "Med3D network",
+      "Dice scores",
+      "optimization",
+      "SGD"
+    ]
+  },
+  "6a9e46b8ec95f5ae14b2afe8e85999b9": {
+    "main_concept": "Model performance, measured by Dice scores, improves with increased training data and suffers from overfitting with limited data.",
+    "type": "result",
+    "keywords": [
+      "Dice score",
+      "training data",
+      "overfitting",
+      "Med3D",
+      "model performance"
+    ]
+  },
+  "ed4d3fb516b69a5f362c05201039c2fb": {
+    "main_concept": "Performance metrics for organ segmentation using med3d, showing correlation with training data size and variety.",
+    "type": "result",
+    "keywords": [
+      "med3d",
+      "segmentation",
+      "performance",
+      "training data",
+      "organ"
+    ]
+  },
+  "f09b945c4cd9eeec39e06e0736211af5": {
+    "main_concept": "Med3D performance improves with increased training data variety and the number of datasets used.",
+    "type": "result",
+    "keywords": [
+      "med3d",
+      "training data",
+      "data variety",
+      "segmentation",
+      "performance"
+    ]
+  },
+  "ac8c39b52dc34a36f9acdf3233b299f0": {
+    "main_concept": "Evaluation of Med3D on the 3Dseg-8 dataset to validate feature transferability and generalization.",
+    "type": "result",
+    "keywords": [
+      "Med3D",
+      "3Dseg-8",
+      "segmentation",
+      "transfer learning",
+      "lung segmentation"
+    ]
+  },
+  "f99b1a28a8817a7c7de8accc833c276a": {
+    "main_concept": "Transfer learning for lung segmentation and pulmonary nodule classification using 3D ResNet models.",
+    "type": "result",
+    "keywords": [
+      "lung segmentation",
+      "pulmonary nodules",
+      "transfer learning",
+      "3D ResNet",
+      "medical imaging"
+    ]
+  },
+  "b31b27db8141035e3dea3e8695118e82": {
+    "main_concept": "Performance metrics for different 3D models (resnet18, resnet34, resnet50, resnet101, resnet152) on various datasets (tfs, kin, med3d).",
+    "type": "result",
+    "keywords": [
+      "3D models",
+      "resnet",
+      "performance",
+      "tfs",
+      "kin",
+      "med3d",
+      "metrics"
+    ]
+  },
+  "b9def50d4a2ce156dc7d5417495171d0": {
+    "main_concept": "Performance comparison of different 3D ResNet models (10, 18, 34, 50, 101, 152, 200) on tfs, kin, and med3d datasets.",
+    "type": "result",
+    "keywords": [
+      "3D ResNet",
+      "tfs dataset",
+      "kin dataset",
+      "med3d dataset",
+      "performance",
+      "losses",
+      "epochs"
+    ]
+  },
+  "fbcd308c083532fb33d937766f645bbe": {
+    "main_concept": "Training lung segmentation models with different initialization methods (med3d, kin, tfs) using ResNet architectures.",
+    "type": "method",
+    "keywords": [
+      "lung segmentation",
+      "ResNet",
+      "med3d",
+      "kin",
+      "tfs",
+      "training",
+      "initialization"
+    ]
+  },
+  "5147d323a22f410774b66a24432a019f": {
+    "main_concept": "Comparison of segmentation network initialization strategies (med3d, kin, tfs) and their impact on performance.",
+    "type": "result",
+    "keywords": [
+      "segmentation network",
+      "pre-trained models",
+      "med3d",
+      "kin",
+      "tfs",
+      "learning rate",
+      "training curves"
+    ]
+  },
+  "e2554462b7e5622e18cf4934312cbd07": {
+    "main_concept": "Comparison of convergence speed and loss values for different 3D neural networks (ResNet10, ResNet18, etc.) using Med3D, TFS, and Kin datasets.",
+    "type": "result",
+    "keywords": [
+      "convergence",
+      "loss",
+      "Med3D",
+      "ResNet",
+      "training"
+    ]
+  },
+  "1aa60254242af94b7beb4b5f887f99b8": {
+    "main_concept": "Training curves for pulmonary nodule classification using ResNet models on the LIDC dataset.",
+    "type": "result",
+    "keywords": [
+      "pulmonary nodules",
+      "classification",
+      "ResNet",
+      "LIDC dataset",
+      "CT scans"
+    ]
+  },
+  "835eba549dffbb6136b31b7c98624e38": {
+    "main_concept": "Comparison of network performance using different initialization methods for nodule classification.",
+    "type": "result",
+    "keywords": [
+      "network performance",
+      "initialization methods",
+      "nodule classification",
+      "med3d",
+      "kin",
+      "tsf"
+    ]
+  },
+  "8f789b2534b2ccb311208c727874c3c9": {
+    "main_concept": "Med3D networks generalize better for classification with limited data, showing less overfitting and faster convergence compared to training from scratch.",
+    "type": "result",
+    "keywords": [
+      "Med3D",
+      "overfitting",
+      "convergence",
+      "training loss",
+      "binary classification"
+    ]
+  },
+  "21d42e61db5d13ed6cf94519f95a7239": {
+    "main_concept": "Performance of Med3D networks on the LITS challenge for liver and tumor segmentation.",
+    "type": "result",
+    "keywords": [
+      "Med3D",
+      "LITS challenge",
+      "segmentation",
+      "liver",
+      "tumor",
+      "CT scans"
+    ]
+  },
+  "28f5bd5572aae2a9cd459625013a59fd": {
+    "main_concept": "Liver and liver tumor segmentation using a ResNet-152 network initialized with Med3D.",
+    "type": "result",
+    "keywords": [
+      "liver segmentation",
+      "tumor segmentation",
+      "ResNet-152",
+      "Med3D",
+      "Dice score"
+    ]
+  },
+  "02dc71c861fc264aa0edcdc0de787374": {
+    "main_concept": "Med3D network achieves a 94.6% Dice score on the LITS challenge, outperforming several 3D networks.",
+    "type": "result",
+    "keywords": [
+      "Med3D",
+      "Dice score",
+      "LITS challenge",
+      "3D networks",
+      "performance"
+    ]
+  },
+  "6d78d779416c2cb02a57dfabd30c78a3": {
+    "main_concept": "The study introduces a large-scale 3D medical dataset (3dseg-8) and a framework for training med3d networks, achieving superior segmentation results.",
+    "type": "result",
+    "keywords": [
+      "med3d",
+      "3D segmentation",
+      "medical dataset",
+      "pre-trained models"
+    ]
+  },
+  "dd4cf28717cc8841522258cb08259e43": {
+    "main_concept": "Future work involves collecting more 3D medical data to improve Med3D models.",
+    "type": "application",
+    "keywords": [
+      "3D medical data",
+      "Med3D",
+      "deep learning",
+      "segmentation"
+    ]
+  },
+  "6693ec35659e8482ebb654ebaf1bd9e7": {
+    "main_concept": "Liver lesion and tumor segmentation using deep learning methods.",
+    "type": "method",
+    "keywords": [
+      "liver segmentation",
+      "deep learning",
+      "convolutional neural network",
+      "tumor segmentation"
+    ]
+  },
+  "8ec40b29987b1190f4818cdde17f1888": {
+    "main_concept": "References to research papers and challenges related to computer vision and deep learning.",
+    "type": "background",
+    "keywords": [
+      "computer vision",
+      "deep learning",
+      "challenges",
+      "segmentation",
+      "Pascal VOC"
+    ]
+  },
+  "8c1dafa01341c1fd1ba8dda48054a8fa": {
+    "main_concept": "Deep transfer learning and convolutional neural networks for medical image analysis.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "medical images",
+      "convolutional neural networks",
+      "transfer learning",
+      "fine tuning"
+    ]
+  },
+  "f34b599b6c42e7e38351c69983305f3b": {
+    "main_concept": "Research papers on deep learning and image recognition, including pre-training techniques.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "image recognition",
+      "pre-training",
+      "convolutional networks"
+    ]
+  },
+  "aae1114837838e84ab86b4dd083f1e60": {
+    "main_concept": "Evaluation of segmentation algorithms in medical imaging challenges.",
+    "type": "background",
+    "keywords": [
+      "segmentation",
+      "algorithms",
+      "medical imaging",
+      "challenges",
+      "evaluation"
+    ]
+  },
+  "72e837ff600f4062f7b1cf7adc504d8a": {
+    "main_concept": "Reference to medical imaging databases and challenges.",
+    "type": "background",
+    "keywords": [
+      "lung nodules",
+      "CT scans",
+      "image database",
+      "LIDC",
+      "IDRI"
+    ]
+  },
+  "2c9e849d69cf0523d0f0bb6fe25d6d1f": {
+    "main_concept": "References to medical imaging research papers focusing on segmentation and benchmark datasets.",
+    "type": "background",
+    "keywords": [
+      "medical imaging",
+      "segmentation",
+      "benchmarks",
+      "deep learning",
+      "CT scans"
+    ]
+  },
+  "bf4e2f25b3c7ca443397a9eccea3ec0a": {
+    "main_concept": "Deep learning applications in medical image analysis, specifically CT scans and cardiac segmentation.",
+    "type": "application",
+    "keywords": [
+      "deep learning",
+      "CT scans",
+      "image segmentation",
+      "pulmonary adenocarcinomas",
+      "neural networks"
+    ]
+  },
+  "49f6a1cea4c46f5c39d5b21f5b2ebe3e": {
+    "main_concept": "References to research papers on convolutional neural networks and medical image segmentation.",
+    "type": "background",
+    "keywords": [
+      "convolutional neural networks",
+      "medical image segmentation",
+      "deep learning",
+      "transfer learning"
+    ]
+  },
+  "a35fd1b3cba0ba3066be958b8d43ce27": {
+    "main_concept": "References to research papers on transfer learning and domain adaptation.",
+    "type": "background",
+    "keywords": [
+      "transfer learning",
+      "domain adaptation",
+      "computer vision",
+      "machine learning"
+    ]
+  },
+  "8d0203450d5de374b53d0ce054df257b": {
+    "main_concept": "References to research papers on convolutional neural networks, deep residual learning, and cancer imaging archives.",
+    "type": "background",
+    "keywords": [
+      "convolutional neural networks",
+      "deep residual learning",
+      "image recognition",
+      "cancer imaging archive",
+      "computer vision"
+    ]
+  },
+  "77827464f2de82f2187c8501eee4aeda": {
+    "main_concept": "References to medical imaging and segmentation research.",
+    "type": "background",
+    "keywords": [
+      "medical imaging",
+      "segmentation",
+      "TCIA",
+      "neural network"
+    ]
+  },
+  "58ed4ba0081915ef887126367419f357": {
+    "main_concept": "Research papers on semantic segmentation and medical image analysis.",
+    "type": "background",
+    "keywords": [
+      "semantic segmentation",
+      "medical imaging",
+      "deep learning",
+      "computer vision"
+    ]
+  },
+  "1a915182060bcd2b3dc682e5c45d7dce": {
+    "main_concept": "References to research papers on deep learning and computer vision.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "computer vision",
+      "image segmentation",
+      "convolutional neural networks",
+      "imagenet"
+    ]
+  },
+  "f2b9015d3f0ed51b1e84931c633187ba": {
+    "main_concept": "References to research papers on lung image analysis and optimization methods.",
+    "type": "background",
+    "keywords": [
+      "lung imaging",
+      "pulmonary nodules",
+      "optimization",
+      "image analysis"
+    ]
+  },
+  "f03b8ef88082d9b187009a25cfa7b44c": {
+    "main_concept": "Research papers on medical image analysis and computer-aided diagnosis.",
+    "type": "background",
+    "keywords": [
+      "medical imaging",
+      "pulmonary nodules",
+      "image segmentation",
+      "CT volumes"
+    ]
+  },
+  "7a2512ea2da50d3ec47040c30b80244d": {
+    "main_concept": "Hybrid Densely Connected UNet for liver and tumor segmentation.",
+    "type": "method",
+    "keywords": [
+      "DenseUNet",
+      "liver segmentation",
+      "tumor segmentation",
+      "CT volumes",
+      "medical imaging"
+    ]
+  },
+  "f8c3dadaafd6bf59ef9a29d368d2023d": {
+    "main_concept": "Research publications on Alzheimer's disease modeling and imaging.",
+    "type": "background",
+    "keywords": [
+      "Alzheimer's disease",
+      "biomarkers",
+      "neuroimaging",
+      "modeling",
+      "MRI"
+    ]
+  },
+  "f2a70633b518bdfc81216ed7dc5f8ea4": {
+    "main_concept": "Introducing the Transformer, a new network architecture based solely on attention mechanisms for sequence transduction.",
+    "type": "background",
+    "keywords": [
+      "transformer",
+      "attention mechanism",
+      "sequence transduction",
+      "machine translation"
+    ]
+  },
+  "16fdcdc109d1fe0713305b58b5a76e69": {
+    "main_concept": "The Transformer model achieves state-of-the-art results on English-to-German and English-to-French translation tasks and generalizes to parsing.",
+    "type": "result",
+    "keywords": [
+      "Transformer",
+      "translation",
+      "BLEU score",
+      "parsing",
+      "state-of-the-art"
+    ]
+  },
+  "0af7fe52b1ec91bce43285186947486e": {
+    "main_concept": "Introduction to recurrent neural networks for sequence modeling.",
+    "type": "background",
+    "keywords": [
+      "recurrent neural networks",
+      "sequence modeling",
+      "language modeling",
+      "machine translation"
+    ]
+  },
+  "a5709fac5c77966176eac5cf77c9560d": {
+    "main_concept": "Introducing the Transformer model, which replaces recurrence with attention mechanisms for improved parallelization and translation quality.",
+    "type": "application",
+    "keywords": [
+      "Transformer",
+      "attention mechanism",
+      "parallelization",
+      "sequence modeling",
+      "translation"
+    ]
+  },
+  "7028eb22d5de7749902dfdf9ce545ebd": {
+    "main_concept": "Convolutional neural networks and self-attention mechanisms are used to process sequential data in parallel, addressing limitations in relating distant positions.",
+    "type": "background",
+    "keywords": [
+      "convolutional neural networks",
+      "self-attention",
+      "sequential computation",
+      "Transformer",
+      "parallel processing"
+    ]
+  },
+  "5bc9d79baf5512b83965e96fe3632b7e": {
+    "main_concept": "Description of the Transformer model architecture and its reliance on self-attention for sequence transduction.",
+    "type": "background",
+    "keywords": [
+      "Transformer",
+      "self-attention",
+      "sequence transduction",
+      "encoder-decoder",
+      "neural networks"
+    ]
+  },
+  "f2278a4d66861423dd7b0134b6d3055d": {
+    "main_concept": "Description of the Transformer encoder and decoder stacks, including sub-layers and residual connections.",
+    "type": "background",
+    "keywords": [
+      "Transformer",
+      "encoder",
+      "decoder",
+      "attention",
+      "residual connections",
+      "layer normalization"
+    ]
+  },
+  "ef9cd4da489161e0b061ee108af749ed": {
+    "main_concept": "The Transformer architecture utilizes multi-head attention with masking to prevent information leakage and maintain auto-regressive properties.",
+    "type": "method",
+    "keywords": [
+      "transformer",
+      "multi-head attention",
+      "self-attention",
+      "masking",
+      "encoder-decoder"
+    ]
+  },
+  "ff60dc5eef7190aabc4854e5747b8bc5": {
+    "main_concept": "Position-wise feed-forward networks within encoder and decoder layers, utilizing linear transformations and ReLU activation.",
+    "type": "method",
+    "keywords": [
+      "feed-forward network",
+      "ReLU activation",
+      "linear transformation",
+      "embeddings",
+      "dmodel",
+      "dff"
+    ]
+  },
+  "f38740f254d648cb88f9e9d54940ba7e": {
+    "main_concept": "Comparison of complexity, path length, and sequential operations for different layer types (self-attention, recurrent, convolutional, restricted self-attention).",
+    "type": "result",
+    "keywords": [
+      "self-attention",
+      "recurrent layers",
+      "convolutional layers",
+      "complexity",
+      "path length",
+      "positional encodings"
+    ]
+  },
+  "1354624cf139e2f1cc9e464986467faa": {
+    "main_concept": "Comparison of self-attention to recurrent and convolutional layers, focusing on efficiency and interpretability.",
+    "type": "method",
+    "keywords": [
+      "self-attention",
+      "recurrent layers",
+      "convolutional layers",
+      "computational complexity",
+      "parallelization",
+      "long-range dependencies",
+      "training regime"
+    ]
+  },
+  "8ddce0371b1b7368d99239bb53036a2f": {
+    "main_concept": "Details of the Transformer model's optimization, regularization, and performance on English-to-German and English-to-French translation tasks.",
+    "type": "result",
+    "keywords": [
+      "Adam optimizer",
+      "Transformer model",
+      "BLEU score",
+      "machine translation",
+      "regularization",
+      "warmup steps",
+      "beam search"
+    ]
+  },
+  "671de575900bbdc454930384feca67f6": {
+    "main_concept": "Evaluation of Transformer model variations and their impact on translation performance (English-to-German).",
+    "type": "result",
+    "keywords": [
+      "Transformer",
+      "translation",
+      "model variations",
+      "performance",
+      "BLEU",
+      "PPL"
+    ]
+  },
+  "1c72d20e3ed7d5197f38255dd3c22bd7": {
+    "main_concept": "Experiments varying attention heads, key size, model size, and positional encoding to evaluate Transformer performance.",
+    "type": "result",
+    "keywords": [
+      "attention heads",
+      "key size",
+      "dropout",
+      "positional encoding",
+      "Transformer"
+    ]
+  },
+  "66f52d5262a4cd63729a96845e6b360d": {
+    "main_concept": "Transformer model performance on English constituency parsing using the WSJ dataset.",
+    "type": "result",
+    "keywords": [
+      "Transformer",
+      "parsing",
+      "WSJ",
+      "F1 score",
+      "development set"
+    ]
+  },
+  "dc2b26acfb1c65060c38cc53470e9c7f": {
+    "main_concept": "List of research papers related to neural networks and machine translation.",
+    "type": "background",
+    "keywords": [
+      "neural networks",
+      "machine translation",
+      "computer vision",
+      "NLP",
+      "research papers"
+    ]
+  },
+  "4153e08afc0fc1ec1946954242e3ee23": {
+    "main_concept": "New laws since 2009 have made voter registration/voting more difficult.",
+    "type": "background",
+    "keywords": [
+      "voting rights",
+      "voter suppression",
+      "legislation",
+      "American government"
+    ]
+  },
+  "7e61002cee83cad2051c47392f3eec44": {
+    "main_concept": "Attention heads focus on distant verb dependencies, specifically 'making'.",
+    "type": "result",
+    "keywords": [
+      "attention heads",
+      "verb dependency",
+      "natural language processing"
+    ]
+  },
+  "1e057eff9939c8e8c0b40e9b9507d5f5": {
+    "main_concept": "Attention mechanisms in language models can resolve anaphora.",
+    "type": "result",
+    "keywords": [
+      "attention heads",
+      "anaphora resolution",
+      "language models"
+    ]
+  },
+  "aaefc48d06c9032efb22a3ce49055cfa": {
+    "main_concept": "The importance of just application of law.",
+    "type": "application",
+    "keywords": [
+      "law",
+      "justice",
+      "application",
+      "attention heads"
+    ]
+  },
+  "70223227840e4bb50e0819d1bf9ec4b3": {
+    "main_concept": "Different attention heads learn different tasks within an encoder.",
+    "type": "result",
+    "keywords": [
+      "attention heads",
+      "encoder",
+      "self-attention",
+      "tasks"
+    ]
+  },
+  "856265825863dc3bf44ea82ed020fd61": {
+    "main_concept": "Multimodal machine learning aims to process and relate information from multiple modalities to improve AI's understanding of the world.",
+    "type": "background",
+    "keywords": [
+      "multimodal learning",
+      "machine learning",
+      "multimodal signals",
+      "fusion",
+      "representation"
+    ]
+  },
+  "6e28ab0eb0d09638691154918d3e587a": {
+    "main_concept": "Multimodal machine learning aims to process and relate information from multiple modalities to improve AI's understanding of the world.",
+    "type": "background",
+    "keywords": [
+      "multimodal learning",
+      "artificial intelligence",
+      "machine learning",
+      "data heterogeneity"
+    ]
+  },
+  "40e043c53a9dc0441d20908931e4dfd7": {
+    "main_concept": "Challenges in multimodal learning including alignment, fusion, and co-learning.",
+    "type": "background",
+    "keywords": [
+      "multimodal learning",
+      "alignment",
+      "fusion",
+      "co-learning",
+      "knowledge transfer"
+    ]
+  },
+  "ecb08a7c0ae0f6a35918372ec781b0d6": {
+    "main_concept": "Overview of historical multimodal applications, focusing on audio-visual speech recognition and the McGurk effect.",
+    "type": "application",
+    "keywords": [
+      "multimodal learning",
+      "audio-visual speech recognition",
+      "McGurk effect",
+      "HMMs",
+      "deep learning"
+    ]
+  },
+  "e07f933eabf8cd22c3e7f44c0ec7fc41": {
+    "main_concept": "Multimedia content indexing and retrieval, and multimodal interaction are important application categories.",
+    "type": "background",
+    "keywords": [
+      "multimedia indexing",
+      "content retrieval",
+      "multimodal interaction",
+      "video summarization",
+      "shot-boundary detection"
+    ]
+  },
+  "523734c6d9748ae10d6b8c8a63efec7f": {
+    "main_concept": "Multimodal representations combine data from multiple sources and are crucial for machine learning performance.",
+    "type": "background",
+    "keywords": [
+      "multimodal representation",
+      "data representation",
+      "machine learning",
+      "heterogeneous data",
+      "similarity"
+    ]
+  },
+  "bbe9bd3780c52cdb8999050a5369cc3d": {
+    "main_concept": "Shift from hand-designed to data-driven unimodal representations in various domains (vision, audio, NLP).",
+    "type": "background",
+    "keywords": [
+      "unimodal representations",
+      "data-driven",
+      "feature extraction",
+      "deep learning",
+      "SIFT",
+      "MFCC",
+      "word embeddings"
+    ]
+  },
+  "17c058a60341f621690b8b693897cc5f": {
+    "main_concept": "Joint and coordinated representations are methods for combining multimodal signals, differing in how they handle the representation space.",
+    "type": "background",
+    "keywords": [
+      "multimodal representation",
+      "joint representation",
+      "coordinated representation",
+      "deep learning"
+    ]
+  },
+  "9362d66dd2262348be52aea344b6ebf1": {
+    "main_concept": "Joint representations combine unimodal data into a multimodal space, often using neural networks.",
+    "type": "background",
+    "keywords": [
+      "joint representations",
+      "multimodal data",
+      "neural networks",
+      "early fusion"
+    ]
+  },
+  "2cfa09b507d284d6c0f3b2423ad52555": {
+    "main_concept": "Neural networks are used for data representation and multimodal learning, often trained end-to-end.",
+    "type": "background",
+    "keywords": [
+      "neural networks",
+      "data representation",
+      "multimodal learning",
+      "end-to-end training",
+      "multimodal fusion"
+    ]
+  },
+  "a9160053295b7fcffbef0e58fefd709e": {
+    "main_concept": "Utilizing autoencoders for multimodal representation learning and the advantages/disadvantages of neural network joint representations.",
+    "type": "background",
+    "keywords": [
+      "autoencoders",
+      "multimodal representation",
+      "neural networks",
+      "unsupervised learning",
+      "joint representations"
+    ]
+  },
+  "9dea77775ca2f84dc418d7d6f3597f07": {
+    "main_concept": "Probabilistic graphical models, specifically deep Boltzmann machines (DBMs) and deep belief networks, for representing data, including multimodal data.",
+    "type": "background",
+    "keywords": [
+      "probabilistic graphical models",
+      "deep Boltzmann machines",
+      "DBMs",
+      "deep belief networks",
+      "multimodal data",
+      "representation learning"
+    ]
+  },
+  "4f1dceaa10fb809965440c103a90a377": {
+    "main_concept": "Multimodal Deep Belief Networks (DBMs) learn joint representations from multiple data modalities and handle missing data effectively.",
+    "type": "method",
+    "keywords": [
+      "multimodal DBMs",
+      "deep learning",
+      "joint representations",
+      "missing data",
+      "Alzheimer\u2019s disease"
+    ]
+  },
+  "bac09802254d3be9bef6f2a06f66dfd2": {
+    "main_concept": "Discusses multimodal representations using RNNs and coordinated representations as an alternative to joint multimodal representations.",
+    "type": "background",
+    "keywords": [
+      "RNN",
+      "multimodal representation",
+      "coordinated representation",
+      "AVSR",
+      "affect recognition"
+    ]
+  },
+  "4d046c9b02ac46aa3133952f763b2a74": {
+    "main_concept": "Coordinated representations for images and text, using methods like WSABIE and neural networks.",
+    "type": "background",
+    "keywords": [
+      "image embedding",
+      "WSABIE",
+      "neural networks",
+      "visual-semantic embedding",
+      "coordinated representation"
+    ]
+  },
+  "5b9e47fb9a0f20472dfd62a220f8dfd1": {
+    "main_concept": "Several models coordinate image/video and sentence representations using ranking losses and deep learning architectures like LSTMs and RNNs.",
+    "type": "background",
+    "keywords": [
+      "cross-modal retrieval",
+      "image embeddings",
+      "video description",
+      "ranking loss",
+      "deep learning"
+    ]
+  },
+  "1486a15042ce0f718460a67092df45ba": {
+    "main_concept": "Structured coordinated spaces enforce constraints between modality representations, often used in cross-modal hashing and retrieval.",
+    "type": "background",
+    "keywords": [
+      "cross-modal hashing",
+      "coordinated spaces",
+      "cross-modal retrieval",
+      "binary codes",
+      "data compression"
+    ]
+  },
+  "9533fce536b66af99d7006d59cff8417": {
+    "main_concept": "Hashing for multimodal data representation aims to create a similarity-preserving binary space.",
+    "type": "method",
+    "keywords": [
+      "hashing",
+      "multimodal learning",
+      "binary space",
+      "similarity learning"
+    ]
+  },
+  "b06ddfec6290801594db0e1c84f90bd4": {
+    "main_concept": "Coordinated spaces for images and sentences to represent semantic similarity and partial order.",
+    "type": "background",
+    "keywords": [
+      "coordinated space",
+      "image similarity",
+      "partial order",
+      "multimodal space",
+      "order-embeddings"
+    ]
+  },
+  "cb2f0371f67987dae78fbee198586505": {
+    "main_concept": "Discussion of denotation graphs, concept taxonomies, and canonical correlation analysis (CCA) for multimodal data analysis.",
+    "type": "background",
+    "keywords": [
+      "denotation graphs",
+      "concept taxonomies",
+      "CCA",
+      "multimodal retrieval",
+      "cross-modal analysis"
+    ]
+  },
+  "7505b49475c556d779d2352574040258": {
+    "main_concept": "Discussion of extensions to Canonical Correlation Analysis (CCA) including KCCA and DCCA to address scalability and improve correlation.",
+    "type": "background",
+    "keywords": [
+      "CCA",
+      "KCCA",
+      "DCCA",
+      "kernel methods",
+      "deep learning",
+      "cross-modal retrieval"
+    ]
+  },
+  "eba7e0657f215f241c7eb6f38123d0c4": {
+    "main_concept": "Discusses joint and coordinated multimodal representations and methods for semantic relevance.",
+    "type": "background",
+    "keywords": [
+      "multimodal representations",
+      "joint representations",
+      "coordinated representations",
+      "semantic correlation",
+      "autoencoders"
+    ]
+  },
+  "bd25187819a1e2c285550abb805d8f3a": {
+    "main_concept": "Comparison of joint and coordinated representations for multimodal tasks.",
+    "type": "background",
+    "keywords": [
+      "multimodal learning",
+      "joint representations",
+      "coordinated representations",
+      "AVSR",
+      "gesture recognition"
+    ]
+  },
+  "f2171c52cc5afaa3881e55bffa695337": {
+    "main_concept": "Multimodal machine learning focuses on translating information between different modalities, like images and text.",
+    "type": "background",
+    "keywords": [
+      "multimodal learning",
+      "translation",
+      "image",
+      "text",
+      "NLP",
+      "computer vision"
+    ]
+  },
+  "2423254d335956d7268687888067c17b": {
+    "main_concept": "Visual scene description (image/video captioning) as a test bed for computer vision and NLP.",
+    "type": "background",
+    "keywords": [
+      "visual scene description",
+      "image captioning",
+      "video captioning",
+      "computer vision",
+      "NLP",
+      "multimodal translation"
+    ]
+  },
+  "335ec3df949a5bbd5908ad7339ec7fcb": {
+    "main_concept": "Unimodal retrieval finds closest instances in a dictionary using a single modality's representation, like visual features for images.",
+    "type": "method",
+    "keywords": [
+      "unimodal retrieval",
+      "image retrieval",
+      "feature space",
+      "nearest neighbor",
+      "translation"
+    ]
+  },
+  "08ef2e8070dd87f2aa67741d42baaf29": {
+    "main_concept": "Using semantic spaces for cross-modal retrieval and translation between images and text.",
+    "type": "background",
+    "keywords": [
+      "semantic space",
+      "cross-modal retrieval",
+      "image-sentence alignment",
+      "multimodal translation",
+      "coordinated representation"
+    ]
+  },
+  "824d55b25b41a31bedd62de8d14030ca": {
+    "main_concept": "Semantic retrieval methods outperform unimodal methods by leveraging a meaningful, optimized space for translation, but require training data or manual construction.",
+    "type": "background",
+    "keywords": [
+      "semantic retrieval",
+      "unimodal methods",
+      "translation",
+      "combination models",
+      "training data"
+    ]
+  },
+  "f92898f83d7318e3da712fd234da9fd0": {
+    "main_concept": "Example-based image captioning methods and their challenges.",
+    "type": "method",
+    "keywords": [
+      "image captioning",
+      "example-based",
+      "translation",
+      "integer linear programming",
+      "CNN"
+    ]
+  },
+  "00a59b4932060906e529ed8c875d79a1": {
+    "main_concept": "Multimodal translation approaches, including combination, retrieval-based, and generative models, and their challenges.",
+    "type": "background",
+    "keywords": [
+      "multimodal translation",
+      "generative models",
+      "semantic space",
+      "evaluation",
+      "modality generation"
+    ]
+  },
+  "1d561d6e63abf0346cddd6f6f9154de0": {
+    "main_concept": "Overview of language and image generation techniques, including generative model categories.",
+    "type": "background",
+    "keywords": [
+      "language generation",
+      "image generation",
+      "generative models",
+      "encoder-decoder",
+      "grammar-based"
+    ]
+  },
+  "b78260fef699ac509eaf0d92f51e944f": {
+    "main_concept": "Different approaches to modality translation using encoder-decoder, continuous generation, and grammar-based models.",
+    "type": "background",
+    "keywords": [
+      "encoder-decoder models",
+      "continuous generation",
+      "grammar-based models",
+      "modality translation",
+      "natural language generation"
+    ]
+  },
+  "59a9ebf16ac7867bf0e0a5dab881e856": {
+    "main_concept": "Several approaches to video and image description using models based on grammars, semantic hierarchies, and object detection.",
+    "type": "background",
+    "keywords": [
+      "video description",
+      "image description",
+      "semantic hierarchies",
+      "object detection",
+      "grammar rules"
+    ]
+  },
+  "b056fff45e505029c822cc0cefca1d4e": {
+    "main_concept": "Image description generation using language models and graphical models to create sentences from visual objects.",
+    "type": "method",
+    "keywords": [
+      "image description",
+      "language model",
+      "graphical models",
+      "sentence generation",
+      "visual objects"
+    ]
+  },
+  "275ccea3bc3e52d78c676d137aab3d6e": {
+    "main_concept": "Graphical models are used for unsupervised multimodal sequence alignment, aligning various data types like images, speech, video, and text.",
+    "type": "background",
+    "keywords": [
+      "graphical models",
+      "sequence alignment",
+      "multimodal",
+      "HMM",
+      "DTW"
+    ]
+  },
+  "45e04b853ae9f7a31a6adbe1a195eb81": {
+    "main_concept": "Supervised alignment methods use labeled data to train similarity measures for aligning modalities, often inspired by unsupervised techniques.",
+    "type": "method",
+    "keywords": [
+      "supervised alignment",
+      "similarity measures",
+      "modality alignment",
+      "sequence alignment",
+      "CCA"
+    ]
+  },
+  "7056cabceeb4ec02b77ede8c6062b22e": {
+    "main_concept": "Deep learning for explicit alignment and similarity measurement using CNNs and LSTMs.",
+    "type": "method",
+    "keywords": [
+      "deep learning",
+      "alignment",
+      "similarity",
+      "CNN",
+      "LSTM",
+      "image",
+      "text"
+    ]
+  },
+  "3123f0cba838a2fb22b724a015c9b521": {
+    "main_concept": "Implicit alignment is an intermediate step for tasks like speech recognition and machine translation, learning alignment during training.",
+    "type": "background",
+    "keywords": [
+      "implicit alignment",
+      "machine translation",
+      "speech recognition",
+      "neural networks",
+      "graphical models"
+    ]
+  },
+  "a09b7709d8f70f2f47140ab89d8fbd0b": {
+    "main_concept": "Challenges in cross-modal translation and the need for alignment between modalities.",
+    "type": "background",
+    "keywords": [
+      "cross-modal translation",
+      "neural networks",
+      "alignment",
+      "encoder-decoder",
+      "latent space"
+    ]
+  },
+  "83984ec5bc5c6688819d47cef85570b2": {
+    "main_concept": "Attention mechanisms allow decoders to focus on specific source sub-components, improving performance over encoding the entire source.",
+    "type": "method",
+    "keywords": [
+      "attention mechanism",
+      "decoder",
+      "encoder-decoder",
+      "image captioning",
+      "focus"
+    ]
+  },
+  "eb92545b91ec6668bdc88d628111f801": {
+    "main_concept": "Attention models are used for aligning questions with information sources and images with captions.",
+    "type": "application",
+    "keywords": [
+      "attention models",
+      "question answering",
+      "image alignment",
+      "cross-modal retrieval"
+    ]
+  },
+  "f501f810395d879bfbe360df37a60811": {
+    "main_concept": "Challenges and approaches to multimodal alignment are discussed, including the shift from unsupervised to supervised learning.",
+    "type": "background",
+    "keywords": [
+      "multimodal alignment",
+      "similarity metrics",
+      "unsupervised learning",
+      "supervised learning",
+      "graphical models"
+    ]
+  },
+  "88b42878913a2ed596c8e4ac2868a5eb": {
+    "main_concept": "Multimodal fusion integrates information from multiple modalities to predict outcomes like classification or regression.",
+    "type": "background",
+    "keywords": [
+      "multimodal fusion",
+      "machine learning",
+      "classification",
+      "regression",
+      "information integration"
+    ]
+  },
+  "2f59351b0c518586d8f3ac79f0d1ac34": {
+    "main_concept": "Benefits of multimodal systems for robust predictions and handling missing data.",
+    "type": "background",
+    "keywords": [
+      "multimodal systems",
+      "fusion",
+      "AVSR",
+      "emotion recognition",
+      "robustness"
+    ]
+  },
+  "109f99fd6022001dd34aceb8cb707103": {
+    "main_concept": "This paper surveys machine learning approaches to multimodal fusion, focusing on technical challenges and prediction stages.",
+    "type": "background",
+    "keywords": [
+      "multimodal fusion",
+      "machine learning",
+      "multimedia analysis",
+      "information retrieval"
+    ]
+  },
+  "5d443adb31f41f110a41991286553246": {
+    "main_concept": "Late fusion combines unimodal decisions using methods like averaging, voting, or learned models, offering flexibility and handling missing modalities.",
+    "type": "method",
+    "keywords": [
+      "late fusion",
+      "multimodal fusion",
+      "averaging",
+      "voting",
+      "speaker identification"
+    ]
+  },
+  "38e94913b09963087b3dec77b0340557": {
+    "main_concept": "Model-based approaches for multimodal fusion including kernel methods, graphical models, and neural networks.",
+    "type": "background",
+    "keywords": [
+      "multimodal fusion",
+      "kernel methods",
+      "multiple kernel learning",
+      "SVM"
+    ]
+  },
+  "d45e7b53288831b607b8867cdc89e00e": {
+    "main_concept": "Multiple Kernel Learning (MKL) is a popular method for multimodal fusion, recently surpassed by deep learning.",
+    "type": "method",
+    "keywords": [
+      "MKL",
+      "multimodal fusion",
+      "object detection",
+      "affect recognition",
+      "Alzheimer\u2019s disease"
+    ]
+  },
+  "d31dcd3e1995ec6377eab6f7d596211b": {
+    "main_concept": "Multiple Kernel Learning (MKL) offers flexibility and convex optimization but suffers from slow inference and high memory usage.",
+    "type": "background",
+    "keywords": [
+      "MKL",
+      "kernel selection",
+      "convex optimization",
+      "multimodal fusion",
+      "graphical models"
+    ]
+  },
+  "6091fb07dc849d0b38b79c7e11060a7c": {
+    "main_concept": "Graphical models are categorized as generative or discriminative, with a shift in popularity from generative to discriminative models.",
+    "type": "background",
+    "keywords": [
+      "graphical models",
+      "generative models",
+      "discriminative models",
+      "HMM",
+      "CRF",
+      "multimodal fusion"
+    ]
+  },
+  "f483e7e8da1e0d611b41d0af14482c01": {
+    "main_concept": "CRF models are used for multimodal data analysis, including image segmentation, meeting segmentation, and emotion recognition.",
+    "type": "method",
+    "keywords": [
+      "CRF models",
+      "multimodal learning",
+      "image segmentation",
+      "emotion recognition",
+      "graphical models"
+    ]
+  },
+  "e737523b7bc784196caf2dafb181abf1": {
+    "main_concept": "Graphical models and neural networks are used for multimodal fusion tasks like AVSR and affect recognition.",
+    "type": "background",
+    "keywords": [
+      "graphical models",
+      "neural networks",
+      "multimodal fusion",
+      "AVSR",
+      "affect recognition"
+    ]
+  },
+  "5ac6f4609d8a22ceae1c6d0b07dd0ae9": {
+    "main_concept": "Neural networks, particularly RNNs and LSTMs, are used for fusing temporal multimodal information, especially in emotion recognition.",
+    "type": "application",
+    "keywords": [
+      "neural networks",
+      "multimodal fusion",
+      "LSTM",
+      "emotion recognition",
+      "RNN"
+    ]
+  },
+  "d492fefae2d081bd412a5ef769c77d69": {
+    "main_concept": "Modality fusion using LSTMs for processing audio and facial expressions, drawing parallels to image captioning techniques.",
+    "type": "method",
+    "keywords": [
+      "LSTM",
+      "modality fusion",
+      "recurrent neural networks",
+      "image captioning"
+    ]
+  },
+  "b14c861ec974cd966cc93f94ff1237f9": {
+    "main_concept": "MV-LSTM models offer flexible multimodal data fusion with end-to-end training capabilities.",
+    "type": "background",
+    "keywords": [
+      "MV-LSTM",
+      "data fusion",
+      "deep learning",
+      "neural networks",
+      "multimodal learning"
+    ]
+  },
+  "463f0f4b0cfe6b8fa0e7227202ea7c3f": {
+    "main_concept": "Multimodal fusion approaches vary in strengths and weaknesses, and neural networks need large datasets.",
+    "type": "background",
+    "keywords": [
+      "multimodal fusion",
+      "neural networks",
+      "datasets",
+      "model agnostic methods"
+    ]
+  },
+  "8bcbf1fbe201ffe8c866599bc6b71d7f": {
+    "main_concept": "Multimodal fusion techniques, including neural networks, graphical models, and multiple kernel learning, face challenges with temporal alignment, complementary vs. supplementary information, and varying noise levels.",
+    "type": "background",
+    "keywords": [
+      "multimodal fusion",
+      "neural networks",
+      "graphical models",
+      "kernel learning",
+      "temporal alignment"
+    ]
+  },
+  "14012630021c900d5ba26750b85d9263": {
+    "main_concept": "Co-learning leverages knowledge from a resource-rich modality to improve modeling of a resource-poor modality.",
+    "type": "background",
+    "keywords": [
+      "co-learning",
+      "multimodal learning",
+      "resource poor",
+      "transfer learning"
+    ]
+  },
+  "f0982feda29762a083f2a04346c7adbf": {
+    "main_concept": "Transferring information between speech recognition and lip-reading networks, and using articulatory data to improve acoustic features via CCA.",
+    "type": "method",
+    "keywords": [
+      "co-learning",
+      "speech recognition",
+      "lip-reading",
+      "acoustic features",
+      "CCA",
+      "data parallelism"
+    ]
+  },
+  "e1daccb37407c0eef6b4914d815fa616": {
+    "main_concept": "Transfer learning can improve representations by transferring information between modalities, even without parallel data.",
+    "type": "background",
+    "keywords": [
+      "transfer learning",
+      "multimodal representations",
+      "image classification",
+      "action recognition",
+      "LSTM"
+    ]
+  },
+  "4f0acc3814838f7b82b7a07a89cfbb25": {
+    "main_concept": "Conceptual grounding involves learning meaning through multiple modalities, not just language, mirroring human cognition.",
+    "type": "background",
+    "keywords": [
+      "conceptual grounding",
+      "semantic meaning",
+      "multimodal learning",
+      "perceptual information"
+    ]
+  },
+  "5832d7c1f38deb0d7cf21db2a53d159d": {
+    "main_concept": "Conceptual grounding uses latent spaces or unimodal representations to connect language to other modalities like visual, acoustic, or olfactory signals.",
+    "type": "background",
+    "keywords": [
+      "conceptual grounding",
+      "multimodal learning",
+      "latent space",
+      "representation learning"
+    ]
+  },
+  "862efb9c87b68d64273b6ecbe403aa76": {
+    "main_concept": "Conceptual grounding and zero-shot learning improve task performance by leveraging complementary information sources.",
+    "type": "background",
+    "keywords": [
+      "conceptual grounding",
+      "zero-shot learning",
+      "multimodal learning",
+      "language and vision"
+    ]
+  },
+  "120abedd328e435bcef102d6034f9388": {
+    "main_concept": "Explanation of unimodal and multimodal Zero-Shot Learning (ZSL).",
+    "type": "background",
+    "keywords": [
+      "zero-shot learning",
+      "ZSL",
+      "unimodal",
+      "multimodal",
+      "concept recognition"
+    ]
+  },
+  "e120d3763db2289e02e8f1555094dbdd": {
+    "main_concept": "Bridging non-parallel data modalities using shared modalities or datasets for improved performance.",
+    "type": "method",
+    "keywords": [
+      "multimodal learning",
+      "data bridging",
+      "pivot modality",
+      "machine translation",
+      "image captioning"
+    ]
+  },
+  "238ab071b2dbe32c62f321dfaedd3f18": {
+    "main_concept": "Multimodal co-learning leverages complementary information across modalities to improve model performance.",
+    "type": "background",
+    "keywords": [
+      "multimodal learning",
+      "co-learning",
+      "representation learning",
+      "fusion",
+      "translation"
+    ]
+  },
+  "d978a1200aa89722005e48688d5f5104": [
+    {
+      "main_concept": "Survey of image description generation models and datasets.",
+      "type": "background",
+      "keywords": [
+        "image description",
+        "automatic generation",
+        "survey",
+        "models"
+      ]
+    },
+    {
+      "main_concept": "VizWiz: real-time visual question answering.",
+      "type": "application",
+      "keywords": [
+        "visual question answering",
+        "VizWiz",
+        "real-time"
+      ]
+    },
+    {
+      "main_concept": "Co-training for combining labeled and unlabeled data.",
+      "type": "method",
+      "keywords": [
+        "co-training",
+        "labeled data",
+        "unlabeled data"
+      ]
+    },
+    {
+      "main_concept": "Weakly supervised action labeling in videos.",
+      "type": "method",
+      "keywords": [
+        "action labeling",
+        "weakly supervised",
+        "videos"
+      ]
+    },
+    {
+      "main_concept": "Weakly-Supervised alignment of video with text.",
+      "type": "method",
+      "keywords": [
+        "video alignment",
+        "text",
+        "weakly supervised"
+      ]
+    },
+    {
+      "main_concept": "ASR approach based on independent frequency bands.",
+      "type": "method",
+      "keywords": [
+        "ASR",
+        "speech recognition",
+        "frequency bands"
+      ]
+    },
+    {
+      "main_concept": "Coupled hidden Markov models for action recognition.",
+      "type": "method",
+      "keywords": [
+        "action recognition",
+        "hidden Markov models",
+        "coupled models"
+      ]
+    }
+  ],
+  "b057cbdb6aec0f59ec86a572d391ffa0": [
+    {
+      "main_concept": "Face synchronization using a linear operator.",
+      "type": "method",
+      "keywords": [
+        "FaceSync",
+        "video",
+        "audio",
+        "synchronization"
+      ]
+    },
+    {
+      "main_concept": "Review of multimodal video indexing techniques.",
+      "type": "background",
+      "keywords": [
+        "multimodal",
+        "video indexing",
+        "review"
+      ]
+    },
+    {
+      "main_concept": "Semi-supervised image segmentation with text.",
+      "type": "method",
+      "keywords": [
+        "image segmentation",
+        "text corpora",
+        "cross-modal"
+      ]
+    },
+    {
+      "main_concept": "Zero-shot learning via cross-modal transfer.",
+      "type": "method",
+      "keywords": [
+        "zero-shot learning",
+        "cross-modal transfer"
+      ]
+    },
+    {
+      "main_concept": "Grounded compositional semantics for image description.",
+      "type": "method",
+      "keywords": [
+        "compositional semantics",
+        "image description"
+      ]
+    },
+    {
+      "main_concept": "Multimodal emotion recognition from videos.",
+      "type": "application",
+      "keywords": [
+        "emotion recognition",
+        "multimodal",
+        "videos"
+      ]
+    },
+    {
+      "main_concept": "Action recognition using multi-view latent variable models.",
+      "type": "method",
+      "keywords": [
+        "action recognition",
+        "multi-view",
+        "latent variables"
+      ]
+    }
+  ],
+  "22e366bbdd9e3064fd188d803a4dcbb7": [
+    {
+      "main_concept": "Multimodal human behavior analysis using correlation and interaction across modalities.",
+      "type": "application",
+      "keywords": [
+        "multimodal analysis",
+        "human behavior",
+        "ICMI"
+      ]
+    },
+    {
+      "main_concept": "Unsupervised alignment of video actions with text descriptions.",
+      "type": "method",
+      "keywords": [
+        "video analysis",
+        "text description",
+        "IJCAI",
+        "unsupervised learning"
+      ]
+    },
+    {
+      "main_concept": "Dropout as a regularization technique to prevent overfitting in neural networks.",
+      "type": "method",
+      "keywords": [
+        "dropout",
+        "regularization",
+        "neural networks",
+        "overfitting",
+        "JMLR"
+      ]
+    },
+    {
+      "main_concept": "Learning representations for multimodal data with deep belief nets.",
+      "type": "method",
+      "keywords": [
+        "multimodal data",
+        "deep belief nets",
+        "ICML",
+        "representation learning"
+      ]
+    },
+    {
+      "main_concept": "Multimodal learning using deep Boltzmann machines.",
+      "type": "method",
+      "keywords": [
+        "multimodal learning",
+        "deep Boltzmann machines",
+        "NIPS"
+      ]
+    },
+    {
+      "main_concept": "Hierarchical feature representation and multimodal fusion for AD/MCI diagnosis.",
+      "type": "application",
+      "keywords": [
+        "deep learning",
+        "multimodal fusion",
+        "AD/MCI diagnosis",
+        "NeuroImage"
+      ]
+    }
+  ],
+  "9ee67ae27a7582f8bfbc3701d6efb98f": [
+    {
+      "main_concept": "Conditional Random Fields for Relational Learning",
+      "type": "background",
+      "keywords": [
+        "conditional random fields",
+        "relational learning",
+        "statistical learning"
+      ]
+    },
+    {
+      "main_concept": "Aligning plot synopses to videos",
+      "type": "application",
+      "keywords": [
+        "plot synopsis",
+        "video retrieval",
+        "story-based"
+      ]
+    },
+    {
+      "main_concept": "Aligning video scenes with book chapters",
+      "type": "application",
+      "keywords": [
+        "video scenes",
+        "book chapters",
+        "alignment"
+      ]
+    },
+    {
+      "main_concept": "Dynamic units of visual speech",
+      "type": "result",
+      "keywords": [
+        "visual speech",
+        "dynamic units"
+      ]
+    },
+    {
+      "main_concept": "Integrating language and vision for video description",
+      "type": "application",
+      "keywords": [
+        "language and vision",
+        "video description",
+        "natural language"
+      ]
+    },
+    {
+      "main_concept": "Using descriptive video services for annotation",
+      "type": "method",
+      "keywords": [
+        "video annotation",
+        "descriptive video services",
+        "data source"
+      ]
+    }
+  ],
+  "eb4aaa02435fc1e3c8b9b6c0605d7af0": [
+    {
+      "main_concept": "Deep canonical time warping.",
+      "type": "method",
+      "keywords": [
+        "time warping",
+        "deep learning"
+      ]
+    },
+    {
+      "main_concept": "End-to-end speech emotion recognition using deep learning.",
+      "type": "method",
+      "keywords": [
+        "speech emotion recognition",
+        "deep learning",
+        "convolutional network"
+      ]
+    },
+    {
+      "main_concept": "AVEC 2013 challenge for emotion and depression recognition.",
+      "type": "application",
+      "keywords": [
+        "emotion recognition",
+        "depression recognition",
+        "challenge"
+      ]
+    },
+    {
+      "main_concept": "WaveNet: A generative model for raw audio.",
+      "type": "method",
+      "keywords": [
+        "WaveNet",
+        "audio generation",
+        "generative model"
+      ]
+    },
+    {
+      "main_concept": "Pixel Recurrent Neural Networks.",
+      "type": "method",
+      "keywords": [
+        "recurrent neural networks",
+        "pixel modeling"
+      ]
+    }
+  ],
+  "e676b002ffa482506d9c055f089c331e": [
+    {
+      "main_concept": "CIDEr: Consensus-based Image Description Evaluation",
+      "type": "method",
+      "keywords": [
+        "CIDEr",
+        "image description",
+        "evaluation"
+      ]
+    },
+    {
+      "main_concept": "Order-Embeddings of Images and Language",
+      "type": "method",
+      "keywords": [
+        "order embeddings",
+        "images",
+        "language"
+      ]
+    },
+    {
+      "main_concept": "Translating Videos to Natural Language",
+      "type": "application",
+      "keywords": [
+        "video translation",
+        "natural language",
+        "deep learning"
+      ]
+    },
+    {
+      "main_concept": "Show and Tell: A Neural Image Caption Generator",
+      "type": "method",
+      "keywords": [
+        "image captioning",
+        "neural networks"
+      ]
+    },
+    {
+      "main_concept": "HMM-based word alignment in statistical translation",
+      "type": "method",
+      "keywords": [
+        "word alignment",
+        "statistical translation",
+        "HMM"
+      ]
+    }
+  ],
+  "12352a48aa6eea738504a334ca9fe585": {
+    "main_concept": "List of research papers on multimodal hashing, similarity search, and deep learning.",
+    "type": "background",
+    "keywords": [
+      "deep learning",
+      "hashing",
+      "image annotation",
+      "similarity search",
+      "multimodal learning"
+    ]
+  }
+}
