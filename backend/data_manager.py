@@ -7,15 +7,21 @@ import json
 import time
 import requests
 from embedder import Embedder
+from dotenv import load_dotenv
+from pathlib import Path
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # folder where this .py is located
 DATABASE_FILE = os.path.join(BASE_DIR, "data", "database.json")
 PDF_FOLDER = os.path.join(BASE_DIR, "data", "pdfs")
 EXAMPLE_FOLDER = os.path.join(BASE_DIR, "example_pdfs_to_upload")
 
-os.environ["GEMMA_API_KEY"] = "YOUR_API_KEY"
+env_path = Path(__file__).resolve().parent / ".env"
+load_dotenv(dotenv_path=env_path)
+
 GEMMA_API_KEY = os.environ.get("GEMMA_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 GEMMA_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
 class DataManager:
     """
@@ -48,20 +54,21 @@ class DataManager:
     # ------------------------------
     # INTERNAL UTILITIES
     # ------------------------------
-    def _save_pdf_to_db(self, file_path, file_name):
+    def _save_pdf_to_db(self, file_path, title, day, researcher):
         """Assigns a DB filename and copies the PDF inside /data/pdfs."""
-        pdf_name = f"{file_name}.pdf"
+        pdf_name = f"{day}_{researcher.replace(' ', '-')}_{title.replace(' ', '-')}.pdf"
         out_path = os.path.join(self.pdf_folder, pdf_name)
         with open(file_path, "rb") as src, open(out_path, "wb") as dst:
             dst.write(src.read())
         return pdf_name
 
-    def _create_database_entry(self, title, pdf_name, researcher):
+    def _create_database_entry(self, title, pdf_name, day, researcher):
         entry = {
             "id": str(uuid.uuid4()),
             "title": title,
             "pdf_name": pdf_name,
             "researcher": researcher,
+            "Upload date": day,
             "chunks": []  # filled after processing
         }
         self.database.append(entry)
@@ -69,10 +76,71 @@ class DataManager:
         return entry
 
     # ------------------------------
-    # LLM HELPERS (GEMMA)
+    # LLM: METADATA EXTRACTION
+    # ------------------------------
+    def extract_llm_metadata(self, doc_text: str) -> dict:
+        """
+        Calls Gemini Flash to get structured JSON metadata (Title, Authors, Summary, etc.)
+        """
+        print("  - Extracting metadata with Gemini...")
+        
+        # Use first 12k chars to avoid context limits, usually enough for Intro/Header
+        snippet = doc_text[:12000]
+
+        prompt = f"""
+        You are extracting bibliographic and topical metadata from a PDF text dump.
+        Return ONLY valid JSON (no markdown formatting).
+
+        Schema:
+        {{
+            "authors": [string],
+            "year": int|null,
+            "keywords": [string],
+            "topics": [string],
+            "one_sentence_summary": string|null
+        }}
+
+        Rules:
+        - If unsure, use null or empty lists
+        - Do not hallucinate author names
+        - Base everything strictly on the provided text
+
+        TEXT:
+        {snippet}
+        """.strip()
+
+        headers = {
+            "Content-Type": "application/json",
+            "x-goog-api-key": GEMMA_API_KEY
+        }
+        body = {"contents": [{"parts": [{"text": prompt}]}]}
+
+        try:
+            response = requests.post(GEMINI_URL, headers=headers, json=body)
+            response.raise_for_status()
+            
+            data = response.json()
+            raw = data["candidates"][0]["content"]["parts"][0]["text"]
+            
+            # Clean Markdown wrappers if present
+            raw = raw.strip().replace("```json", "").replace("```", "").strip()
+            
+            return json.loads(raw)
+
+        except Exception as e:
+            print(f"Metadata extraction failed: {e}")
+            # Return empty structure on failure so pipeline doesn't crash
+            return {"authors": [], "year": None, 
+                "keywords": [], "topics": [], "one_sentence_summary": None}
+    
+    
+    # ------------------------------
+    # HELPERS (LLM AND METADATA STRING BUILDER)
     # ------------------------------
     def _rough_chunk_text(self, text, max_chars=12000):
-        """Splits text into large blocks to fit API context window."""
+        """
+        Splits text into large blocks to fit API context window.
+        """
         return [text[i : i + max_chars] for i in range(0, len(text), max_chars)]
 
     def _call_gemma(self, prompt):
@@ -99,18 +167,31 @@ class DataManager:
             print(f"Error calling Gemma: {e}")
             return ""
 
-    # ------------------------------
-    # MAIN UPLOAD METHODS
-    # ------------------------------
+    def _build_metadata_string(self, llm_meta):
+        """
+        Formats the metadata dictionary into a structured string for embedding.
+        """
+        if not llm_meta:
+            return ""
+            
+        parts = []
 
-    def upload_pdf(self, file_path, title, researcher, file_name):
-        """UPLOAD from a local file path and index it immediately."""
-        self.database = self.load_database()
-        pdf_name = self._save_pdf_to_db(file_path, file_name)
-        entry = self._create_database_entry(title, pdf_name, researcher)
-        self.process_pdf(entry)
-        print(f"Successfully uploaded & indexed: {title}")
-        return entry
+        if llm_meta.get("year") and isinstance(llm_meta["year"], list):
+            parts.append("year: " + ", ".join(llm_meta["year"]))
+
+        if llm_meta.get("author") and isinstance(llm_meta["author"], list):
+            parts.append("Autor: " + ", ".join(llm_meta["author"]))
+            
+        if llm_meta.get("topics") and isinstance(llm_meta["topics"], list):
+            parts.append("Topics: " + ", ".join(llm_meta["topics"]))
+            
+        if llm_meta.get("keywords") and isinstance(llm_meta["keywords"], list):
+            parts.append("Keywords: " + ", ".join(llm_meta["keywords"]))
+            
+        if llm_meta.get("one_sentence_summary"):
+            parts.append("Summary: " + llm_meta["one_sentence_summary"])
+            
+        return "[METADATA]\n" + "\n".join(parts)
 
 
     # ------------------------------
@@ -175,18 +256,53 @@ class DataManager:
 
         return all_semantic_chunks
 
+
+    # ------------------------------
+    # MAIN UPLOAD METHODS
+    # ------------------------------
+
+    def upload_pdf(self, file_path, title, day, researcher):
+        """
+        UPLOAD from a local file path and index it immediately.
+        """
+        self.database = self.load_database()
+        pdf_name = self._save_pdf_to_db(file_path, title, day, researcher)
+        entry = self._create_database_entry(title, pdf_name, day, researcher)
+        self.process_pdf(entry)
+        print(f"Successfully uploaded & indexed: {title}")
+        return entry
+
+
     def process_pdf(self, entry):
         pdf_path = os.path.join(self.pdf_folder, entry["pdf_name"])
         if not os.path.exists(pdf_path):
             print("PDF missing:", pdf_path)
             return
 
+        # 1. Extract raw text
         text = self.extract_text(pdf_path)
+
+        # 2. Extract metadata
+        metadata = self.extract_llm_metadata(text)
+        entry["metadata"] = metadata
+
+        # 3. Embed metadata and store
+        print("  - Embedding metadata...")
+        meta_str = self._build_metadata_string(metadata)
+        entry["metadata"]["string_representation"] = meta_str
+        if meta_str:
+            entry["metadata"]["embedding"] = self.embedder.encode(meta_str)
+        else:
+            entry["metadata"]["embedding"] = []
+
+        # 3. LLM chunking
         chunks = self.chunk_text(text)
         if not chunks:
             print("Warning: No chunks returned from LLM. Using raw text fallback.")
             chunks = [text]
 
+        # 4. Embed chunks and store
+        entry["chunks"] = []
         for chunk_text in chunks:
             entry["chunks"].append({
                 "id": str(uuid.uuid4()),
@@ -197,3 +313,5 @@ class DataManager:
         self.save_database()
         print(f"Indexed {len(chunks)} chunks for: {entry['title']}")
         return entry
+
+

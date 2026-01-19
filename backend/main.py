@@ -1,8 +1,8 @@
 # import_pdfs_to_db.py
 import os
-import arxiv
 from data_manager import DataManager, PDF_FOLDER, DATABASE_FILE, EXAMPLE_FOLDER
 from baseline_retriever import BaselineRetriever
+from datetime import date
 
 os.makedirs(PDF_FOLDER, exist_ok=True)
 os.makedirs(os.path.dirname(DATABASE_FILE), exist_ok=True)
@@ -38,15 +38,15 @@ for filename in files_to_process:
     if len(parts) >= 3:
         date_str = parts[0]
         researcher = parts[1]
-        title = parts[2].replace("-", " ") # Replace hyphens with spaces for the title to make it readable
+        title = parts[2]
         print(f"\nUploading: {filename}...")
         
         try:
             dm.upload_pdf(
                 file_path=file_path, 
                 title=title, 
-                researcher=researcher, 
-                file_name=name_without_ext)
+                day=date_str,
+                researcher=researcher)
         except Exception as e:
             print(f"   Failed to upload: {e}")
     else:
@@ -97,10 +97,11 @@ while True:
                 break
             else:
                 print("Invalid selection. Please choose a number from the list.\n")
+        day = date.today()
 
         # Upload pdf to the database
         dm = DataManager()
-        dm.upload_pdf(file_path, title, researcher, arxiv_id)
+        dm.upload_pdf(file_path, title, day, researcher)
 
     # ------------------ RETRIEVE ------------------
     elif action == "2":
@@ -116,9 +117,7 @@ while True:
                       f"  {r['title']}\n"
                       f"      Score: {r['score']}\n      Researcher: {r['researcher']}\n\n")
 
-        """
 
-        """
 
 
     # ------------------ SUMMARIZE ------------------
