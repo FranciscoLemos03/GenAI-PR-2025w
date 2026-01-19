@@ -21,7 +21,7 @@ load_dotenv(dotenv_path=env_path)
 GEMMA_API_KEY = os.environ.get("GEMMA_API_KEY")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 GEMMA_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent"
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
 class DataManager:
     """

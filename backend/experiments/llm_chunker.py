@@ -4,6 +4,7 @@ import json
 import requests
 import time
 import re
+import sys
 import uuid
 from embedder import Embedder
 from dotenv import load_dotenv
@@ -13,7 +14,11 @@ from pathlib import Path
 # CONFIG
 # =========================
 
-env_path = Path(__file__).resolve().parent / ".env"
+CURRENT_FILE = Path(__file__).resolve()
+PROJECT_ROOT = CURRENT_FILE.parent.parent
+#sys.path.append(str(PROJECT_ROOT))
+
+env_path = PROJECT_ROOT / ".env"
 load_dotenv(dotenv_path=env_path)
 
 API_KEY = os.getenv("GEMMA_API_KEY")
@@ -26,8 +31,9 @@ GEMMA_URL = (
     "models/gemma-3-27b-it:generateContent"
 )
 
-PDF_FOLDER = "example_pdfs_to_upload"
-OUTPUT_FILE = "llm_database.json"
+PDF_FOLDER = str(PROJECT_ROOT / "example_pdfs_to_upload")
+OUTPUT_FILE = str(PROJECT_ROOT / "data" / "llm_database.json")
+
 
 MAX_CHARS_PER_CALL = 12000
 SLEEP_BETWEEN_CALLS = 0.5
