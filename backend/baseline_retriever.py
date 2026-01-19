@@ -5,6 +5,8 @@ from embedder import Embedder
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATABASE_FILE = os.path.join(BASE_DIR, "data", "database.json")
+    
+
 
 class BaselineRetriever:
     def __init__(self, database_file=DATABASE_FILE):
@@ -23,8 +25,10 @@ class BaselineRetriever:
         v2 = np.array(v2)
         return float(np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2)))
 
-    def search(self, query, threshold=0.70):
-        """Returns papers ranked by similarity. threshold ~ 0.65-0.80 recommended"""    
+    def search(self, query, threshold=0.45, alpha=0.5):
+        """
+        Returns papers ranked by similarity.
+        """    
         self.database = self.load_database()
 
         if len(self.database) == 0:
@@ -35,12 +39,16 @@ class BaselineRetriever:
 
         for entry in self.database:
             if "chunks" not in entry:
-                continue  # not processed yet
+                continue
             best_score = 0
             best_chunk = None
+            metadata = entry["metadata"]
 
             for chunk in entry["chunks"]:
-                score = self.cosine_similarity(query_emb, chunk["embedding"])
+                # APPLY DUAL EMBEDDINGS
+                score_text = self.cosine_similarity(query_emb, chunk["embedding"])
+                score_meta = self.cosine_similarity(query_emb, metadata["embedding"])
+                score = alpha * score_text + (1 - alpha) * score_meta
                 if score > best_score:
                     best_score = score
                     best_chunk = chunk
@@ -54,6 +62,6 @@ class BaselineRetriever:
                     "score": round(best_score, 3),
                     "sample_text": best_chunk["text"][:300] if best_chunk else ""
                 })
-        # Sort best match → worst
+        # Sort best match --> worst
         results.sort(key=lambda x: x["score"], reverse=True)
         return results

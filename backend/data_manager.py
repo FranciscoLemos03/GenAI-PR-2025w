@@ -1,9 +1,10 @@
 # data_manager.py
 import os
+import re
 import uuid
 import fitz
 import json
-import tempfile
+import time
 import requests
 from embedder import Embedder
 
@@ -11,6 +12,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # folder where this .py i
 DATABASE_FILE = os.path.join(BASE_DIR, "data", "database.json")
 PDF_FOLDER = os.path.join(BASE_DIR, "data", "pdfs")
 EXAMPLE_FOLDER = os.path.join(BASE_DIR, "example_pdfs_to_upload")
+
+os.environ["GEMMA_API_KEY"] = "YOUR_API_KEY"
+GEMMA_API_KEY = os.environ.get("GEMMA_API_KEY")
+GEMMA_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent"
 
 class DataManager:
     """
@@ -26,7 +31,6 @@ class DataManager:
         self.database_file = database_file
         self.pdf_folder = pdf_folder
         self.database = self.load_database()
-        self.tokenizer = self.embedder.model.tokenizer
 
     # ------------------------------
     # DATABASE I/O
@@ -44,7 +48,7 @@ class DataManager:
     # ------------------------------
     # INTERNAL UTILITIES
     # ------------------------------
-    def _save_pdf_to_db(self, file_path, file_name=None):
+    def _save_pdf_to_db(self, file_path, file_name):
         """Assigns a DB filename and copies the PDF inside /data/pdfs."""
         pdf_name = f"{file_name}.pdf"
         out_path = os.path.join(self.pdf_folder, pdf_name)
@@ -63,7 +67,37 @@ class DataManager:
         self.database.append(entry)
         self.save_database()
         return entry
-    
+
+    # ------------------------------
+    # LLM HELPERS (GEMMA)
+    # ------------------------------
+    def _rough_chunk_text(self, text, max_chars=12000):
+        """Splits text into large blocks to fit API context window."""
+        return [text[i : i + max_chars] for i in range(0, len(text), max_chars)]
+
+    def _call_gemma(self, prompt):
+        """
+        Sends prompt to Google Gemma API.
+        """
+        if not GEMMA_API_KEY:
+            raise ValueError("GEMMA_API_KEY not found")
+
+        headers = {
+            "Content-Type": "application/json",
+            "x-goog-api-key": GEMMA_API_KEY
+        }
+        body = {
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.1, "maxOutputTokens": 2048}
+        }
+        
+        try:
+            response = requests.post(GEMMA_URL, headers=headers, json=body)
+            response.raise_for_status()
+            return response.json()["candidates"][0]["content"]["parts"][0]["text"]
+        except Exception as e:
+            print(f"Error calling Gemma: {e}")
+            return ""
 
     # ------------------------------
     # MAIN UPLOAD METHODS
@@ -75,12 +109,12 @@ class DataManager:
         pdf_name = self._save_pdf_to_db(file_path, file_name)
         entry = self._create_database_entry(title, pdf_name, researcher)
         self.process_pdf(entry)
-        print(f"Uploaded & indexed: {title}")
+        print(f"Successfully uploaded & indexed: {title}")
         return entry
 
 
     # ------------------------------
-    # PROCESSING (CHUNK + EMBEDDING)
+    # PROCESSING (LLM CHUNKING + EMBEDDING)
     # ------------------------------
     def extract_text(self, pdf_path):
         doc = fitz.open(pdf_path)
@@ -88,21 +122,58 @@ class DataManager:
         doc.close()
         return text
 
-    def chunk_text(self, text, chunk_size=400, chunk_overlap=50):
-        # 1. Convert text to token IDs (integers)
-        # We use add_special_tokens=False so we don't get [CLS]/[SEP] inside every chunk
-        tokens = self.tokenizer.encode(text, add_special_tokens=False)
-        chunks = []
-        # 2. Iterate through tokens with a sliding window
-        # The step size is (chunk_size - chunk_overlap)
-        step = chunk_size - chunk_overlap
-        for i in range(0, len(tokens), step):
-            # Extract the window of tokens
-            chunk_ids = tokens[i : i + chunk_size]
-            # 3. Decode back to text
-            chunk_text = self.tokenizer.decode(chunk_ids, skip_special_tokens=True)
-            chunks.append(chunk_text)
-        return chunks
+
+    def chunk_text(self, text):
+        """
+        Uses Gemma to split text into semantic chunks.
+        Returns a list of strings.
+        """
+        CHUNK_REGEX = re.compile(r"<CHUNK>(.*?)</CHUNK>", re.DOTALL)
+        
+        # 1. Split into large blocks for the API
+        blocks = self._rough_chunk_text(text)
+        all_semantic_chunks = []
+
+        print(f"Starting LLM Chunking ({len(blocks)} API calls required)...")
+
+        for i, block in enumerate(blocks):
+            print(f"  - Processing block {i+1}/{len(blocks)}...")
+            
+            prompt = f"""
+                You are a document analysis system.
+
+                From the text below:
+                1) Split the text into semantically coherent chunks
+                2) Preserve original text exactly
+                3) 150-300 words per chunk
+                4) Output ONLY in this format:
+
+                <CHUNK>
+                chunk text here
+                </CHUNK>
+
+                <CHUNK>
+                chunk text here
+                </CHUNK>
+
+                TEXT:
+                \"\"\"
+                {block}
+                \"\"\"
+                """
+            # 2. Call API
+            raw_output = self._call_gemma(prompt)
+            
+            # 3. Parse XML Tags
+            found_chunks = CHUNK_REGEX.findall(raw_output)
+            clean_chunks = [c.strip() for c in found_chunks if c.strip()]
+            
+            all_semantic_chunks.extend(clean_chunks)
+            
+            # Rate limiting
+            time.sleep(0.5)
+
+        return all_semantic_chunks
 
     def process_pdf(self, entry):
         pdf_path = os.path.join(self.pdf_folder, entry["pdf_name"])
@@ -112,15 +183,16 @@ class DataManager:
 
         text = self.extract_text(pdf_path)
         chunks = self.chunk_text(text)
+        if not chunks:
+            print("Warning: No chunks returned from LLM. Using raw text fallback.")
+            chunks = [text]
 
-        entry["chunks"] = [
-            {
+        for chunk_text in chunks:
+            entry["chunks"].append({
                 "id": str(uuid.uuid4()),
-                "text": chunk,
-                "embedding": self.embedder.encode(chunk)
-            }
-            for chunk in chunks
-        ]
+                "text": chunk_text,
+                "embedding": self.embedder.encode(chunk_text)
+            })
 
         self.save_database()
         print(f"Indexed {len(chunks)} chunks for: {entry['title']}")
