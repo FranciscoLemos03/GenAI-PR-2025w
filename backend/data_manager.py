@@ -68,7 +68,7 @@ class DataManager:
             "title": title,
             "pdf_name": pdf_name,
             "researcher": researcher,
-            "Upload date": day,
+            "Upload date": day.isoformat(),
             "chunks": []  # filled after processing
         }
         self.database.append(entry)
