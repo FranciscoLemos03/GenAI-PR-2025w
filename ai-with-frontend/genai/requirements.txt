@@ -1,0 +1,8 @@
+sentence-transformers
+torch
+numpy
+pymupdf
+requests
+arxiv
+fitz
+python-dotenv
