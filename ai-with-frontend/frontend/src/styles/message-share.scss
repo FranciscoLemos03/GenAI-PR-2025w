@@ -1,0 +1,27 @@
+.message-share {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 64px;
+
+    span {
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    };
+
+    p {
+        margin-top: 8px;
+        font-size: 14px;
+        margin-bottom: 12px;
+        text-align: center;
+        color: #737380;
+    }
+
+    > img {
+        height: 150px;
+        width: 150px
+    }
+}
