@@ -63,12 +63,17 @@ class DataManager:
         return pdf_name
 
     def _create_database_entry(self, title, pdf_name, day, researcher):
+        if hasattr(day, "isoformat"):
+            day_str = day.isoformat()
+        else:
+            day_str = str(day)  # ya es string tipo "2025-01-07"
+
         entry = {
             "id": str(uuid.uuid4()),
             "title": title,
             "pdf_name": pdf_name,
             "researcher": researcher,
-            "Upload date": day.isoformat(),
+            "Upload date": day_str,
             "chunks": []  # filled after processing
         }
         self.database.append(entry)

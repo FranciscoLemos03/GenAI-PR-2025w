@@ -12,7 +12,7 @@ os.makedirs(os.path.dirname(DATABASE_FILE), exist_ok=True)
 ###      (this part is skipped automatically if they are already on the database)
 ### -------------------------------------------------------------------
 
-"""N_TO_IMPORT = 20
+N_TO_IMPORT = 20
 
 dm = DataManager()
 
@@ -52,7 +52,7 @@ for filename in files_to_process:
     else:
         print(f"   Skipping {filename}: Filename does not follow the YYYY-MM-DD_Name_Title format.")
 
-print("\n\n\n")"""
+print("\n\n\n")
 
 
 
