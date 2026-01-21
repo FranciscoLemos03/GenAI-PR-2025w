@@ -84,7 +84,7 @@ Implements semantic search over the document database.
 - `load_database()` - Load all documents
 
 ### 4. **Main** (`main.py`)
-Orchestrates the entire pipeline.
+Orchestrates the entire pipeline. You can directly run this file in order to see the implementation without th web application.
 
 **Workflow:**
 1. Loads up to 20 example PDFs from `example_pdfs_to_upload/`
