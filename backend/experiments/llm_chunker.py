@@ -16,7 +16,6 @@ from pathlib import Path
 
 CURRENT_FILE = Path(__file__).resolve()
 PROJECT_ROOT = CURRENT_FILE.parent.parent
-#sys.path.append(str(PROJECT_ROOT))
 
 env_path = PROJECT_ROOT / ".env"
 load_dotenv(dotenv_path=env_path)
@@ -252,7 +251,7 @@ def main():
     print(f"Already processed PDFs: {len(existing_pdfs)}")
 
     # -----------------------
-    # Processar só os novos
+    # Process
     # -----------------------
     for pdf in pdfs:
         if pdf in existing_pdfs:
@@ -262,7 +261,6 @@ def main():
         doc = process_pdf(os.path.join(PDF_FOLDER, pdf))
         database.append(doc)
 
-        # Guarda incrementalmente (segurança contra crash)
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(database, f, ensure_ascii=False, indent=2)
 

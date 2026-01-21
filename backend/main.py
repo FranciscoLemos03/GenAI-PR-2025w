@@ -1,4 +1,3 @@
-# import_pdfs_to_db.py
 import os
 from data_manager import DataManager, PDF_FOLDER, DATABASE_FILE, EXAMPLE_FOLDER
 from baseline_retriever import BaselineRetriever
@@ -72,12 +71,10 @@ while True:
         #       example_pdfs_to_upload/2026-01-05_Alice-Robertson_Compliance-Review.pdf
         #       Compliance Review
         #       Alice Robertson
-        #       2026-01-05      
         # 2. 
         #       example_pdfs_to_upload/2026-01-08_Chloe-Nguyen_Multimodal-Fusion-Logic.pdf
         #       Multimodal Fusion Logic
         #       Chloe Nguyen
-        #       2026-01-08
         # ------------------------------------------------------------
 
         # Select pdf
@@ -116,14 +113,4 @@ while True:
                 print(f"- {r['pdf_name']}\n"
                       f"  {r['title']}\n"
                       f"      Score: {r['score']}\n      Researcher: {r['researcher']}\n\n")
-
-
-
-
-    # ------------------ SUMMARIZE ------------------
-    #from summarizer import Summarizer
-    #summ = Summarizer()
-    #elif action == "3":
-    #    summ.summarize_all()
-
 
