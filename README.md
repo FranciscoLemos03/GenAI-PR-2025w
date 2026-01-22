@@ -33,7 +33,7 @@ Features a tuned cosine similarity threshold of 0.45 to maximize retrieval accur
 The repository is organized into three main components:
 
 - ai-with-frontend/ (React.JS web app with firebase integration)
-- backend/ (Python development for GenAI Functionalities)
+- ai-without-frontend/ (Python development for GenAI Functionalities)
   - experiments/ (Jupyter notebooks detailing model optimization and evaluation metrics)
 - .gitignore 
 - README.md
